@@ -48,10 +48,26 @@ POLYMER_TERMS = {
     "PBT": ["butylene terephthalate", "tetramethylene terephthalate",
             "butylene terephtalate"],
     "PLA": ["lactic acid", "lactide", "polylactide"],
+    # ---- 其余 8 个 Tier1 成员（2026-10-10 补齐，供分层抽样与后续 shortlist 使用）----
+    "PEN": ["ethylene naphthalate", "naphthalene dicarboxylate",
+            "naphthalate", "naphthoate"],
+    "PBN": ["butylene naphthalate", "tetramethylene naphthalate"],
+    "PCL": ["caprolactone", "polycaprolactone"],
+    "PGA": ["glycolic acid", "glycolide", "polyglycolide", "polyglycolic"],
+    "PBS": ["butylene succinate", "tetramethylene succinate",
+            "butylene succinate adipate"],
+    "PBSA": ["butylene succinate adipate", "butylene succinate co adipate",
+             "butylene succinate adipate copolyester", "succinate adipate"],
+    "PHB": ["hydroxybutyrate", "polyhydroxybutyrate", "hydroxybutyrate co",
+            "hydroxyalkanoate"],
+    "PHBV": ["hydroxyvalerate", "hydroxybutyrate hydroxyvalerate",
+             "hydroxybutyrate co hydroxyvalerate", "hydroxyalkanoate"],
 }
 
-# 单独出现的缩写（词边界匹配，避免 petroleum / plan / place 之类误命中）
-POLYMER_ABBR = {"PET": "pet", "PTT": "ptt", "PBT": "pbt", "PLA": "pla"}
+# 单独出现的缩写（词边界匹配，避免 petroleum / plan / place / PGA=磷酸甘油酸 之类误命中）
+POLYMER_ABBR = {"PET": "pet", "PTT": "ptt", "PBT": "pbt", "PLA": "pla",
+                "PEN": "pen", "PBN": "pbn", "PCL": "pcl", "PGA": "pga",
+                "PBS": "pbs", "PBSA": "pbsa", "PHB": "phb", "PHBV": "phbv"}
 
 # 缩写歧义防护：PET 也指"正电子发射断层(PET)扫描仪"，PBT/PLA 亦有其它含义。
 # 仅凭缩写命中时，必须同时出现下列聚合物语境词之一，才算真的在讲这种高分子。
@@ -60,6 +76,9 @@ POLYMER_CONTEXT = [
     "crystallization", "crystallisation", "spherulite", "lamellar",
     "fiber", "fibre", "film", "resin", "macromolecule", "melt spun",
     "oligomer",
+    # 其余成员语境佐证（缩写在生物/医学领域常有其它含义，需语境才计分）
+    "naphthalate", "succinate", "caprolactone", "lactide", "glycolide",
+    "hydroxyalkanoate", "biopolyester", "polyesteramide",
 ]
 
 # 正向关键词（权重）

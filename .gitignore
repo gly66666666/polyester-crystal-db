@@ -19,3 +19,9 @@ data/processed/extraction_output.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# LaTeX 中间产物
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc

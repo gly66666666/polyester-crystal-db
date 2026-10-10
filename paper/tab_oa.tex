@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{全文可获取性分层抽样实测（12 个成员分层抽样，每成员取前 5 条高相关候选，共 $n=60$）}
+\label{tab:oa}
+\begin{tabularx}{\textwidth}{l c c X}
+\toprule
+状态 & 条数 & 占比 & 含义\\
+\midrule
+\texttt{closed} & 49 & 81.7\% & 无合法开放获取版本，须机构订阅 / 馆际互借 / 人工获取 \\
+\texttt{oa\_landing} & 9 & 15.0\% & 判定为 OA，但链接为出版商落地页或 HTML，无法自动下载 \\
+\texttt{oa\_pdf} & 2 & 3.3\% & 给出 \texttt{url\_for\_pdf} 且实际取回内容为 PDF，可自动下载 \\
+\midrule
+\multicolumn{4}{p{0.94\textwidth}}{\footnotesize 样本 60 条；Unpaywall 查询成功 60 条。判定为开放获取（\texttt{is\_oa}=true）共 11 条（占查询成功样本 18.3\%），其中可自动下载全文 PDF 的 2 条。}\\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,609 @@
+[
+  {
+    "polymer_abbr": "PET",
+    "doi": "10.1002/crat.201300369",
+    "title": "Isothermal crystallization behavior and crystal structure of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PET",
+    "doi": "10.1002/polb.21032",
+    "title": "Sequence distribution and crystal structure of poly(ethylene/butylene terephthalate) copolyesters compared with poly(ethylene/trimethylene terephthalate) copolyesters",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PET",
+    "doi": "10.1016/0032-3861(95)91437-c",
+    "title": "Morphology and crystal structure of an a axis oriented, highly crystalline poly(ethylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PET",
+    "doi": "10.1016/j.polymer.2005.04.030",
+    "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PET",
+    "doi": "10.1016/0032-3861(88)90201-7",
+    "title": "The crystal modulus and structure of oriented poly(ethylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBT",
+    "doi": "10.1002/pol.1975.180131109",
+    "title": "The crystal structure of poly(tetramethylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBT",
+    "doi": "10.1139/v85-510",
+    "title": "On the structure of poly(tetramethylene terephthalate). Structural, infrared, and Raman studies of three tetramethylene glycol dibenzoate derivatives, models for poly(tetramethylene terephthalate)",
+    "pdf_check": "err:HTTPError",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": false,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBT",
+    "doi": "10.4028/p-8jeg9d",
+    "title": "Correlation of Wear Behavior of PBT/PC Blend with Crystallographic Structure: A Comprehensive Study on Wear Rate and Crystal Structure",
+    "is_oa": true,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBT",
+    "doi": "10.1295/polymj.23.949",
+    "title": "Crystal Structure of Cyclic Dimer of Poly(butylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBT",
+    "doi": "10.1002/macp.1985.021860317",
+    "title": "Crystallization behaviour of poly(ethylene terephthalate) and poly(tetramethylene terephthalate) blends",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PTT",
+    "doi": "10.1016/0032-3861(79)90064-8",
+    "title": "The crystal structure of poly(trimethylene terephthalate) by X-ray and electron diffraction",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PTT",
+    "doi": "10.1021/ma000210w",
+    "title": "Crystal Structure and Banded Spherulite of Poly(trimethylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PTT",
+    "doi": "10.1016/j.polymer.2005.04.030",
+    "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PTT",
+    "doi": "10.58837/chula.the.2003.1976",
+    "title": "Shear-induced crystallization in poly (trimethylene terephthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PTT",
+    "doi": "10.58837/chula.the.2004.2118",
+    "title": "Crystallization kinetics of poly(trimethylene terephthalate) : macroscopic and microscopic studies",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PEN",
+    "doi": "10.1002/(sici)1099-1581(199710)8:10<592::aid-pat713>3.0.co;2-h",
+    "title": "Mesophase structures in poly(ethylene terephthalate), poly(ethylene naphthalate) and poly(ethylene naphthalate bibenzoate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PEN",
+    "doi": "10.1016/b978-0-08-100572-9.00010-0",
+    "title": "Poly(ethylene naphthalate) [poly(ethylene-2,6-naphthalene dicarboxylate)]",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PEN",
+    "doi": "10.5040/9781501365072.12586",
+    "title": "polyethylene naphthalate",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PEN",
+    "doi": "10.1016/s0032-3861(01)00623-1",
+    "title": "Fracture behaviour of polyethylene naphthalate (PEN)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PEN",
+    "doi": "10.1109/iseim.2014.6870804",
+    "title": "Analysis on thermally stimulated currents in polyethylene-terephthalate and polyethylene-naphthalate",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBN",
+    "doi": "10.1039/c4ce00651h",
+    "title": "Crystallization of poly(butylene-2,6-naphthalate-co-butylene adipate) copolymers: regulating crystal modification of the polymorphic parent homopolymers and biodegradation",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBN",
+    "doi": "10.1007/s002890050137",
+    "title": "Crystallization kinetics and multiple melting point phenomena of polybutylene naphthalate terephthalate (PBNT) copolyesters",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBN",
+    "doi": "10.1016/b978-1-895198-92-8.50096-3",
+    "title": "PBN poly(butylene 2,6-naphthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBN",
+    "doi": "10.1016/b978-1-895198-47-8.50095-3",
+    "title": "PBN poly(butylene 2,6-naphthalate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBN",
+    "doi": "10.1109/icsd.2007.4290892",
+    "title": "Effects of Gamma-ray Irradiation on Dielectric Breakdown of Polybutylene Naphthalate and Polybutylene Terephthalate under Magnetic Field",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PLA",
+    "doi": "10.1021/acs.macromol.7b01468",
+    "title": "Crystal Structure of Poly(lactic acid) Stereocomplex: Random Packing Model of PDLA and PLLA Chains As Studied by X-ray Diffraction Analysis",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PLA",
+    "doi": "10.1016/j.polymer.2019.05.020",
+    "title": "Crystal structure and unique lamellar thickening for poly(l-lactide) induced by high pressure",
+    "is_oa": true,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PLA",
+    "doi": "10.1021/ma0348674",
+    "title": "Helix Distortion and Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PLA",
+    "doi": "10.1080/00222349108245788",
+    "title": "Crystal structure of stereocomplex of poly(L-lactide) and poly(D-lactide)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PLA",
+    "doi": "10.1021/ma001630o",
+    "title": "Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PCL",
+    "doi": "10.3724/sp.j.1095.2014.30657",
+    "title": "Synthesis of Novel Cyclic Poly(&amp;epsilon;-caprolactone-co-&amp;gamma;-triethylsilyloxy-&amp;epsilon;-caprolactone)",
+    "pdf_check": "pdf",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": true,
+    "oa_host_type": "publisher",
+    "status": "oa_pdf"
+  },
+  {
+    "polymer_abbr": "PCL",
+    "doi": "10.1021/ma00119a031",
+    "title": "Synthesis of Poly(.epsilon.-caprolactone-b- tetrahydrofuran-b-.epsilon.-caprolactone) through the Samarium Iodide-Induced Transformation",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PCL",
+    "doi": "10.2115/fiber.53.9_373",
+    "title": "Evaluation of Biodegradability of Poly(.EPSILON.-Caprolactone-co-.EPSILON.-Caprolactam) and Poly(.EPSILON.-Caprolactone-co-.OMEGA.-Laurolactam).",
+    "pdf_check": "pdf",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": true,
+    "oa_host_type": "publisher",
+    "status": "oa_pdf"
+  },
+  {
+    "polymer_abbr": "PCL",
+    "doi": "10.1201/b10372-7",
+    "title": "Polycaprolactone Nanowires for Controlling Cell Behavior at the Biointerface",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PCL",
+    "doi": "10.1081/e-ebpp-120052542",
+    "title": "Nanowires, Polycaprolactone: Cell Behavior Control",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PGA",
+    "doi": "10.1021/acs.macromol.3c01909",
+    "title": "Crystal Structure of Poly(glycolic acid) β Form",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PGA",
+    "doi": "10.1002/brb3.71008/v2/review1",
+    "title": "Review for \"Basic Fibroblast Growth Factor‐Releasing Bioabsorbable Polyglycolic Acid Dura Mater Enhances Neural Progenitor Cell Proliferation and Neuroprotection After Brain Injury\"",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PGA",
+    "doi": "10.1002/brb3.71008/v1/review2",
+    "title": "Review for \"Basic Fibroblast Growth Factor‐Releasing Bioabsorbable Polyglycolic Acid Dura Mater Enhances Neural Progenitor Cell Proliferation and Neuroprotection After Brain Injury\"",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PGA",
+    "doi": "10.1002/brb3.71008/v2/review2",
+    "title": "Review for \"Basic Fibroblast Growth Factor‐Releasing Bioabsorbable Polyglycolic Acid Dura Mater Enhances Neural Progenitor Cell Proliferation and Neuroprotection After Brain Injury\"",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PGA",
+    "doi": "10.1016/j.eurpolymj.2015.09.009",
+    "title": "Hansen solubility parameters of polyglycolic acid and interaction parameters between polyglycolic acid and solvents",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBS",
+    "doi": "10.20944/preprints201801.0254.v1",
+    "title": "Molecular and Supramolecular Changes in Polybutylene Succinate (PBS) and Polybutylene Succinate Adipate (PBSA) Copolymer during Degradation in Various Environmental Conditions",
+    "pdf_check": "err:HTTPError",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": false,
+    "oa_host_type": "repository",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBS",
+    "doi": "10.1039/c7ce02124k",
+    "title": "Effects of isomorphic poly(butylene succinate-\n                    <i>co</i>\n                    -butylene fumarate) on the nucleation of poly(butylene succinate) and the formation of poly(butylene succinate) ring-banded spherulites",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBS",
+    "doi": "10.1109/icsd.2007.4290893",
+    "title": "Dielectric Properties of Polybutylene Succinate and Polybutylene Succinate Adipate",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBS",
+    "doi": "10.58837/chula.sp.2019.333",
+    "title": "อัตราการย่อยสลายของแก้วกระดาษเคลือบพลาสติกชนิด Polybutylene succinate (PBS) โดยใช้หนอนนก Tenebrio molitor และกระบวนการฝังกลบตามธรรมชาติ",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBS",
+    "doi": "10.70675/eee109a5z8feaz4a91z84c9zce897a8f1750",
+    "title": "Flame retardancy of polybutylene succinate by multiple approaches",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBSA",
+    "doi": "10.3390/molecules30112252",
+    "title": "Influence of Hydrolysis on Non-Isothermal Crystallization of Poly(Butylene Succinate-Co-Adipate) (PBSA)",
+    "pdf_check": "err:HTTPError",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": false,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBSA",
+    "doi": "10.20944/preprints201801.0254.v1",
+    "title": "Molecular and Supramolecular Changes in Polybutylene Succinate (PBS) and Polybutylene Succinate Adipate (PBSA) Copolymer during Degradation in Various Environmental Conditions",
+    "pdf_check": "err:HTTPError",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": false,
+    "oa_host_type": "repository",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBSA",
+    "doi": "10.3390/polym10030251",
+    "title": "Molecular and Supramolecular Changes in Polybutylene Succinate (PBS) and Polybutylene Succinate Adipate (PBSA) Copolymer during Degradation in Various Environmental Conditions",
+    "pdf_check": "err:HTTPError",
+    "is_oa": true,
+    "has_pdf_url": true,
+    "real_pdf": false,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PBSA",
+    "doi": "10.1002/pen.25915",
+    "title": "Improving crystallization properties of <scp>PBSA</scp> by blending <scp>PBS</scp> as a polymeric nucleating agent to prepare high‐performance <scp>PPC</scp>/<scp>PBSA</scp>/<scp>AX8900</scp> blown films",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PBSA",
+    "doi": "10.1109/icsd.2007.4290893",
+    "title": "Dielectric Properties of Polybutylene Succinate and Polybutylene Succinate Adipate",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHB",
+    "doi": "10.1021/ma102723n",
+    "title": "Infrared Spectroscopy and X-ray Diffraction Studies of Thermal Behavior and Lamella Structures of Poly(3-hydroxybutyrate-<i>co</i>-3-hydroxyvalerate) (P(HB-<i>co</i>-HV)) with PHB-Type Crystal Structure and PHV-Type Crystal Structure",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHB",
+    "doi": "10.1016/j.polymer.2015.08.011",
+    "title": "Intermolecular hydrogen bondings in the poly(3-hydroxybutyrate) and chitin blends: Their effects on the crystallization behavior and crystal structure of poly(3-hydroxybutyrate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHB",
+    "doi": "10.1021/ma034546s",
+    "title": "Crystal Structure and Enzymatic Degradation of Poly(4-hydroxybutyrate)",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHB",
+    "doi": "10.1016/j.polymer.2017.12.030",
+    "title": "Intermolecular interactions of poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (P(HB-co-HV)) with PHB-type crystal structure and PHV-type crystal structure studied by low-frequency Raman and terahertz spectroscopy",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHB",
+    "doi": "10.1016/0032-3861(96)82922-3",
+    "title": "Temperature influence on changes of parameters of the unit cell of biopolymer PHB",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHBV",
+    "doi": "10.2139/ssrn.5096032",
+    "title": "Comparative Study on Crystallization Behaviour of Poly(3-Hydroxybutyrate-Co-3-Hydroxyvalerate) (Phbv) Nucleated with Different Nucleating Agents - Crystallization, Thermal, and Mechanical Properties",
+    "is_oa": true,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": "repository",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PHBV",
+    "doi": "10.1016/j.polymer.2025.128319",
+    "title": "Comparative study on crystallization behaviour of poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (PHBV) nucleated with different nucleating agents - Crystallization, thermal, and mechanical properties",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHBV",
+    "doi": "10.1016/j.carbpol.2017.05.064",
+    "title": "Effect of silver contents in cellulose nanocrystal/silver nanohybrids on PHBV crystallization and property improvements",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  },
+  {
+    "polymer_abbr": "PHBV",
+    "doi": "10.3724/sp.j.1105.2010.09291",
+    "title": "CRYSTALLIZATION BEHAVIOR OF INCOMPATIBLE PHBV/PS AND PHBV/PMMA CRYSTALLINE/AMORPHOUS BLENDS",
+    "is_oa": true,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": "publisher",
+    "status": "oa_landing"
+  },
+  {
+    "polymer_abbr": "PHBV",
+    "doi": "10.1007/s13233-026-00511-0",
+    "title": "Enhanced crystallization and structural refinement in polylactide via PHBV blending and ball-milled cellulose fiber modification",
+    "is_oa": false,
+    "has_pdf_url": false,
+    "real_pdf": null,
+    "oa_host_type": null,
+    "status": "closed"
+  }
+]

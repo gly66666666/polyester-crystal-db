@@ -50,7 +50,17 @@ polyester-crystal-db/
 │   │   └── evaluate.py             # Gold Set 字段级 Precision/Recall/F1 评测（P1 验收 ≥80%）
 │   │
 │   └── annotation/                 # 标注工具
-│       └── gold_set_annotator.py   # Gold Set 标注：init / list-candidates / add / validate / stats / export-db
+│       ├── gold_set_annotator.py   # Gold Set 标注：init / list-candidates / add / validate / stats / export-db
+│       ├── shortlist.py            # 候选文献相关性打分排序（12 成员身份词 + 缩写语境保护）
+│       ├── verify_refs.py          # 参考文献DOI的CrossRef核验（写入前必须核验）
+│       ├── fetch_citations.py      # 批量抓取已核验DOI的完整题录（论文引用用）
+│       ├── oa_survey.py            # 全文可获取性分层抽样实测（论文结果可复现）
+│       └── make_oa_table.py        # 把实测统计渲染为论文LaTeX表格
+│
+├── paper/                          # 论文（中文稿）
+│   ├── main.tex                    # 四层数据模型 + 抽取流水线 + 质量治理（XeLaTeX 编译 ×2）
+│   ├── tab_oa.tex                  # OA实测表（由 make_oa_table.py 自动生成，勿手改）
+│   └── main.pdf
 │
 ├── docs/                           # 数据字典 / 抽取决议 / CHANGELOG（规划中，待补）
 ├── requirements.txt                # Python 依赖清单

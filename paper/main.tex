@@ -1,0 +1,782 @@
+% =====================================================================
+%  面向聚酯家族的高分子结晶数据库：数据模型、抽取流水线与质量治理
+%  编译引擎：XeLaTeX（需编译两遍以生成目录与交叉引用）
+%   xelatex -interaction=nonstopmode main.tex   （×2）
+% =====================================================================
+\documentclass[11pt,a4paper]{ctexart}
+
+% ---------- 页面与基础 ----------
+\usepackage[top=2.2cm,bottom=2.2cm,left=2.4cm,right=2.4cm]{geometry}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+
+% ---------- 中文字体 ----------
+\setCJKmainfont{Microsoft YaHei}[AutoFakeBold=true, AutoFakeSlant=true]
+\setCJKsansfont{Microsoft YaHei}[AutoFakeBold=true]
+% 注意：Consolas 无中文字形，代码块（\ttfamily）中的中文注释会丢字符，
+% 故 CJK 等宽族回退到雅黑（非等宽，但保证注释可读）。
+\setCJKmonofont{Microsoft YaHei}
+
+% ---------- 提示框 ----------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\newtcolorbox{warnbox}[1]{%
+  breakable,
+  colback=red!5!white,
+  colframe=red!60!black,
+  coltitle=white, fonttitle=\bfseries, title={#1},
+  boxrule=0.5pt, arc=1.5mm,
+  left=3mm, right=3mm, top=2mm, bottom=2mm,
+}
+\newtcolorbox{tipbox}[1]{%
+  breakable,
+  colback=blue!5!white,
+  colframe=blue!55!black,
+  coltitle=white, fonttitle=\bfseries, title={#1},
+  boxrule=0.5pt, arc=1.5mm,
+  left=3mm, right=3mm, top=2mm, bottom=2mm,
+}
+
+% ---------- 代码块 ----------
+\usepackage{listings}
+\definecolor{codebg}{gray}{0.955}
+\definecolor{codeframe}{gray}{0.72}
+\lstdefinestyle{common}{%
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codebg}, frame=single, rulecolor=\color{codeframe},
+  framerule=0.4pt, framesep=4pt, breaklines=true, breakatwhitespace=false,
+  breakindent=1.2em, columns=fullflexible, keepspaces=true,
+  showstringspaces=false, tabsize=2, aboveskip=6pt, belowskip=6pt,
+  extendedchars=true,
+}
+
+% ---------- 页眉页脚 ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 聚酯家族结晶数据库：数据模型、抽取流水线与质量治理}
+\fancyhead[R]{\small 南京大学「金种子」早期科研训练项目}
+\setlength{\headheight}{13.5pt}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black,
+            urlcolor=blue!60!black, bookmarksnumbered=true}
+
+% ---------- 标题信息 ----------
+\title{\textbf{面向聚酯家族的高分子结晶数据库构建：\\
+四层数据模型、LLM 抽取流水线与数据质量治理}}
+\author{葛陆熠\textsuperscript{1} \quad 朱芷卿\textsuperscript{1} \quad 胡文兵\textsuperscript{2,*}
+\\[4pt]
+{\small \textsuperscript{1}南京大学匡亚明学院，南京 210023}\\
+{\small \textsuperscript{2}南京大学化学化工学院高分子科学与工程系，南京 210023}\\
+{\small * 通讯作者，E-mail: wbhu@nju.edu.cn}}
+\date{}
+
+\begin{document}
+\maketitle
+
+% ============================== 摘要 ==============================
+\begin{abstract}
+\noindent
+\textbf{摘\quad 要}\quad
+半结晶性高分子的结晶结构与其热历史、加工条件强耦合，同一聚合物在不同结晶温度、拉伸与退火条件下
+可给出晶型、晶胞参数与热力学量的系统性差异。这类数据目前以表格形式散落在数十年的期刊文献中，
+既无统一的结构化表示，也缺乏可回溯的出处记录，因而难以支撑统计分析与数据驱动的建模。
+本文面向\textbf{半结晶性聚酯家族}（PET、PBT、PTT、PEN、PBN、PLA、PCL、PGA、PBS、PBSA、PHB、PHBV
+共 12 个成员），提出并实现一个"文献检索 $\rightarrow$ 大语言模型抽取 $\rightarrow$ 结构化归一
+$\rightarrow$ 质量治理 $\rightarrow$ 入库检索"的完整技术路线。
+主要工作包括：（1）提出聚合物--晶型--观测--文献四层数据模型（L0--L3），
+把晶胞参数归入晶型层（L1）、把实测条件与热力学量归入观测层（L2），
+使"一条记录 = 一组结晶条件下的一组结构/性质"成为可计数的建模单元；
+（2）实现一条具备幂等落库、断点续跑、置信自评与出处定位的抽取流水线，
+并针对高分子文献特有的单位陷阱（如 kJ/mol 与 J/g 的换算依赖重复单元分子量）建立归一化模块；
+（3）建立"保留全部分歧 + 互相标记冲突 + 择优排序外置"的冲突消解机制，
+把文献间数值不一致从"需要消除的错误"转化为"可分析的数据资产"；
+（4）以开放获取可获取性实测为例，给出自动化文献获取在本领域的真实上限：
+在 12 个成员分层抽样的 60 条高相关候选中，Unpaywall 判定为开放获取的比例为 18.3\%，
+但其中可由程序直接下载全文 PDF 的仅 3.3\%（2/60），
+说明规模化数据建设必须依托机构订阅与人工核验，而不能依赖自动抓取。
+本文所有数据条目强制绑定单一 DOI 并以"仅存数值性事实 + 出处定位"为合规边界，
+不整段复制原文、不复制图表、不转载受许可约束的晶体学文件。
+文中给出了检索覆盖、系统实现与可获取性实测的定量结果，
+抽取精度评测因人工金标准标注尚未完成而以\textbf{占位表}形式给出，未在本文填入任何未经实测的数值。
+
+\smallskip
+\noindent\textbf{关键词：}高分子结晶；聚酯；数据库；大语言模型；信息抽取；数据质量；可溯源数据
+
+\smallskip
+\noindent\textbf{中图分类号：}O631 \quad \textbf{文献标识码：}A
+\end{abstract}
+
+\tableofcontents
+\bigskip
+
+% ============================== 1 引言 ==============================
+\section{引言}
+
+\subsection{问题的由来：结晶数据"可查"但"不可用"}
+
+半结晶性高分子（如聚对苯二甲酸乙二醇酯 PET、聚乳酸 PLA）的宏观性能几乎完全由结晶结构决定：
+晶型决定链构象与堆砌密度，晶胞参数反映链间相互作用，结晶度、片晶厚度与长周期决定力学与阻隔性能，
+而平衡熔点 $T_m^0$、熔融焓 $\Delta H_f$、玻璃化转变温度 $T_g$ 等热力学量则是加工窗口的直接依据。
+经典的 Hoffman--Weeks 外推\cite{hoffman1962}与 Lauritzen--Hoffman 折叠链理论\cite{lauritzen1960}
+提供了把这些量联系起来的框架，其应用前提是\textbf{同类可比的数据序列}：同一聚合物、
+在明确的结晶温度 $T_c$ 下、由确定的热历史得到的结构与热力学测量。
+
+问题在于，这样的序列在文献中是\textbf{隐式存在、显式缺失}的。以 PET 为例，
+其晶胞参数早在 1954 年即由 Daubeny、Bunn 与 Brown 测定\cite{daubeny1954}，
+此后数十年间不同作者在不同取向、不同结晶条件下给出过略有差异的晶胞；
+PLLA 的 $\alpha$ 晶型结构在 2001 年得到系统修正\cite{aleman2001}；
+PBT（早期文献称 PTMT）的三斜晶胞见 Mencik 的工作\cite{mencik1975}。
+这些数值分散在各自的论文表格里，单位不一（$\mathrm{\AA}$ 与 nm、kJ/mol 与 J/g 混用），
+条件记录不完整（$T_c$、降温速率、拉伸比常常缺省），且彼此之间的不一致从未被系统整理。
+对研究者而言，这些数据"可查"（能找到原文），但"不可用"（无法直接汇总、比较与建模）。
+
+\subsection{为什么是"一类高分子"，而不是"所有高分子"或"单一聚合物"}
+
+构建此类数据库时，范围的选择决定了它能否产出科学结论。
+\textbf{面向"所有高分子"}看似野心更大，实则统计上无效：
+聚乙烯、PET、尼龙 6、纤维素、聚偏氟乙烯的重复单元化学结构差异远大于相似性，
+把它们放在同一个样本池里训练迁移模型，模型只能"跑通"，无法给出可解释的结论；
+且若样本总量只有数百条，摊到数十个成员后每个成员仅十余条，采样密度不足以填充
+"结晶条件 $\times$ 结构"的交叉表。
+
+\textbf{面向"单一聚合物"}则走向另一个极端：单一成员的数据量足以支撑细致分析，
+但结论无法外推，难以区分"聚合物的个性"与"聚酯家族的共性"，
+也不足以支撑跨成员的构效关系讨论与留一成员（leave-one-polymer-out）泛化评测。
+
+因此本文采用\textbf{家族口径}：聚焦半结晶性\textbf{聚酯家族}的 12 个成员
+（表~\ref{tab:members}）。选择聚酯的理由有三：
+\begin{enumerate}[label=(\arabic*), leftmargin=2.2em]
+  \item \textbf{结构同源性}：重复单元均为酯键连接的二醇--二酸（或羟基酸）序列，
+        主链化学结构可通过亚甲基数与芳环数两个整数参数化，成员之间存在可比较的同源序列；
+  \item \textbf{性质跨度大}：从芳香族刚性链（PET、PEN）到脂肪族柔性链（PCL、PBS、PHB），
+        $T_g$ 与 $T_m$ 跨度足以形成有意义的对照，且包含 $\alpha/\beta/\alpha'$ 等多晶型现象；
+  \item \textbf{文献与产业基础}：聚酯既是产量最大的工程塑料/纤维品类之一，
+        也是可降解塑料（PLA、PBS、PBSA、PHB、PHBV）的主体，文献积累跨越 70 年，数据密度高。
+\end{enumerate}
+
+\subsection{本文的贡献与边界}
+
+本文报告的是该数据库建设项目的\textbf{数据工程与方法学部分}，核心贡献为：
+\begin{itemize}[leftmargin=2.2em]
+  \item 提出适配高分子结晶数据的四层数据模型（L0--L3），明确"晶胞属晶型层、条件与热力学属观测层"的划分原则（第~\ref{sec:model} 节）；
+  \item 实现一条可断点续跑、幂等落库、具备置信自评与出处定位的 LLM 抽取流水线（第~\ref{sec:pipeline} 节）；
+  \item 针对高分子文献的单位陷阱与文献间数值分歧，给出归一化、越界检测与冲突消解的工程方案（第~\ref{sec:quality} 节）；
+  \item 以可复现的抽样实测量化"自动化全文获取"的真实上限，为同类项目提供可行性基线（第~\ref{sec:results} 节）；
+  \item 明确一套可执行的数据合规边界，使数据库在开源与发表时具备清晰的版权立场（第~\ref{sec:compliance} 节）。
+\end{itemize}
+
+\begin{warnbox}{本文的结果边界（请读者注意）}
+截至本文撰写时，人工金标准（Gold Set）标注尚未完成，规模化抽取尚未执行，
+因此\textbf{本文不包含抽取精度、数据库规模等方面的实验数值}。
+凡涉及此类结果之处，均以明确标注的\textbf{占位表}呈现（表~\ref{tab:placeholder}），
+待相应阶段完成后填入。本文可复现的定量结果限于：
+文献检索覆盖统计（\ref{sec:corpus} 节）、全文可获取性实测（\ref{sec:oa} 节）、
+以及流水线端到端的功能验证（\ref{sec:pipeline} 节）。
+\end{warnbox}
+
+% ============================== 2 相关工作 ==============================
+\section{相关工作}
+
+\subsection{通用材料数据库：晶体学与计算数据}
+
+晶体学领域已建成成熟的开放基础设施。Crystallography Open Database（COD）\cite{grazulis2009,grazulis2011}
+以开放许可汇集数十万条无机/小分子晶体结构；Cambridge Structural Database（CSD）\cite{groom2016}
+覆盖有机与金属有机小分子晶体；Materials Project\cite{jain2013}则以第一性原理计算为主，
+提供无机材料的结构与能量学数据。这类资源的共同特点是\textbf{以完整晶体结构文件（CIF）为中心}，
+其数据质量由"结构是否已解出"这一硬门槛保证。
+
+然而它们对\textbf{高分子结晶}覆盖极为有限。原因并非疏忽，而是本质困难：
+高分子晶体多为半结晶、链折叠、取向织构，通常只能得到纤维图或粉末图的\textbf{部分}结构信息，
+很少能满足 CIF 所需的全原子坐标与精修指标；即使已发表，也多以"晶胞参数 + 链构象"的
+表格形式存在于论文中，而非以结构文件形式沉淀。因此，
+\textbf{高分子结晶数据的入口是文献表格，而不是晶体学数据库}——这正是本文工作的出发点。
+
+\subsection{聚合物数据库：PoLyInfo 与其可复用性}
+
+日本物质材料研究机构（NIMS）的 PoLyInfo\cite{otsuka2011,ishii2024}是目前覆盖最广的聚合物数据库，
+收录均聚物、共聚物、混合物与复合材料的物性数据，并持续推进知识的机器可读标准化。
+PoLyInfo 证明了聚合物数据整合的价值，也揭示了两点局限：
+其一，其数据以\textbf{聚合物/牌号}为单位聚合，侧重工程物性，
+\textbf{结晶条件 $\rightarrow$ 结构 $\rightarrow$ 性质}的三联关系表达较弱；
+其二，其采用注册制并受版权约束，第三方既不能整包抓取，也不能直接再分发其内容。
+
+这决定了本文的立场：PoLyInfo 在本项目中\textbf{仅用于交叉校验}，
+不作为数据来源入库；本文数据库坚持"每一条数值都可回溯到单一公开 DOI"，
+从而保证开源与发表时的合规清晰性（详见 \ref{sec:compliance} 节）。
+
+\subsection{文献信息抽取：从规则工具到大语言模型}
+
+化学领域的自动抽取长期依赖规则与词典方法，代表性工作如 ChemDataExtractor\cite{swain2016}
+提供化学命名实体识别与属性关系抽取。这类方法在命名实体上表现稳定，
+但对\textbf{跨句的条件--数值绑定}（例如"在 $T_c=180\,^\circ\mathrm{C}$ 结晶 2 h 后测得
+$a=4.56$~\AA"中，数值与条件的依存关系）以及表格的多样排版缺乏鲁棒性。
+
+大语言模型的出现显著改变了这一局面。近期研究表明，LLM 可从材料科学文献表格中抽取知识图谱\cite{dreger2025}，
+可从特定领域的文献语料中完成知识发现\cite{su2025}，经微调后在化学文本挖掘任务上进一步提升\cite{zhang2024}，
+并已被用于构建领域数据库的自动化流程\cite{itani2025}。
+聚合物信息学方面，机器学习模型的基准评测也已展开\cite{tao2021}，但这类工作普遍指出：
+\textbf{数据规模与数据质量是比模型选择更强的瓶颈}。
+
+本文的定位正处在这一缺口上：不追求提出新的抽取模型，
+而是把 LLM 作为可替换的抽取后端，重点解决"抽取之后"的工程问题——
+单位归一、越界检测、冲突消解、可溯源性——并给出可评测、可复现的流水线设计。
+
+% ============================== 3 数据模型 ==============================
+\section{四层数据模型}\label{sec:model}
+
+\subsection{分层原则}
+
+数据模型的设计原则只有一条：\textbf{让"一条记录"对应一个可被统计的观测单元，
+并让该单元的所有上下文都能被追溯}。据此建立四层结构（表~\ref{tab:layers}）。
+
+\begin{table}[htbp]
+\centering
+\caption{四层数据模型（对应 schema v1.1 的 7 张表）}
+\label{tab:layers}
+\begin{tabularx}{\textwidth}{c l l X}
+\toprule
+层 & 表 & 语义 & 典型字段\\
+\midrule
+L0 & \texttt{polymers} & 聚合物成员（身份层） & 缩写、中英文名、家族分支、重复单元分子量、手性、立构策略、Tier\\
+L1 & \texttt{polymorphs} & 晶型与晶胞（结构层） & 晶型标签、晶系、空间群、$a/b/c$、$\alpha/\beta/\gamma$、$z$、$\rho_c$、纤维周期、链构象\\
+L2 & \texttt{observations} & 一次实测（观测层） & 溯源 DOI、$T_c$、结晶路径、降温速率、退火、拉伸比、结晶度、长周期、$T_m$、$T_m^0$、$\Delta H_f$、$T_g$、Avrami 指数、生长速率\\
+L2.5 & \texttt{atomic\_coordinates} / \texttt{properties} & 扩展（预留） & 全原子坐标；未列入 L2 的其它实测量\\
+L3 & \texttt{literature\_sources} & 文献与抽取溯源 & DOI、题录、抽取模型与版本、抽取时间、数值性事实片段\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+其中\textbf{最关键的一条约定}是：\textbf{晶胞参数属于 L1（晶型层），不在 L2 重复存储}。
+观测行通过 \texttt{polymorph\_id} 外键引用晶型。这样设计的直接后果是，
+同一聚合物被不同文献给出的略有差异的晶胞不会被"数值重复"的去重规则误删，
+而是作为\textbf{多条晶型记录}共存，其分歧交由冲突消解模块显式管理（\ref{sec:conflict} 节）。
+
+\subsection{计数口径：一条 = 一个观测行}
+
+本文明确规定\textbf{计数单元为 L2 观测行}，而非论文篇数或聚合物个数：
+一篇论文若在 5 个不同 $T_c$ 下给出 5 组结构/热力学数据，即产生 5 条观测。
+这是数据库能否支撑建模的关键设计——只有以观测行为单位，
+"结晶条件 $\rightarrow$ 结构/性质"的映射才具有足够的样本密度。项目规模化阶段的量化目标
+（$\geq 300$ 条观测、覆盖 $\geq 8$ 个成员）即按此口径定义。
+
+\subsection{溯源是硬约束}
+
+L2 的每一条观测都必须携带 \texttt{doi}；\texttt{ref\_source}（期刊/书名）、
+\texttt{ref\_table}（原文表号或图号）与 \texttt{source\_field}
+（\texttt{measured} / \texttt{review-cited}）用于区分\textbf{本文实测值}与\textbf{综述转引值}。
+后者在统计时须降权或单独分组，避免同一数值被多篇综述重复计入而放大权重。
+\texttt{extraction\_confidence}、\texttt{reviewed\_by}、\texttt{review\_status}
+三个字段共同构成质量标记，使"机器抽取"与"人工核验"的数据在库内始终可区分。
+
+% ============================== 4 方法 ==============================
+\section{系统与方法}\label{sec:pipeline}
+
+\subsection{总体流程}
+
+流水线由 6 个可独立运行的阶段构成，各阶段之间以磁盘文件（JSON / SQLite）解耦，
+任何阶段失败均可从上一阶段的产物重入（图~\ref{fig:pipeline}）。
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  node distance=0.9cm and 0.35cm,
+  stage/.style={draw=blue!55!black, fill=blue!5!white, rounded corners=2.5pt,
+                minimum height=1.05cm, text width=2.55cm, align=center, font=\small},
+  io/.style={draw=gray!60!black, fill=gray!8!white, rounded corners=1.5pt,
+             minimum height=0.75cm, text width=2.55cm, align=center, font=\scriptsize},
+  arrow/.style={-{Stealth[length=2.6mm]}, thick, draw=blue!60!black},
+]
+\node[stage] (s1) {1. 文献检索\\CrossRef};
+\node[stage, right=of s1] (s2) {2. 候选排序\\相关性打分};
+\node[stage, right=of s2] (s3) {3. 全文获取\\OA / 机构订阅};
+\node[stage, below=of s3] (s4) {4. LLM 抽取\\合约化输出};
+\node[stage, left=of s4] (s5) {5. 归一 + 质检\\单位 / 区间 / 冲突};
+\node[stage, left=of s5] (s6) {6. 幂等落库\\L0--L3};
+
+\node[io, below=of s6] (o1) {\texttt{search\_results.json}};
+\node[io, below=of s5] (o2) {\texttt{extraction\_output.json}};
+\node[io, below=of s4] (o3) {\texttt{polymer\_crystal.db}};
+
+\draw[arrow] (s1) -- (s2);
+\draw[arrow] (s2) -- (s3);
+\draw[arrow] (s3) -- (s4);
+\draw[arrow] (s4) -- (s5);
+\draw[arrow] (s5) -- (s6);
+\draw[arrow] (s6.west) -- ++(-0.55,0) |- node[pos=0.72, left, font=\scriptsize]{checkpoint / resume} (s1.west);
+\draw[dashed, draw=gray!70] (s6) -- (o3);
+\draw[dashed, draw=gray!70] (s5) -- (o2);
+\draw[dashed, draw=gray!70] (s1) -- (o1);
+\end{tikzpicture}
+\caption{抽取流水线总体流程。各阶段以磁盘产物解耦，支持断点续跑与单阶段重跑。}
+\label{fig:pipeline}
+\end{figure}
+
+\subsection{文献检索与候选排序}\label{sec:corpus}
+
+检索层使用 CrossRef REST API，按成员组织检索词（含同义词与历史称谓，
+例如 PBT 需同时检索 \textit{poly(tetramethylene terephthalate)} 与缩写 PTMT；
+PLA 需覆盖 \textit{poly(L-lactide)}），并加入晶型相关限定词。
+对返回结果按 DOI 去重后，所有请求均携带联系邮箱（mailto polite pool，
+即 CrossRef 官方建议的礼貌调用约定），保证服务可持续使用。
+
+候选排序是本阶段的实际难点。直接用聚合物名做文本匹配会引入大量噪声：
+PDB 中大量"PET 降解酶"的蛋白晶体结构、卟啉与金属配合物的小分子晶体学论文、
+以及与方法学相关的综述都会排在前列。为此实现了一个打分排序器，包含三条规则：
+（i）\textbf{身份词加权}——标题/摘要中出现聚合物身份词（\textit{poly(}\ldots\textit{terephthalate)}、
+\textit{polyester}、缩写等）显著加分；（ii）\textbf{缩写语境保护}——对 PET 等存在多义缩写的成员，
+要求缩写与高分子语境共现才计分，避免"positron emission tomography"之类误召回；
+（iii）\textbf{剔除补充材料}——过滤 \texttt{.s001} 之类的补充信息条目，
+它们通常是主文的附件，题录不完整且无独立摘要。
+
+排序后的候选进入人工标注与抽取队列。截至本文撰写时，检索阶段共得到
+\textbf{725} 条不重复候选，覆盖全部 12 个 Tier1 成员，年份跨度 1956--2026（中位数 2009），
+各成员分布见表~\ref{tab:members}。
+
+\begin{table}[htbp]
+\centering
+\caption{12 个 Tier1 聚酯成员的检索覆盖（不重复 DOI）}
+\label{tab:members}
+\begin{tabularx}{\textwidth}{l l c c l l c c}
+\toprule
+缩写 & 中文名 & 篇数 & 分支 & 缩写 & 中文名 & 篇数 & 分支\\
+\midrule
+PET & 聚对苯二甲酸乙二醇酯 & 60 & 芳香族 & PCL & 聚己内酯 & 50 & 脂肪族\\
+PBT & 聚对苯二甲酸丁二醇酯 & 79 & 芳香族 & PGA & 聚乙醇酸 & 50 & 脂肪族\\
+PTT & 聚对苯二甲酸丙二醇酯 & 87 & 芳香族 & PBS & 聚丁二酸丁二醇酯 & 60 & 脂肪族\\
+PEN & 聚萘二甲酸乙二醇酯 & 60 & 芳香族 & PBSA & 聚(丁二酸/己二酸丁二醇酯) & 40 & 共聚酯\\
+PBN & 聚萘二甲酸丁二醇酯 & 50 & 芳香族 & PHB & 聚羟基丁酸酯 & 50 & 脂肪族\\
+PLA & 聚乳酸 & 99 & 脂肪族 & PHBV & 聚(羟基丁酸/羟基戊酸)酯 & 40 & 共聚酯\\
+\midrule
+\multicolumn{8}{l}{\footnotesize 合计 725 条；年份 1956--2026，中位数 2009。}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{全文获取与其真实上限}\label{sec:oa}
+
+\textbf{晶胞参数几乎不出现在摘要中}，这是高分子结晶抽取区别于其它领域抽取任务的关键特征。
+若仅以摘要为抽取源，晶胞、链构象、Avrami 指数等字段的召回率将结构性偏低。
+因此流水线必须尽可能使用全文。
+
+为此实现了两个模块：生产模块负责查询 Unpaywall、对合法开放获取版本取回 PDF
+并以 \texttt{\%PDF} 魔数校验（避免把 HTML 落地页误当成 PDF）；
+测量模块则对样本做分层抽样统计，用于量化"可自动化获取"的比例。
+测量模块把 Unpaywall 的 \texttt{is\_oa} 进一步拆分为三类：
+\texttt{oa\_pdf}（给出 \texttt{url\_for\_pdf} 且实际取回内容为 PDF）、
+\texttt{oa\_landing}（判定为 OA 但链接指向出版商落地页/HTML）、
+\texttt{closed}（无合法 OA 版本）。
+
+\begin{tipbox}{为什么必须区分 is\_oa 与"可自动下载"}
+OA 状态与"可自动化下载"并不等价。大量绿色 OA（仓储自存档）与金色 OA 条目在元数据中
+\texttt{is\_oa=true}，但其 \texttt{url} 指向的是 DOI 落地页或需会话的阅读器页面，
+程序化请求返回的是 HTML 而非 PDF。若只看 \texttt{is\_oa}，
+会显著高估自动化获取能力，进而误判项目规模化的可行性。
+\end{tipbox}
+
+实测结果见 \ref{sec:results} 节。其方法论意义在于：\textbf{同类项目不应以"自动抓取"为规模化基础}，
+高校项目应尽早规划机构订阅访问与人工下载，并把人工核验成本计入项目工期。
+
+\subsection{LLM 抽取：合约化输出与鲁棒解析}
+
+抽取后端采用抽象接口，可切换云端 API、本地模型与 \texttt{mock} 后端（用于无密钥时的全流程联调）。
+关键设计不在模型选择，而在\textbf{输出合约}：
+
+\begin{enumerate}[label=(\arabic*), leftmargin=2.2em]
+  \item \textbf{宁可空、不许编}。提示词明确要求：原文未给出的字段输出 \texttt{null}，
+        严禁依据常识或"典型值"补全。这一条直接决定了数据库的可信度——
+        一条编造的晶胞参数比十条缺失更难被发现。
+  \item \textbf{置信自评}。要求模型对每个数值给出 0--1 的置信度；
+        置信低于阈值（当前取 0.7）的字段在落库时被标记为 \texttt{pending\_review}，
+        不参与统计分析，等待人工复核。
+  \item \textbf{出处定位}。要求输出数值所在的\textbf{表号/图号}，与 DOI 一起构成可回溯定位。
+  \item \textbf{单位显式化}。要求模型同时输出数值与\textbf{原文单位}，
+        由归一化模块统一换算，而不是让模型"顺便"换算（后者是量级错误的主要来源）。
+  \item \textbf{条件绑定}。结晶温度、降温速率、退火条件必须与被测数值成对输出，
+        避免只抽数值、丢条件。
+\end{enumerate}
+
+解析层对模型返回做鲁棒处理：剥离代码块围栏、定位首个与末个花括号以取出 JSON 对象、
+按合约字段名映射到 schema 列名。映射失败的字段不丢弃，而是记入诊断信息，
+供迭代提示词时使用。
+
+\subsection{幂等落库与断点续跑}
+
+落库顺序为 L3（文献）$\rightarrow$ L1（晶型）$\rightarrow$ L2（观测），
+去重键为 \texttt{doi + polymer + polymorph\_label + t\_c}。
+同一 $(\text{DOI}, T_c)$ 重复跑批只会更新而不会新增，
+这使得"补跑失败批次"与"换模型重跑"都是安全操作。
+流水线以 checkpoint 文件记录已处理 DOI，进程中断后可从断点继续。
+
+% ============================== 5 质量治理 ==============================
+\section{数据质量治理}\label{sec:quality}
+
+\subsection{单位归一化}
+
+入库前所有数值必须换算到规范单位（表~\ref{tab:units}）。
+这一环节看似平凡，却是高分子文献抽取中\textbf{量级错误的最大来源}。
+
+\begin{table}[htbp]
+\centering
+\caption{规范单位与典型换算（节选）}
+\label{tab:units}
+\begin{tabularx}{\textwidth}{l c l X}
+\toprule
+字段 & 规范单位 & 常见输入单位 & 换算与陷阱\\
+\midrule
+$a,b,c$, 纤维周期 & \AA & nm、pm & nm $\to$ \AA\ 乘 10；注意长周期常用 nm 而晶胞用 \AA，二者不可混用\\
+$\alpha,\beta,\gamma$ & $^\circ$ & rad & 乘 $180/\pi$\\
+$\rho_c$ & g/cm$^3$ & kg/m$^3$、Mg/m$^3$ & kg/m$^3\to$ g/cm$^3$ 除 1000；Mg/m$^3$ 与 g/cm$^3$ 等值\\
+$T_c,T_m,T_m^0,T_g$ & $^\circ$C & K、$^\circ$F & K 是\textbf{偏移}而非比例；$^\circ$F 需 $(v-32)\times5/9$\\
+$\Delta H_f$ & J/g & kJ/mol、cal/g & \textbf{kJ/mol $\to$ J/g 必须除以重复单元分子量}（见正文）\\
+生长速率 & nm/s & $\mu$m/s、$\mu$m/min & 时间单位与长度单位需同时换算\\
+结晶度 & \% & 小数 & 0.45 $\to$ 45\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{$\Delta H_f$ 的换算是本项目最具代表性的陷阱}。文献中熔融焓常以 kJ/mol（每摩尔重复单元）给出，
+而数据库规范单位为 J/g，两者相差一个重复单元分子量 $M$：
+\begin{equation}
+\Delta H_f\;[\mathrm{J/g}] = \frac{\Delta H_f\;[\mathrm{kJ/mol}] \times 1000}{M\;[\mathrm{g/mol}]}
+\end{equation}
+以 PET 为例，$M = 192.17$ g/mol，文献值 26.9 kJ/mol 对应
+$26.9\times1000/192.17 = 139.98$ J/g。若忘记除以 $M$，将得到约 $2.7\times10^4$ J/g 的荒谬值，
+误差达两个数量级。因此归一化模块在\textbf{缺少重复单元分子量时明确拒绝换算}并报错，
+而不是静默保留原值——"拒绝"比"猜测"更安全。该用例已固化为单元测试。
+
+\subsection{越界与离群检测}
+
+质检分两级（表~\ref{tab:sanity}）：
+\begin{itemize}[leftmargin=2.2em]
+  \item \textbf{硬区间}：由物理意义确定的绝对边界，超出即判定为错误（如晶胞 $a$ 不可能为 300 \AA，
+        结晶度不可能为 150\%）。区间的设定留有余量，避免误伤真实极端值。
+  \item \textbf{统计离群}：对同一聚合物同一字段，用中位数与中位数绝对偏差
+        （$\mathrm{MAD} = 1.4826\times \mathrm{median}(|x_i - \tilde{x}|)$）计算稳健 $z$ 分数，
+        $|z| > 3.5$ 且样本数 $\geq 4$ 时报告。采用中位数与 MAD 而非均值与标准差，
+        是因为离群值本身会把均值与标准差带偏，导致"漏检"或"整片误报"。
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\caption{硬区间示例与统计离群策略}
+\label{tab:sanity}
+\begin{tabularx}{\textwidth}{l c c X}
+\toprule
+字段 & 硬区间 & 统计离群 & 说明\\
+\midrule
+$a,b,c$ & 0.3--60 \AA & 是 & 高分子晶胞轴长量级\\
+$\rho_c$ & 0.8--2.0 g/cm$^3$ & 是 & 聚合物晶体密度的物理上下限\\
+$T_m$ & 0--400 $^\circ$C & 是 & 聚酯熔点上限余量充足\\
+$T_c$、退火温度 & $-50$--350 $^\circ$C & \textbf{否} & 实验条件，见正文\\
+结晶度 & 0--100 \% & 是 & 百分比制\\
+$z$ & 1--16 & 是 & 每晶胞重复单元数\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{tipbox}{实验条件字段不做统计离群判定}
+$T_c$、退火温度、降温速率、拉伸比属于\textbf{研究者主动设定的自变量}，
+其取值分散是合法的实验设计而非错误。若对它们施加统计离群判定，
+一个设置 5 个温度点的系统实验会被整片误报为离群。
+因此这类字段只做硬区间检查（例如 $T_c = 999\,^\circ$C 仍是不可能的），
+不参与 MAD 判定。这一区分是在实际数据上踩坑后确立的规则。
+\end{tipbox}
+
+\subsection{冲突消解：把分歧变成资产}\label{sec:conflict}
+
+文献间数值不一致在高分子结晶领域是常态而非异常：不同样品分子量、不同热历史、
+不同精修方法都会导致差异。\textbf{若把这类差异当作"错误"去消除，就会销毁项目最有价值的信息}。
+本文的机制是：
+
+\begin{enumerate}[label=(\arabic*), leftmargin=2.2em]
+  \item \textbf{全部保留}。冲突的观测行一条也不删。
+  \item \textbf{互相标记}。冲突双方均置 \texttt{conflict\_flag=1}，
+        并在 \texttt{clash\_with\_ids} 中互写对方 \texttt{obs\_id}，使冲突关系双向可查。
+  \item \textbf{分歧值入扩展表}。相对偏差超过容差（当前取 2\%）的数值以键值对形式写入
+        L2.5 的 \texttt{properties} 表，保留"谁给了什么值"。
+  \item \textbf{择优排序外置}。给出一个推荐排序（例如优先实测而非综述转引、优先高置信、
+        优先近期且方法明确者），但\textbf{不覆盖、不删除}任何一条；
+        使用者可在查询时按排序取首选值，也可取全部值做敏感性分析。
+  \item \textbf{量级错误识别}。若两个值相差恰好约 $10^n$ 倍（$n=1,2,3$），
+        优先判定为\textbf{单位错误}而非真实分歧，交由归一化模块复核，
+        这类"假冲突"在实际数据中最常见（如 $\rho_c$ 的 1455 kg/m$^3$ 与 1.455 g/cm$^3$）。
+\end{enumerate}
+
+\subsection{评测设计}
+
+评测以人工标注的 Gold Set 为基准，做\textbf{字段级}精确率/召回率/$F_1$，而非整条记录的匹配：
+\begin{equation}
+P = \frac{TP}{TP+FP},\qquad R = \frac{TP}{TP+FN},\qquad F_1 = \frac{2PR}{P+R}
+\end{equation}
+其中 $TP$ 为"抽对且值在容差内"的字段数，$FP$ 为"抽了但错/原文没有却编造"的字段数，
+$FN$ 为"原文有但没抽到"的字段数。Gold Set 中标注为 \texttt{null} 的字段视为中性，
+不计入 $FN$，以避免"原文确实没有该数据"被算作抽取失败。
+项目验收阈值设定为字段级 $F_1 \geq 80\%$。
+
+% ============================== 6 结果 ==============================
+\section{已完成工作的结果}\label{sec:results}
+
+\subsection{流水线端到端功能验证}
+
+在缺少云端密钥的条件下，流水线以 \texttt{mock} 后端完成端到端验证：
+检索 $\to$ 排序 $\to$ 抽取 $\to$ 归一 $\to$ 落库 $\to$ 评测六阶段全部跑通；
+重复跑批验证幂等性（同一 $(\text{DOI}, T_c)$ 不产生重复行）；
+单位换算、越界检测、冲突消解三个模块在临时数据库副本上以合成数据验证：
+\textit{（a）} 7 条观测的落库与关联正确；
+\textit{（b）} 3 个超容差分歧值正确写入扩展表并置冲突标记；
+\textit{（c）} 5 条记录正确互写 \texttt{clash\_with\_ids}；
+\textit{（d）} $\rho_c = 1455$ 与 $1.455$ 被正确识别为相差 $10^3$ 倍的单位错误而非真实分歧。
+这些验证\textbf{只证明系统功能正确}，不构成抽取精度的证据。
+
+\subsection{全文可获取性实测}\label{sec:oa-result}
+
+对 12 个成员各取前 5 条高相关候选（共 60 条）做分层抽样，逐条查询 Unpaywall，
+并对给出 \texttt{url\_for\_pdf} 的条目实际取回前 2 KB 以 \texttt{\%PDF} 魔数校验。
+结果见表~\ref{tab:oa}。
+
+三个数字值得注意。第一，\textbf{封闭访问的占 81.7\%}（49/60），
+即绝大多数目标文献必须通过机构订阅或馆际互借获取。
+第二，判定为开放获取的 11 条（18.3\%）中，只有 \textbf{2 条能由程序直接取回 PDF}，
+其余 9 条的链接指向出版商落地页或预印本平台的 HTML 页面。
+\textbf{若仅依据 Unpaywall 的 \texttt{is\_oa} 字段评估可行性，会把自动化获取能力高估约 5.5 倍}
+（18.3\% 对 3.3\%）。
+第三，这 2 条可自动下载的全文，其主题分别为环状聚己内酯共聚物的合成与
+聚己内酯的生物降解性评价，\textbf{均不属晶胞测定类论文}；
+换言之，对本项目最需要的晶胞与链构象数据，本次抽样中可自动获取全文的比例实际为 0。
+这一结果提示：全文可获取性与字段可抽性是两个独立的瓶颈，需分别度量、分别解决。
+
+% 下表由 src/annotation/make_oa_table.py 依据 data/processed/oa_survey.json 自动生成，
+% 请勿手改；重跑 oa_survey.py 后执行 make_oa_table.py 即可同步。
+\input{tab_oa}
+
+\begin{tipbox}{该结果对项目规划的含义}
+（1）\textbf{不能依赖自动抓取做规模化}。判定为开放获取的条目中，
+真正能由程序直接下载全文 PDF 的只是少数，其余 OA 链接指向出版商落地页，需浏览器会话或人工点击。
+（2）\textbf{必须尽早接入机构订阅}。高校图书馆已订阅的主要出版商数据库
+（本项目涉及的 Wiley、Elsevier、ACS 等）才是可行入口，或走馆际互借与人工下载。
+（3）\textbf{人工核验成本应显式计入工期}，而不是当作"出了问题再说的兜底"。
+（4）因此本项目的抽取队列允许"摘要模式"与"全文模式"并存：
+摘要模式用于 $T_m$、$T_g$ 等常在摘要出现的字段，
+全文模式专攻晶胞与链构象等只在表格出现的字段，并对后者做人工优先处理。
+\end{tipbox}
+
+\subsection{抽取精度：占位}\label{sec:placeholder}
+
+抽取精度评测依赖人工 Gold Set 标注（PET/PTT/PBT/PLA 各 5 条，共 20 条，
+每条由人工打开原文核对数值与表号）。\textbf{截至本文撰写时该标注尚未完成}，
+因此下表为\textbf{占位表}，用于固化评测口径，\textbf{表中不填任何未经实测的数值}。
+
+\begin{table}[htbp]
+\centering
+\caption{字段级抽取精度（占位表，待 Gold Set 标注与真实抽取完成后填入）}
+\label{tab:placeholder}
+\begin{tabular}{l c c c c}
+\toprule
+字段组 & 精确率 $P$ & 召回率 $R$ & $F_1$ & 样本字段数\\
+\midrule
+晶胞参数（$a,b,c,\alpha,\beta,\gamma$） & -- & -- & -- & --\\
+晶型标识（晶系/空间群/晶型标签） & -- & -- & -- & --\\
+热力学（$T_m, T_m^0, T_g, \Delta H_f$） & -- & -- & -- & --\\
+结晶条件（$T_c$、降温速率、退火） & -- & -- & -- & --\\
+结晶度与动力学（结晶度、Avrami $n$、生长速率） & -- & -- & -- & --\\
+\midrule
+\textbf{合计（字段级）} & -- & -- & -- & --\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{warnbox}{占位表的读数规则}
+表中 "--" 表示\textbf{未测量}，不是"零"也不是"缺失"。
+在标注与真实抽取完成前，本文不对抽取精度作任何定量声明。
+评测脚本（\texttt{src/extraction/evaluate.py}）已就绪，
+Gold Set 标注完成后可直接产出该表数值，无需改动评测口径。
+\end{warnbox}
+
+% ============================== 7 实验设计 ==============================
+\section{后续实验设计}\label{sec:design}
+
+为说明数据库建成后的用途，本节给出已规划但尚未执行的实验设计。
+
+\subsection{Gold Set 标注与一致性}
+
+20 条金标准由两名标注者独立完成，对不一致字段回到原文仲裁。
+除字段值外，记录\textbf{表号/图号}与"是否为综述转引"，
+以便把标注一致性（Cohen's $\kappa$）与抽取精度分开报告——
+前者衡量任务定义是否清晰，后者衡量系统性能，混淆二者是这类评测的常见错误。
+
+\subsection{规模化抽取与人工抽检}
+
+规模化阶段按成员分批，每批完成后抽取 10\% 做人工复核，
+重点检查两类错误：\textbf{幻觉}（原文无此值却给出数值）与\textbf{条件错配}
+（数值正确但挂到了错误的 $T_c$）。前者通过"置信阈值 + 人工复核"控制，
+后者通过"要求输出表号"来降低——可定位的数值比不可定位的数值更容易复核。
+
+\subsection{建模实验：留一成员划分}
+
+数据库的三个下游任务规划为：
+\textbf{T1} 分类（给定条件与结构特征预测晶型）、
+\textbf{T2} 回归（预测 $T_m$、结晶度等连续量）、
+\textbf{T3} 语义检索（自然语言查询返回观测行）。
+评测采用\textbf{留一成员法}（leave-one-polymer-out，LOPO）：
+每次留出一个成员做测试，其余成员训练。
+若 LOPO 误差显著高于随机划分误差，即说明\textbf{该数据量下跨成员泛化不可行}，
+此时应诚实报告这一结论，并把分析本身写入论文的方法讨论，
+而不是用随机划分的乐观数字掩盖泛化失败——这是小规模材料数据集最常见的评测陷阱。
+
+% ============================== 8 合规 ==============================
+\section{数据合规与治理边界}\label{sec:compliance}
+
+数据型项目的风险往往不在技术而在合规。本文确立并已在工程上落实以下边界：
+
+\begin{enumerate}[label=(\arabic*), leftmargin=2.2em]
+  \item \textbf{每条数据必须可回溯单一 DOI}，无 DOI 的数据不入库。
+  \item \textbf{只存数值性事实与出处定位}（表号/图号），不整段复制原文、不复制图表。
+  \item \textbf{不整包抓取第三方数据库}。PoLyInfo 等注册制资源仅用于交叉校验，其内容不入库、不再分发。
+  \item \textbf{回避晶体学文件的再分发问题}。CCDC / COD 等来源的 CIF 下载即受其许可约束，
+        本项目只收录\textbf{已公开发表于论文中}的数值，不转载结构文件。
+  \item \textbf{全文 PDF 只存本地、不进版本库、不外传}（已由 .gitignore 强制）。
+  \item \textbf{文献题录一律以 CrossRef 实时核验为准}。项目早期曾发现"凭记忆写下的经典文献 DOI"
+        全部指向无关论文，故此后所有 DOI 在写入代码或数据前均须经 CrossRef 核验题录。
+  \item \textbf{金标准数值只能由人工打开原文填写}。自动生成脚本只允许填候选书目
+        （标记为 \texttt{suggested}），绝不允许脚本或模型臆测晶胞与热力学数值。
+\end{enumerate}
+
+\begin{tipbox}{对同行的建议}
+"数据库开源"常被当作项目的结题指标，但\textbf{绝不能为凑量放入受限来源的数据}。
+一篇因版权问题被撤的论文，对项目与作者的伤害远大于一个延迟发布的数据库。
+把合规边界写进代码（而非只写在文档里）是保证它被执行的有效方式。
+\end{tipbox}
+
+% ============================== 9 结论 ==============================
+\section{结论与后续工作}
+
+本文面向半结晶性聚酯家族，给出了一个结晶数据库的数据模型、抽取流水线与质量治理方案。
+方法的要点可归纳为三句话：\textbf{以观测行为计数单元}，使结晶条件与结构/性质形成可统计的映射；
+\textbf{以晶型层承载晶胞}，使文献间分歧不被去重规则误删；
+\textbf{以保留分歧代替消除分歧}，把不一致转化为可分析的数据资产。
+工程上，单位归一化（尤其是 kJ/mol 与 J/g 的分子量依赖换算）、
+条件字段豁免统计离群判定、以及"OA 状态 $\neq$ 可自动下载"的实测结论，
+是本项目在实践中确立的三条经验，对同类文献数据项目具有直接参考价值。
+
+本文也明确划出了当前的能力边界：抽取精度尚未评测，规模化数据尚未入库。
+后续工作按三条线推进：（i）完成 Gold Set 人工标注并产出字段级精度报告；
+（ii）依托机构订阅完成规模化抽取，达成 $\geq 300$ 条观测、覆盖 $\geq 8$ 个成员的目标；
+（iii）上线语义检索与留一成员评测，并公开数据库与流水线代码。
+
+\section*{致谢}
+感谢南京大学有训书院「金种子项目」早期科研训练计划的支持，
+感谢胡文兵老师在聚酯结晶物理方面的指导与对数据口径的把关。
+感谢 NIMS PoLyInfo 提供的交叉校验渠道，以及 CrossRef、Unpaywall 提供的开放 API。
+
+\section*{数据与代码可用性}
+本文涉及的流水线代码、数据库 schema、检索与质检脚本均在项目仓库中维护，
+运行方式见仓库 README。受版权约束的内容（全文 PDF、第三方数据库内容）不在公开范围内。
+
+% ============================== 参考文献 ==============================
+\begin{thebibliography}{99}
+\bibitem{daubeny1954} Daubeny R de P, Bunn C W, Brown C J. The crystal structure of polyethylene terephthalate[J]. \textit{Proceedings of the Royal Society of London Series A}, 1954, 226: 531--542. DOI: 10.1098/rspa.1954.0273
+
+\bibitem{aleman2001} Alemán C, Lotz B, Puiggali J. Crystal structure of the $\alpha$-form of poly(L-lactide)[J]. \textit{Macromolecules}, 2001, 34(14): 4795--4801. DOI: 10.1021/ma001630o
+
+\bibitem{mencik1975} Mencik Z. The crystal structure of poly(tetramethylene terephthalate)[J]. \textit{Journal of Polymer Science: Polymer Physics Edition}, 1975, 13(11): 2173--2181. DOI: 10.1002/pol.1975.180131109
+
+\bibitem{hoffman1962} Hoffman J D, Weeks J J. Melting process and the equilibrium melting temperature of polychlorotrifluoroethylene[J]. \textit{Journal of Research of the National Bureau of Standards Section A}, 1962, 66A: 13. DOI: 10.6028/jres.066a.003
+
+\bibitem{lauritzen1960} Lauritzen J I, Hoffman J D. Theory of formation of polymer crystals with folded chains in dilute solution[J]. \textit{Journal of Research of the National Bureau of Standards Section A}, 1960, 64A: 73. DOI: 10.6028/jres.064a.007
+
+\bibitem{grazulis2009} Gražulis S, Chateigner D, Downs R T, et al. Crystallography Open Database---an open-access collection of crystal structures[J]. \textit{Journal of Applied Crystallography}, 2009, 42(4): 726--729. DOI: 10.1107/s0021889809016690
+
+\bibitem{grazulis2011} Gražulis S, Daškevič A, Merkys A, et al. Crystallography Open Database (COD): an open-access collection of crystal structures and platform for world-wide collaboration[J]. \textit{Nucleic Acids Research}, 2012, 40(D1): D420--D427. DOI: 10.1093/nar/gkr900
+
+\bibitem{groom2016} Groom C R, Bruno I J, Lightfoot M P, Ward S C. The Cambridge Structural Database[J]. \textit{Acta Crystallographica Section B}, 2016, 72(2): 171--179. DOI: 10.1107/s2052520616003954
+
+\bibitem{jain2013} Jain A, Ong S P, Hautier G, et al. Commentary: The Materials Project: a materials genome approach to accelerating materials innovation[J]. \textit{APL Materials}, 2013, 1(1): 011002. DOI: 10.1063/1.4812323
+
+\bibitem{otsuka2011} Otsuka S, Kuwajima I, Hosoya J, et al. PoLyInfo: polymer database for polymeric materials design[C]//\textit{2011 International Conference on Emerging Intelligent Data and Web Technologies}. IEEE, 2011: 22--29. DOI: 10.1109/eidwt.2011.13
+
+\bibitem{ishii2024} Ishii M, Ito T, Sakamoto K. NIMS polymer database PoLyInfo (II): machine-readable standardization of polymer knowledge expression[J]. \textit{Science and Technology of Advanced Materials: Methods}, 2024, 4(1): 2354651. DOI: 10.1080/27660400.2024.2354651
+
+\bibitem{swain2016} Swain M C, Cole J M. ChemDataExtractor: a toolkit for automated extraction of chemical information from the scientific literature[J]. \textit{Journal of Chemical Information and Modeling}, 2016, 56(10): 1894--1904. DOI: 10.1021/acs.jcim.6b00207
+
+\bibitem{tao2021} Tao L, Varshney V, Li Y. Benchmarking machine learning models for polymer informatics: an example of glass transition temperature[J]. \textit{Journal of Chemical Information and Modeling}, 2021, 61(11): 5395--5413. DOI: 10.1021/acs.jcim.1c01031
+
+\bibitem{dreger2025} Dreger M, Malek K, Eikerling M. Large language models for knowledge graph extraction from tables in materials science[J]. \textit{Digital Discovery}, 2025, 4: 1221--1231. DOI: 10.1039/d4dd00362d
+
+\bibitem{su2025} Su Y, Yang S, Liu Y, et al. Knowledge discovery from porous organic cage literature using a large language model[J]. \textit{Digital Discovery}, 2025, 4: 403--410. DOI: 10.1039/d4dd00337c
+
+\bibitem{zhang2024} Zhang W, Wang Q, Kong X, et al. Fine-tuning large language models for chemical text mining[J]. \textit{Chemical Science}, 2024, 15: 10600--10611. DOI: 10.1039/d4sc00924j
+
+\bibitem{itani2025} Itani S, Zhang Y, Zang J. Large language model-driven database for thermoelectric materials[J]. \textit{Computational Materials Science}, 2025, 253: 113855. DOI: 10.1016/j.commatsci.2025.113855
+\end{thebibliography}
+
+% ============================== 附录 ==============================
+\appendix
+\section{复现命令}
+
+\begin{lstlisting}[style=common]
+# 1) 初始化数据库（写入 12 个 Tier1 成员）
+python src/database/init_db.py
+
+# 2) 文献检索（CrossRef，按成员分组，DOI 去重）
+python -m src.extraction.literature_search
+
+# 3) 候选排序（剔除补充材料与小分子晶体学噪声）
+python src/annotation/shortlist.py --polymers PET,PBT,PTT,PLA --top 10
+
+# 4) 全文可获取性测量（本文表 4 的复现方式）
+python src/annotation/oa_survey.py --per-polymer 5
+
+# 5) 流水线端到端（无密钥时用 mock 后端）
+python -m src.extraction.pipeline --backend mock --limit 10 --dry-run
+
+# 6) 单位 / 区间 / 冲突 的统一质检入口（含自测）
+python -m src.extraction.qa --self-test
+python -m src.extraction.qa            # 只报告
+python -m src.extraction.qa --apply    # 写回冲突标记
+
+# 7) 字段级精度评测（Gold Set 标注完成后）
+python -m src.extraction.evaluate --extracted data/processed/extraction_output.json
+\end{lstlisting}
+
+\section{主要模块一览}
+
+\begin{table}[htbp]
+\centering
+\caption{流水线模块与职责}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+模块 & 职责\\
+\midrule
+\texttt{extraction/literature\_search.py} & CrossRef 检索、DOI 去重、按成员落盘\\
+\texttt{annotation/shortlist.py} & 候选相关性打分排序；剔除补充材料与缩写误召回\\
+\texttt{extraction/fetch\_pdf.py} & 合法 OA 全文获取；\texttt{\%PDF} 魔数校验；人工清单生成\\
+\texttt{annotation/oa\_survey.py} & 全文可获取性分层抽样测量（本文表~\ref{tab:oa}）\\
+\texttt{extraction/llm\_client.py} & LLM 后端抽象（云端 / 本地 / mock）；退避与配额语义区分\\
+\texttt{extraction/prompts.py} & 输出合约与字段映射；"宁可 null 不许编"约束\\
+\texttt{extraction/extractor.py} & JSON 鲁棒解析\\
+\texttt{extraction/normalizer.py} & 结构(L1) / 实测(L2) 拆分；低置信转人工复核\\
+\texttt{extraction/units.py} & 单位归一化；kJ/mol $\to$ J/g 的分子量依赖换算\\
+\texttt{extraction/sanity.py} & 硬区间 + 中位数/MAD 稳健离群；条件字段豁免\\
+\texttt{extraction/conflict.py} & 冲突检测、量级倍数识别、择优排序（不删除）\\
+\texttt{extraction/store.py} & 幂等落库（L3$\to$L1$\to$L2）；分歧值入扩展表\\
+\texttt{extraction/pipeline.py} & 编排、断点续跑、\texttt{--dry-run}\\
+\texttt{extraction/evaluate.py} & Gold Set 字段级 $P/R/F_1$\\
+\texttt{extraction/qa.py} & 质检统一入口与自测\\
+\texttt{annotation/gold\_set\_annotator.py} & 金标准标注工具\\
+\texttt{annotation/fetch\_citations.py} & 参考文献 DOI 的 CrossRef 题录核验\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
