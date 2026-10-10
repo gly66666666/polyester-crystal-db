@@ -46,7 +46,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1002/crat.201300369",
+        "title": "Isothermal crystallization behavior and crystal structure of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters",
+        "journal": "Crystal Research and Technology",
+        "year": 2014,
+        "score": 26,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PET-002",
@@ -80,7 +88,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1002/polb.21032",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/butylene terephthalate) copolyesters compared with poly(ethylene/trimethylene terephthalate) copolyesters",
+        "journal": "Journal of Polymer Science Part B: Polymer Physics",
+        "year": 2007,
+        "score": 19,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PET-003",
@@ -114,7 +130,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/0032-3861(95)91437-c",
+        "title": "Morphology and crystal structure of an a axis oriented, highly crystalline poly(ethylene terephthalate)",
+        "journal": "Polymer",
+        "year": 1995,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PET-004",
@@ -148,7 +172,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/j.polymer.2005.04.030",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+        "journal": "Polymer",
+        "year": 2005,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PET-005",
@@ -182,7 +214,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/0032-3861(88)90201-7",
+        "title": "The crystal modulus and structure of oriented poly(ethylene terephthalate)",
+        "journal": "Polymer",
+        "year": 1988,
+        "score": 2,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PTT-001",
@@ -216,7 +256,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/0032-3861(79)90064-8",
+        "title": "The crystal structure of poly(trimethylene terephthalate) by X-ray and electron diffraction",
+        "journal": "Polymer",
+        "year": 1979,
+        "score": 20,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PTT-002",
@@ -250,7 +298,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1021/ma000210w",
+        "title": "Crystal Structure and Banded Spherulite of Poly(trimethylene terephthalate)",
+        "journal": "Macromolecules",
+        "year": 2000,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PTT-003",
@@ -284,7 +340,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/j.polymer.2005.04.030",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+        "journal": "Polymer",
+        "year": 2005,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PTT-004",
@@ -318,7 +382,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.58837/chula.the.2003.1976",
+        "title": "Shear-induced crystallization in poly (trimethylene terephthalate)",
+        "journal": "",
+        "year": null,
+        "score": 7,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PTT-005",
@@ -352,7 +424,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.58837/chula.the.2004.2118",
+        "title": "Crystallization kinetics of poly(trimethylene terephthalate) : macroscopic and microscopic studies",
+        "journal": "",
+        "year": null,
+        "score": 7,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PBT-001",
@@ -386,7 +466,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1002/pol.1975.180131109",
+        "title": "The crystal structure of poly(tetramethylene terephthalate)",
+        "journal": "Journal of Polymer Science: Polymer Physics Edition",
+        "year": 1975,
+        "score": 26,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PBT-002",
@@ -420,7 +508,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1139/v85-510",
+        "title": "On the structure of poly(tetramethylene terephthalate). Structural, infrared, and Raman studies of three tetramethylene glycol dibenzoate derivatives, models for poly(tetramethylene terephthalate)",
+        "journal": "Canadian Journal of Chemistry",
+        "year": 1985,
+        "score": 17,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PBT-003",
@@ -454,7 +550,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.4028/p-8jeg9d",
+        "title": "Correlation of Wear Behavior of PBT/PC Blend with Crystallographic Structure: A Comprehensive Study on Wear Rate and Crystal Structure",
+        "journal": "Materials Science Forum",
+        "year": 2024,
+        "score": 12,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PBT-004",
@@ -488,7 +592,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1295/polymj.23.949",
+        "title": "Crystal Structure of Cyclic Dimer of Poly(butylene terephthalate)",
+        "journal": "Polymer Journal",
+        "year": 1991,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PBT-005",
@@ -522,7 +634,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1002/macp.1985.021860317",
+        "title": "Crystallization behaviour of poly(ethylene terephthalate) and poly(tetramethylene terephthalate) blends",
+        "journal": "Die Makromolekulare Chemie",
+        "year": 1985,
+        "score": 5,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PLA-001",
@@ -556,7 +676,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1021/acs.macromol.7b01468",
+        "title": "Crystal Structure of Poly(lactic acid) Stereocomplex: Random Packing Model of PDLA and PLLA Chains As Studied by X-ray Diffraction Analysis",
+        "journal": "Macromolecules",
+        "year": 2017,
+        "score": 14,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PLA-002",
@@ -590,7 +718,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1016/j.polymer.2019.05.020",
+        "title": "Crystal structure and unique lamellar thickening for poly(l-lactide) induced by high pressure",
+        "journal": "Polymer",
+        "year": 2019,
+        "score": 14,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PLA-003",
@@ -624,7 +760,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1021/ma0348674",
+        "title": "Helix Distortion and Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "journal": "Macromolecules",
+        "year": 2003,
+        "score": 12,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PLA-004",
@@ -658,7 +802,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1080/00222349108245788",
+        "title": "Crystal structure of stereocomplex of poly(L-lactide) and poly(D-lactide)",
+        "journal": "Journal of Macromolecular Science, Part B",
+        "year": 1991,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     },
     {
       "gold_id": "PLA-005",
@@ -692,7 +844,15 @@
       "annotator": null,
       "annotation_date": null,
       "confidence": null,
-      "notes": null
+      "notes": null,
+      "suggested": {
+        "doi": "10.1021/ma001630o",
+        "title": "Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "journal": "Macromolecules",
+        "year": 2001,
+        "score": 10,
+        "note": "候选书目（自动排序，非人工核验数值）；请打开原文确认后再填数值"
+      }
     }
   ]
 }

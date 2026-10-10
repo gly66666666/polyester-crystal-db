@@ -22,7 +22,10 @@
       "polybutylene terephthalate unit cell",
       "PBT alpha beta crystal stress induced",
       "PBT crystallographic parameters",
-      "聚对苯二甲酸丁二醇酯 晶体结构"
+      "聚对苯二甲酸丁二醇酯 晶体结构",
+      "poly(tetramethylene terephthalate) crystal structure",
+      "PTMT crystal structure",
+      "poly(tetramethylene terephthalate) unit cell"
     ]
   },
   "PEN": {
@@ -50,7 +53,10 @@
       "PDLA crystal structure",
       "PLA alpha prime crystal",
       "PLA stereocomplex crystal",
-      "聚乳酸 晶体结构"
+      "聚乳酸 晶体结构",
+      "poly(L-lactide) crystal structure",
+      "poly(L-lactic acid) crystal structure",
+      "PLLA unit cell orthorhombic"
     ]
   },
   "PGA": {
@@ -75,7 +81,10 @@
       "polytrimethylene terephthalate unit cell",
       "PTT crystal structure electron diffraction",
       "PTT crystallographic parameters",
-      "聚对苯二甲酸丙二醇酯 晶体结构"
+      "聚对苯二甲酸丙二醇酯 晶体结构",
+      "poly(propylene terephthalate) crystal structure",
+      "poly(trimethylene terephthalate) unit cell",
+      "PTT unit cell triclinic"
     ]
   },
   "PBN": {

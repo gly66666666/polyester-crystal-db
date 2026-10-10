@@ -325,15 +325,6 @@
       "url": "https://doi.org/10.1107/s0365110x6600416x"
     },
     {
-      "doi": "10.1017/s0885715600014019",
-      "title": "Exhaustive indexing of triclinic powder diffraction patterns with known unit cell parameters",
-      "authors": "Ludo K. Frevel",
-      "journal": "Powder Diffraction",
-      "year": 1994,
-      "abstract": "<jats:p>\n                    A novel algorithm has been developed for obtaining directly the applicable indices\n                    <jats:italic>hkl</jats:italic>\n                    for any interplanar spacing,\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    ±Δ\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    , of a triclinic phase with known unit cell parameters. This method is particularly useful for indexing back reflections for triclinic phases with unit cell volumes greater than 500 Å\n                    <jats:sup>3</jats:sup>\n                    .\n                  </jats:p>",
-      "url": "https://doi.org/10.1017/s0885715600014019"
-    },
-    {
       "doi": "10.1021/bi00626a028",
       "title": "Crystallographic studies of protein denaturation and renaturation. 2. Sodium dodecyl sulfate induced structural changes in triclinic lysozyme",
       "authors": "Ada Yonath, Alberto Podjarny, Barry Honig, Anita Sielecki, Wolfie Traub",
@@ -341,6 +332,15 @@
       "year": 1977,
       "abstract": "",
       "url": "https://doi.org/10.1021/bi00626a028"
+    },
+    {
+      "doi": "10.1017/s0885715600014019",
+      "title": "Exhaustive indexing of triclinic powder diffraction patterns with known unit cell parameters",
+      "authors": "Ludo K. Frevel",
+      "journal": "Powder Diffraction",
+      "year": 1994,
+      "abstract": "<jats:p>\n                    A novel algorithm has been developed for obtaining directly the applicable indices\n                    <jats:italic>hkl</jats:italic>\n                    for any interplanar spacing,\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    ±Δ\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    , of a triclinic phase with known unit cell parameters. This method is particularly useful for indexing back reflections for triclinic phases with unit cell volumes greater than 500 Å\n                    <jats:sup>3</jats:sup>\n                    .\n                  </jats:p>",
+      "url": "https://doi.org/10.1017/s0885715600014019"
     },
     {
       "doi": "10.1021/ic50116a005",
@@ -442,13 +442,13 @@
       "url": "https://doi.org/10.1021/acs.macromol.4c00245.s001"
     },
     {
-      "doi": "10.1002/jnr.25253/v2/decision1",
+      "doi": "10.1002/jnr.25253/v1/decision1",
       "title": "Decision letter for \"PET imaging of synaptic density in Parkinsonian disorders\"",
       "authors": "",
       "journal": "",
       "year": 2023,
       "abstract": "",
-      "url": "https://doi.org/10.1002/jnr.25253/v2/decision1"
+      "url": "https://doi.org/10.1002/jnr.25253/v1/decision1"
     },
     {
       "doi": "10.1360/zb1994-24-9-930",
@@ -669,15 +669,6 @@
       "url": "https://doi.org/10.2116/xraystruct.25.51"
     },
     {
-      "doi": "10.2116/xraystruct.25.23",
-      "title": "Crystal Structure of Meclofenoxate Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.23"
-    },
-    {
       "doi": "10.2116/xraystruct.25.3",
       "title": "Crystal Structure of Guanfacine Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -685,6 +676,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.3"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.23",
+      "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.23"
     },
     {
       "doi": "10.2210/pdb9k2j/pdb",
@@ -696,15 +696,6 @@
       "url": "https://doi.org/10.2210/pdb9k2j/pdb"
     },
     {
-      "doi": "10.2116/xraystruct.27.21",
-      "title": "Synthesis and Crystal Structure of LiLaP4O12",
-      "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2011,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.27.21"
-    },
-    {
       "doi": "10.1021/om700344q.s001",
       "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
       "authors": "",
@@ -712,6 +703,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/om700344q.s001"
+    },
+    {
+      "doi": "10.2116/xraystruct.27.21",
+      "title": "Synthesis and Crystal Structure of LiLaP4O12",
+      "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2011,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.27.21"
     },
     {
       "doi": "10.1021/om700344q.s002",
@@ -741,15 +741,6 @@
       "url": "https://doi.org/10.9713/kcer.2016.54.4.437"
     },
     {
-      "doi": "10.1007/978-0-387-30160-0_8854",
-      "title": "Polybutylene terephthalate (PBTP, PBT, and polytetramethylene terephthalate)",
-      "authors": "",
-      "journal": "Encyclopedic Dictionary of Polymers",
-      "year": 2007,
-      "abstract": "",
-      "url": "https://doi.org/10.1007/978-0-387-30160-0_8854"
-    },
-    {
       "doi": "10.1002/0471740039.vec2037",
       "title": "Polybutylene Terephthalate Polysters",
       "authors": "",
@@ -757,6 +748,15 @@
       "year": 2005,
       "abstract": "",
       "url": "https://doi.org/10.1002/0471740039.vec2037"
+    },
+    {
+      "doi": "10.1007/978-0-387-30160-0_8854",
+      "title": "Polybutylene terephthalate (PBTP, PBT, and polytetramethylene terephthalate)",
+      "authors": "",
+      "journal": "Encyclopedic Dictionary of Polymers",
+      "year": 2007,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-0-387-30160-0_8854"
     },
     {
       "doi": "10.1002/9780470114735.hawley13082",
@@ -786,15 +786,6 @@
       "url": "https://doi.org/10.1016/b978-188420717-4.50039-7"
     },
     {
-      "doi": "10.2991/isees-18.2018.75",
-      "title": "Dynamics of Changes in Mechanical Properties of Polybutylene Terephthalate and Polybutylene Terephthalate-Polyethylene Compositions in Aggressive Liquid Media",
-      "authors": "Madnat Magomedovna Akayeva",
-      "journal": "Proceedings of the International Symposium “Engineering and Earth Sciences: Applied and Fundamental Research” (ISEES 2018)",
-      "year": 2018,
-      "abstract": "",
-      "url": "https://doi.org/10.2991/isees-18.2018.75"
-    },
-    {
       "doi": "10.1021/acs.iecr.9b04936.s001",
       "title": "Heat Induced Grafting of Poly(glycidyl methacrylate) on Polybutylene Terephthalate Nonwovens for Bioseparations",
       "authors": "",
@@ -802,6 +793,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/acs.iecr.9b04936.s001"
+    },
+    {
+      "doi": "10.2991/isees-18.2018.75",
+      "title": "Dynamics of Changes in Mechanical Properties of Polybutylene Terephthalate and Polybutylene Terephthalate-Polyethylene Compositions in Aggressive Liquid Media",
+      "authors": "Madnat Magomedovna Akayeva",
+      "journal": "Proceedings of the International Symposium “Engineering and Earth Sciences: Applied and Fundamental Research” (ISEES 2018)",
+      "year": 2018,
+      "abstract": "",
+      "url": "https://doi.org/10.2991/isees-18.2018.75"
     },
     {
       "doi": "10.1201/9781003066156-2",
@@ -930,15 +930,6 @@
       "url": "https://doi.org/10.1201/b12142-2"
     },
     {
-      "doi": "10.1201/b12142-8",
-      "title": "PBT-based composite materials",
-      "authors": "",
-      "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties",
-      "year": 2006,
-      "abstract": "",
-      "url": "https://doi.org/10.1201/b12142-8"
-    },
-    {
       "doi": "10.1002/app.30930",
       "title": "Mechanical and dielectric breakdown properties of PBT/TPE, PBT/PBT/PET, and PBT/antioxidant blends",
       "authors": "Hyeyoung Shin, Eun‐Soo Park",
@@ -946,6 +937,15 @@
       "year": 2009,
       "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>To improve the thermal aging flexibility of poly(butylene terephthalate) (PBT), PBT was melt‐blended with three type thermoplastic elastomer [poly ether‐ester type (TPE1), polyester‐ester type (TPE2), and poly(buthylene 2,6‐naphthalate)/poly(tetramethylene glycol) block copolymer type (TPE3)], PBT/poly(ethylene terephthalate), (PET) alloy (Alloy), and phosphate type antioxidant (T1). The content of the three type TPEs and Alloy was fixed at 20 parts per 100 g of PBT. The morphology and thermal behavior of these blends have been investigated with scanning electron microscopy (SEM), differential scanning calorimetry (DSC), and thermogravimetry (TG). In the case of PBT/Alloy‐20 and PBT/TPE3–20 blends show clean fractured surface, whereas for PBT/TPE1–20 and PBT/TPE2–20 blends, the elongated pieces or fiber can be seen abundantly which indicates a good compatibility. TG traces show a significant shift of the weight loss toward hig",
       "url": "https://doi.org/10.1002/app.30930"
+    },
+    {
+      "doi": "10.1201/b12142-8",
+      "title": "PBT-based composite materials",
+      "authors": "",
+      "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties",
+      "year": 2006,
+      "abstract": "",
+      "url": "https://doi.org/10.1201/b12142-8"
     },
     {
       "doi": "10.1127/ejm/6/4/0465",
@@ -1063,6 +1063,195 @@
       "year": 1989,
       "abstract": "",
       "url": "https://doi.org/10.1360/csb1989-34-8-587"
+    },
+    {
+      "doi": "10.1139/v85-510",
+      "title": "On the structure of poly(tetramethylene terephthalate). Structural, infrared, and Raman studies of three tetramethylene glycol dibenzoate derivatives, models for poly(tetramethylene terephthalate)",
+      "authors": "Allan Palmer, Suzie Poulin-Dandurand, François Brisse",
+      "journal": "Canadian Journal of Chemistry",
+      "year": 1985,
+      "abstract": "<jats:p> The crystal structures of tetramethylene glycol dibenzoate (1), tetramethylene glycol di-pora-chlorobenzoate (2), and tetramethylene glycol di-para-nitrobenzoate (3) have been solved by direct methods in order to establish the possible conformations of the methylenic sequence in poly(tetramethylene terephthalate), poly(4GT). Compound 1 has a triclinic unit cell of dimensions a = 7.870(3), b = 8.574(3), c = 12.993(4) Å α = 83.76(3), β = 89.92(3), γ = 64.68(3)°; Z = 2, space group [Formula: see text]. For 2 the unit cell is also triclinic and has dimensions a = 5.916(3), b = 7.599(2), c = 10.404(2) Å; α = 67.81(2), β = 77.47(2), γ = 81.63(3)°; Z = 1, space group [Formula: see text]. The unit cell dimensions of 3 are a = 6.086(1), b = 11.475(3), c = 13.162(3) Å and β = 101.93(2)°, Z = 2. The space group is P2<jats:sub>1</jats:sub>/c. The structures were solved by direct methods using 2682, 969, and 781 observed reflections for 1, 2, and 3, respectively. The refinements were concl",
+      "url": "https://doi.org/10.1139/v85-510"
+    },
+    {
+      "doi": "10.1002/pol.1975.180131109",
+      "title": "The crystal structure of poly(tetramethylene terephthalate)",
+      "authors": "Z. Mencik",
+      "journal": "Journal of Polymer Science: Polymer Physics Edition",
+      "year": 1975,
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    The unit cell of poly(tetramethylene terephthalate) is triclinic with parameters\n                    <jats:italic>a</jats:italic>\n                    = 5.96 Å,\n                    <jats:italic>b</jats:italic>\n                    = 4.83 Å,\n                    <jats:italic>c</jats:italic>\n                    (fiber axis) = 11.62 Å, α = 115.2. β = 99.9, and γ = 111.3°; space group\n                    <jats:italic>P</jats:italic>\n                    <jats:styled-content>1</jats:styled-content>\n                    , calculated crystalline density 1.41 g/cc. The plane of the benzene ring is found to be inclined by about 15° from the fiber axis, contributing to a shortening of the fiber period as compared to the period expected on the basis of analogy with other members of the terephthalate ester series. The remaining shortening of the fiber period occurs in the O°CH\n                    <jats:sub>2</jats:sub>\n ",
+      "url": "https://doi.org/10.1002/pol.1975.180131109"
+    },
+    {
+      "doi": "10.1002/pi.1995.210380407",
+      "title": "Synthesis and properties of poly(tetramethylene terephthalate‐co‐ethylene terephthalate)–poly(tetramethylene ether) segmented copolymers",
+      "authors": "Youheng Shi, Meiyan Wu",
+      "journal": "Polymer International",
+      "year": 1995,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>A series of polyether–copolyester segmented copolymers ((PBT–PET)PTMG) based on hard segments of tetramethylene terephthalate–ethylene terephthalate copolyester (PBT–PET) and soft segments of poly(tetramethylene ether)(PTMG) was synthesized. The hard : soft segment weight ratio was 30 : 70 and the mole ratio of PBT : PET was 1 : 10; 1 : 6; 1 : 1; 3 : 1, respectively. Their mechanical properties, morphology, crystallization behavior and optical transparency were investigated and compared with poly(tetramethylene terephthalate)–poly(tetramethylene ether)(PBT–PTMG), as well as with poly(ethylene terephthalate)–poly(tetramethylene ether)(PET–PTMG), consisting of the equivalent composition ratio of hard and soft segments. It was found that the transparency could be improved by introducing a small amount of PBT into PET–PTMG through copolymerization. However, a decrease was observed in the transparency if more PBT was added. This is due to the fact th",
+      "url": "https://doi.org/10.1002/pi.1995.210380407"
+    },
+    {
+      "doi": "10.1007/978-0-387-30160-0_9079",
+      "title": "Poly(tetramethylene terephthalate)",
+      "authors": "",
+      "journal": "Encyclopedic Dictionary of Polymers",
+      "year": 2007,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-0-387-30160-0_9079"
+    },
+    {
+      "doi": "10.1021/ma9701999",
+      "title": "Reversible Crystal Deformation of Poly(tetramethylene terephthalate) Segments in Semicrystalline Segmented Poly(ether ester) Thermoplastic Elastomers",
+      "authors": "Shigeru Muramatsu, Jerome B. Lando",
+      "journal": "Macromolecules",
+      "year": 1998,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma9701999"
+    },
+    {
+      "doi": "10.1002/macp.1979.021800913",
+      "title": "Diffusion of <i>p</i>‐nitroaniline in poly(tetramethylene oxide)‐poly(tetramethylene terephthalate) block copolymers",
+      "authors": "Toru Masuko",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1979,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Diffusion coefficients of <jats:italic>p</jats:italic>‐nitroaniline in poly(tetramethylene ether)glycol terephthalate‐poly(tetramethylene terephthalate) (4GT) block copolymers, containing 4GT wt fraction of 0,345, 0,514, and 0,712, have been determined from sublimative desorption kinetics in the range from 60 to 120°C. The temperature dependence of diffusion coefficients in each diffusion system has been found to be a Williams‐Landel‐Ferry (WLF) type. When the glass transition temperatures (<jats:italic>T</jats:italic><jats:sub>g</jats:sub>) of the soft segments are selected as reference temperatures, the WLF parameters of <jats:italic>C</jats:italic><jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/tex2gif-stack-1.gif\" xlink:title=\"urn:x-wiley:0025116X:media:MACP021800913:tex2gif-stack-1\" /> and <jats:italic>C</jats:italic><jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/tex2g",
+      "url": "https://doi.org/10.1002/macp.1979.021800913"
+    },
+    {
+      "doi": "10.1007/978-1-4419-6247-8_9235",
+      "title": "Poly(Tetramethylene Terephthalate)",
+      "authors": "Jan W. Gooch",
+      "journal": "Encyclopedic Dictionary of Polymers",
+      "year": 2011,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-1-4419-6247-8_9235"
+    },
+    {
+      "doi": "10.1016/0010-4361(79)90492-0",
+      "title": "Glass fiber-reinforced poly(tetramethylene terephthalate) resin composition",
+      "authors": "",
+      "journal": "Composites",
+      "year": 1979,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0010-4361(79)90492-0"
+    },
+    {
+      "doi": "10.1002/macp.1985.021860317",
+      "title": "Crystallization behaviour of poly(ethylene terephthalate) and poly(tetramethylene terephthalate) blends",
+      "authors": "Siba P. Mishra, Basanti L. Deopura",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1985,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The isothermal and non‐isothermal crystallization behaviour of blends of poly(ethylene terephthalate) (PET) and poly(tetramethylene terephthalate) (PBT) is investigated at low percentage of the second component. The melting behaviour of the isothermally crystallized sample shows that the crystallization behaviour in the blend is governed by the mobility of PBT. Below 200°C the crystallization process is hindered, whereas above 200°C the PET crystals are larger in case of added PBT. The non‐isothermal crystallization behaviour shows that the crystallization process is hindered when the PBT content in the blend is less or higher than 6 wt.‐%.</jats:p>",
+      "url": "https://doi.org/10.1002/macp.1985.021860317"
+    },
+    {
+      "doi": "10.1007/978-0-387-30160-0_9407",
+      "title": "PTMT",
+      "authors": "",
+      "journal": "Encyclopedic Dictionary of Polymers",
+      "year": 2007,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-0-387-30160-0_9407"
+    },
+    {
+      "doi": "10.31219/osf.io/zuv9p",
+      "title": "MENYONGSONG PTMT PADA DUNIA PENDIDIKAN",
+      "authors": "Muhammad Yusuf",
+      "journal": "",
+      "year": 2022,
+      "abstract": "<p>Tulisan dalam buku ini adalah buah pikiran para penulis dari berbagai profesi baik itu guru, dosen dan bahkan ada juga yang berasal dari Instansi pemerintah yang menduduki jabatan struktural dengan latar belakang pendidikan yang berjenjang dan berbeda-beda satu sama lainnya baik yang profesinya berkaitan dengan dunia pendidikan maupun lainnya, semua menjadi satu dalam tulisan yang dapat memperkaya pemikiran para pembaca buku Bunga Rampai ini.Kerinduan yang sangat tinggi akan proses belajar secara normal menjadi pemikiran yang mendasar dari para penulis Buku Bunga Rampai ini untuk berbagi pemikiran, sehingga muncul berbagai topik yang berbeda-beda dalam tulisan ini sehingga sangat layak untuk dibaca dan dapat memperkaya pemikiran para pembaca seperti apa kondisi riil dan penerimaan para murid, orangtua dan masyarakat di tengah kondisi pandemi yang masih belum tuntas secara seutuhnya. Kondisi ini harus disikapi semua pihak dengan meningkatkan pengetahuannya, keterampilannya dan perila",
+      "url": "https://doi.org/10.31219/osf.io/zuv9p"
+    },
+    {
+      "doi": "10.31219/osf.io/mejkz",
+      "title": "EFEKTIVITAS PEMBELAJARAN SELAMA PELAKSANAAN PTMT",
+      "authors": "Adi Wijayanto",
+      "journal": "",
+      "year": 2022,
+      "abstract": "<p>Proses belajar di dunia pendidikan pada pasca pandemi covid-19 memang akan berjalan unik dan menarik untuk dikaji secara empiris, teoretis dan berbagai pengalaman yang dialami guru dan murid selama proses belajar daring (online) dapat dijadikan inspirasi untuk diurai dalam wujud tulisan-tulisan ringan yang layak untuk di ketahui banyak orang dan layak dimuat dalam Buku Bunga Rampai ini. Para penulis buku ini akan berbeda sudut pandangnya melihat penyelenggaraan pendidikan di pasca pandemi, tetapi pada prinsipnya sama yakni bagaimana proses belajar di sekolah dan di rumah siswa dapat mengikutinya dan berbagai materi yang tertinggal selama proses belajar daring selama kurun waktu 2 tahun ini dijadikan dasar berpikir yang kuat untuk mau lebih meningkatkan lagi keinginan belajarnya baik di sekolah maupun di rumah.Pendidikan pada prinsipnya harus berada di garda terdepan bagi bangsa Indonesia secara khusus bagi para generasi milineal bangsa ini, olehkarena estafet kepemimpinan yang akan ",
+      "url": "https://doi.org/10.31219/osf.io/mejkz"
+    },
+    {
+      "doi": "10.31219/osf.io/upv2d",
+      "title": "MENYONGSONG PTMT PADA DUNIA PENDIDIKAN",
+      "authors": "Adi Wijayanto",
+      "journal": "",
+      "year": 2022,
+      "abstract": "<p>Kerinduan yang sangat tinggi akan proses belajar secara normal menjadi pemikiran yang mendasar dari para penulis Buku Bunga Rampai ini untuk berbagi pemikiran, sehingga muncul berbagai topik yang berbeda-beda dalam tulisan ini sehingga sangat layak untuk dibaca dan dapat memperkaya pemikiran para pembaca seperti apa kondisi riil dan penerimaan para murid, orangtua dan masyarakat di tengah kondisi pandemi yang masih belum tuntas secara seutuhnya. Kondisi ini harus disikapi semua pihak dengan meningkatkan pengetahuannya, keterampilannya dan perilaku seperti apa yang harus diwujudkan di pasca pandemi ini.Proses belajar di dunia pendidikan pada pasca pandemi covid-19 memang akan berjalan unik dan menarik untuk dikaji secara empiris, teoretis dan berbagai pengalaman yang dialami guru dan murid selama proses belajar daring (online) dapat dijadikan inspirasi untuk diurai dalam wujud tulisan-tulisan ringan yang layak untuk di ketahui banyak orang dan layak dimuat dalam Buku Bunga Rampai ini",
+      "url": "https://doi.org/10.31219/osf.io/upv2d"
+    },
+    {
+      "doi": "10.31219/osf.io/j9c7s",
+      "title": "AKADEMISI DALAM PENUANGAN GAGASAN, STRATEGI SERTA TANTANGAN DALAM PELAKSANAAN PTMT",
+      "authors": "Adi Wijayanto",
+      "journal": "",
+      "year": 2022,
+      "abstract": "<p>Penyelenggaraan pendidikan di masa sebelum, selama dan pasca Pandemi Covid-19 tentu berbeda-beda dan pandemi covid-19 ini sepertinya cenderung terjadi berjilid-jilid, tanpa hentinya, dan saat ini tetap diwaspadai covid mutasi yang ketiga, sehingga ada larangan kepada masyarakat untuk mudik di akhir tahun 2021. Kondisi riil ini memang menarik untuk dibahas dalam tulisan –tulisan ringan secara khusus dalam menghadapi masa pasca pandemi covid-19 dimana sudah ada sekolah yang mengizinkan proses belajar normal dengan di tengah kondisi adanya kerinduan anak didik dan orangtua untuk segera sekolah dibuka secara normal kembali meskipun tetap mematuhi protokol kesehatan yang ketat. Membangun kondisi untuk lebih semangat lagi belajar di masa pasca pandemi tentulah tidak mudah, oleh karena bagaimanapun proses belajar daring selama ini sedikit banyaknya telah memengaruhi kaharakter siswa dalam membagi waktunya untuk mau menjalani proses belajar yang berkualitas. Oleh karena selama ini cenderung",
+      "url": "https://doi.org/10.31219/osf.io/j9c7s"
+    },
+    {
+      "doi": "10.1007/978-1-4419-6247-8_9586",
+      "title": "PTMT",
+      "authors": "Jan W. Gooch",
+      "journal": "Encyclopedic Dictionary of Polymers",
+      "year": 2011,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-1-4419-6247-8_9586"
+    },
+    {
+      "doi": "10.36989/didaktik.v9i04.1521",
+      "title": "EFEKTIVITAS EFEKTIVITAS PEMBELAJARAN TATAP MUKA TERBATAS (PTMT) PASCA PANDEMI DALAM MENINGKATKAN HASIL BELAJAR PESERTA DIDIK",
+      "authors": "Cahyono, Dadang Mulyana, Lili Sukarliana, Syifa Nurul Latiefah",
+      "journal": "Didaktik : Jurnal Ilmiah PGSD STKIP Subang",
+      "year": 2023,
+      "abstract": "<jats:p>This study aims to determine whether the effectiveness of limited face-to-face learning has an effect on improving student learning outcomes, during learning during the current pandemic and new normal. The method used in this study is a quantitative approach with survey methods and the independent variable analysis is the effectiveness of limited face-to-face learning (PTMT) and the dependent variable is Student Learning Outcomes. The research sample used by the researcher is simple random sampling. The samples used by the researchers were class VIII A, VIII B, and VIII C. Furthermore, data collection in this study used a questionnaire/questionnaire and interviews. Researchers process the results of the analysis data, including technical analysis of normality, homogeneity, simple linear regression, coefficient of determination, and the last is hypothesis testing. Research results the results of data analysis tests by researchers prove that students in the effectiveness of the i",
+      "url": "https://doi.org/10.36989/didaktik.v9i04.1521"
+    },
+    {
+      "doi": "10.21831/pspmm.v6i2.216",
+      "title": "Analisis Kesulitan Siswa Menyelesaikan Soal Cerita Materi Perbandingan Pada Saat PTMT",
+      "authors": "Mei Indriawati",
+      "journal": "Prosiding Seminar Pendidikan Matematika dan Matematika",
+      "year": 2022,
+      "abstract": "<jats:p>Salah satu kompetensi dasar yang harus dikuasai siswa adalah siswa dapat menyelesaikan soal cerita tentang perbandingan. Namun, tidak semua siswa lancar menyelesaikan permasalahan ini, karena mengalami kesulitan dalam mengerjakan soal. Selain itu, Pembelajaran tatap muka terbatas (PTMT) membuat waktu pembelajaran disekolah berkurang, sehingga siswa dituntut lebih banyak belajar mandiri. Penelitian ini bertujuan untuk mendeskripsikan kesulitan siswa dalam menyelesaikan soal cerita terkait perbandingan pada saat PTMT. Penelitian ini merupakan penelitian kualitatatif yang berjenis studi kasus. Partisipan dalam penelitian ini adalah siswa kelas VII SMP N 1 Galur, Kulon Progo, D.I. Yogyakarta. Data dikumpulkan menggunakan tes, yang terdiri dari 5 soal uraian. kepada 24 siswa dan wawancara. Selanjutnya jawaban dari siswa tersebut dikelompokkan berdasarkan benar atau salah berdasarkan langkah-langkah Polya. Setelah itu dipilih 4 siswa dengan kemapuan rendah, sedang,dan tinggi. Analisi",
+      "url": "https://doi.org/10.21831/pspmm.v6i2.216"
+    },
+    {
+      "doi": "10.1093/oso/9780199576340.003.0024",
+      "title": "Outline of a crystal structure determination",
+      "authors": "Jenny Pickworth Glusker, Kenneth N. Trueblood",
+      "journal": "Crystal Structure Analysis",
+      "year": 2010,
+      "abstract": "<p> The stages in a crystal structure analysis by diffraction methods are summarized in Figure 14.1 for a substance with fewer than about 1000 atoms. The principal steps are: (1) First it is necessary to obtain or grow suitable single crystals; this is sometimes a tedious and difficult process. The ideal crystal for X-ray diffraction studies is 0.2–0.3mm in diameter. Somewhat larger specimens are generally needed for neutron diffraction work. Various solvents, and perhaps several different derivatives of the compound under study, may have to be tried before suitable specimens are obtained. (2) Next it is necessary to check the crystal quality. This is usually done by finding out if the crystal diffracts X rays (or neutrons) and how well it does this. (3) If the crystal is considered suitable for investigation, its unitcell dimensions are determined. This can usually be done in 20 minutes, barring complications. The unit-cell dimensions are obtained by measurements of the locations of t",
+      "url": "https://doi.org/10.1093/oso/9780199576340.003.0024"
+    },
+    {
+      "doi": "10.1021/acs.inorgchem.9b00758.s001",
+      "title": "Influence of Crystal Water on Crystal Structure, Electronic Structure, Band Structure, and Charge Separation of WO32H2O Nanosheets",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.inorgchem.9b00758.s001"
+    },
+    {
+      "doi": "10.1021/ma00229a037",
+      "title": "Light scattering studies on the morphology and deformation mechanism of poly(tetramethylene oxide)-poly(tetramethylene terephthalate) block polymer",
+      "authors": "Masaru Matsuo, Keiko Geshi, Akiyo Moriyama, Chie Sawatari",
+      "journal": "Macromolecules",
+      "year": 1982,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma00229a037"
+    },
+    {
+      "doi": "10.1002/app.1995.070571107",
+      "title": "Effects of catalyst on sequence distribution and transparency of poly(tetramethylene terephthalate)–poly(tetramethylene ether) segmented copolymers",
+      "authors": "Youheng Shi, Meiyan Wu",
+      "journal": "Journal of Applied Polymer Science",
+      "year": 1995,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Polyether‐polyester segmented copolymer based on hard segments of tetramethylene terephthalate (PBT) and soft segments of poly(tetramethylene ether glycol) (PTMG) was synthesized by four kinds of catalyst: tetrabutyl titanate and magnesium acetate (Ti‐Mg); tetrabutyl titanate and triethanolamine; tetra(isopropyl) titanate; and isopropoxy(triethanolaminato) titanate, respectively. Their segment sequence distributions were analyzed by <jats:sup>13</jats:sup>C‐NMR, based on different chemical shifts of aromatic quaternary carbons in the three different triad sequences. The effects of catalyst on sequence distribution and transparency were investigated. It was found that the copolymer has lower probability of B‐T‐B when Ti‐Mg was used as catalysts, and results in higher transparency. © 1995 John Wiley &amp; Sons, Inc.</jats:p>",
+      "url": "https://doi.org/10.1002/app.1995.070571107"
     }
   ],
   "PEN": [
@@ -1139,15 +1328,6 @@
       "url": "https://doi.org/10.1021/la0626048.s001"
     },
     {
-      "doi": "10.1023/a:1024422232582",
-      "title": "Mechanical and thermal properties of poly(butylene terephthalate)/poly(ethylene naphthalate), and Nylon66/poly(ethylene naphthalate) blends",
-      "authors": "Dylan Dae Bong Jung, D. Bhattacharyya, A. J. Easteal",
-      "journal": "Journal of Materials Science",
-      "year": 2003,
-      "abstract": "",
-      "url": "https://doi.org/10.1023/a:1024422232582"
-    },
-    {
       "doi": "10.1021/ie061668a.s002",
       "title": "Crystallization Behaviors of Poly(ethylene 2,6-naphthalate) in the Presence of Liquid Crystalline Polymer",
       "authors": "",
@@ -1155,6 +1335,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/ie061668a.s002"
+    },
+    {
+      "doi": "10.1023/a:1024422232582",
+      "title": "Mechanical and thermal properties of poly(butylene terephthalate)/poly(ethylene naphthalate), and Nylon66/poly(ethylene naphthalate) blends",
+      "authors": "Dylan Dae Bong Jung, D. Bhattacharyya, A. J. Easteal",
+      "journal": "Journal of Materials Science",
+      "year": 2003,
+      "abstract": "",
+      "url": "https://doi.org/10.1023/a:1024422232582"
     },
     {
       "doi": "10.2210/pdb6bwc/pdb",
@@ -1364,6 +1553,15 @@
       "url": "https://doi.org/10.1016/c2009-0-07296-1"
     },
     {
+      "doi": "10.2139/ssrn.7238023",
+      "title": "Thermodynamic and Topological Phase Transitions of AdS Black Holes with Nonminimal$F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ Coupling",
+      "authors": "Mehdi Sadeghi, Faramarz Rahmani",
+      "journal": "",
+      "year": 2026,
+      "abstract": "<jats:p>The conventional and topological phase transitions of a four-dimensional asymptotically AdS black hole with a non-minimal coupling term $F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ are investigated. Using a perturbative approach to first order in the coupling $\\epsilon$, the thermodynamic quantities are derived and the first law and Smarr relation are verified. Intriguingly, while the $\\epsilon = 0$ limit yields the standard Reissner--Nordstr\\\"om--AdS black hole belonging to the $W^{1+}$ topological class ($W = +1$), switching on the non-minimal coupling fundamentally transforms the topology to the $W^{0-}$ class ($W = 0$). This transition occurs while the van der Waals-type first-order phase transition survives in the intermediate region, embedded within the overall Hawking--Page pattern, rendering the system a hybrid black hole thermodynamic system. The coupling $\\epsilon$ thus acts as a topological deformation parameter that alters the universal classif",
+      "url": "https://doi.org/10.2139/ssrn.7238023"
+    },
+    {
       "doi": "10.2139/ssrn.7238021",
       "title": "Thermodynamic and Topological Phase Transitions of AdS Black Holes with Nonminimal$F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ Coupling",
       "authors": "Mehdi Sadeghi, Faramarz Rahmani",
@@ -1371,15 +1569,6 @@
       "year": 2026,
       "abstract": "<jats:p>The conventional and topological phase transitions of a four-dimensional asymptotically AdS black hole with a non-minimal coupling term $F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ are investigated. Using a perturbative approach to first order in the coupling $\\epsilon$, the thermodynamic quantities are derived and the first law and Smarr relation are verified. Intriguingly, while the $\\epsilon = 0$ limit yields the standard Reissner--Nordstr\\\"om--AdS black hole belonging to the $W^{1+}$ topological class ($W = +1$), switching on the non-minimal coupling fundamentally transforms the topology to the $W^{0-}$ class ($W = 0$). This transition occurs while the van der Waals-type first-order phase transition survives in the intermediate region, embedded within the overall Hawking--Page pattern, rendering the system a hybrid black hole thermodynamic system. The coupling $\\epsilon$ thus acts as a topological deformation parameter that alters the universal classif",
       "url": "https://doi.org/10.2139/ssrn.7238021"
-    },
-    {
-      "doi": "10.18494/sam.2017.1524",
-      "title": "Application of Adaptive &amp;alpha;-&amp;beta;-&amp;gamma; and &amp;alpha;-&amp;beta;-&amp;gamma;-&amp;delta; Filters to Tracking Systems",
-      "authors": "",
-      "journal": "Sensors and Materials",
-      "year": 2017,
-      "abstract": "",
-      "url": "https://doi.org/10.18494/sam.2017.1524"
     },
     {
       "doi": "10.18494/sam.2016.1297",
@@ -1391,13 +1580,13 @@
       "url": "https://doi.org/10.18494/sam.2016.1297"
     },
     {
-      "doi": "10.2139/ssrn.7238023",
-      "title": "Thermodynamic and Topological Phase Transitions of AdS Black Holes with Nonminimal$F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ Coupling",
-      "authors": "Mehdi Sadeghi, Faramarz Rahmani",
-      "journal": "",
-      "year": 2026,
-      "abstract": "<jats:p>The conventional and topological phase transitions of a four-dimensional asymptotically AdS black hole with a non-minimal coupling term $F^{\\alpha\\beta}F^{\\gamma\\lambda}R_{\\alpha\\gamma}R_{\\beta\\lambda}$ are investigated. Using a perturbative approach to first order in the coupling $\\epsilon$, the thermodynamic quantities are derived and the first law and Smarr relation are verified. Intriguingly, while the $\\epsilon = 0$ limit yields the standard Reissner--Nordstr\\\"om--AdS black hole belonging to the $W^{1+}$ topological class ($W = +1$), switching on the non-minimal coupling fundamentally transforms the topology to the $W^{0-}$ class ($W = 0$). This transition occurs while the van der Waals-type first-order phase transition survives in the intermediate region, embedded within the overall Hawking--Page pattern, rendering the system a hybrid black hole thermodynamic system. The coupling $\\epsilon$ thus acts as a topological deformation parameter that alters the universal classif",
-      "url": "https://doi.org/10.2139/ssrn.7238023"
+      "doi": "10.18494/sam.2017.1524",
+      "title": "Application of Adaptive &amp;alpha;-&amp;beta;-&amp;gamma; and &amp;alpha;-&amp;beta;-&amp;gamma;-&amp;delta; Filters to Tracking Systems",
+      "authors": "",
+      "journal": "Sensors and Materials",
+      "year": 2017,
+      "abstract": "",
+      "url": "https://doi.org/10.18494/sam.2017.1524"
     },
     {
       "doi": "10.5373/jarpm.366.021110",
@@ -1535,15 +1724,6 @@
       "url": "https://doi.org/10.3724/j.issn.1000-0518.1986.5.9696"
     },
     {
-      "doi": "10.1360/csb1992-37-1-43",
-      "title": "聚对苯二甲酸乙二醇酯驻极体TSC谱中&amp;tau;峰的本质研究",
-      "authors": "兴元 张",
-      "journal": "Chinese Science Bulletin",
-      "year": 1992,
-      "abstract": "",
-      "url": "https://doi.org/10.1360/csb1992-37-1-43"
-    },
-    {
       "doi": "10.1360/csb1981-26-17-1045",
       "title": "聚对苯二甲酸聚四亚甲基醚二酯的结晶",
       "authors": "人元 钱, 美琰 吴",
@@ -1551,6 +1731,15 @@
       "year": 1981,
       "abstract": "",
       "url": "https://doi.org/10.1360/csb1981-26-17-1045"
+    },
+    {
+      "doi": "10.1360/csb1992-37-1-43",
+      "title": "聚对苯二甲酸乙二醇酯驻极体TSC谱中&amp;tau;峰的本质研究",
+      "authors": "兴元 张",
+      "journal": "Chinese Science Bulletin",
+      "year": 1992,
+      "abstract": "",
+      "url": "https://doi.org/10.1360/csb1992-37-1-43"
     },
     {
       "doi": "10.3724/j.issn.1000-0518.1986.5.96",
@@ -1726,15 +1915,6 @@
       "url": "https://doi.org/10.2210/pdb4z8w/pdb"
     },
     {
-      "doi": "10.2116/xraystruct.25.3",
-      "title": "Crystal Structure of Guanfacine Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.3"
-    },
-    {
       "doi": "10.2116/xraystruct.25.23",
       "title": "Crystal Structure of Meclofenoxate Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -1742,6 +1922,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.23"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.3",
+      "title": "Crystal Structure of Guanfacine Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.3"
     },
     {
       "doi": "10.2210/pdb9k2j/pdb",
@@ -1762,15 +1951,6 @@
       "url": "https://doi.org/10.2116/xraystruct.27.21"
     },
     {
-      "doi": "10.1021/om700344q.s002",
-      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
-      "authors": "",
-      "journal": "",
-      "year": null,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/om700344q.s002"
-    },
-    {
       "doi": "10.1021/om700344q.s001",
       "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
       "authors": "",
@@ -1778,6 +1958,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/om700344q.s001"
+    },
+    {
+      "doi": "10.1021/om700344q.s002",
+      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/om700344q.s002"
     },
     {
       "doi": "10.2116/xraystruct.25.47",
@@ -1888,15 +2077,6 @@
       "url": "https://doi.org/10.1007/s10965-020-02206-1"
     },
     {
-      "doi": "10.1016/j.polymer.2017.03.018",
-      "title": "Crystal polymorphism of polylactides and poly(Pro- alt -CO): The metastable beta and gamma phases. Formation of homochiral PLLA phases in the PLLA/PDLA blends",
-      "authors": "Bernard Lotz, Gao Li, Xuesi Chen, Jordi Puiggali",
-      "journal": "Polymer",
-      "year": 2017,
-      "abstract": "",
-      "url": "https://doi.org/10.1016/j.polymer.2017.03.018"
-    },
-    {
       "doi": "10.3724/sp.j.1105.2011.10096",
       "title": "INFLUENCE OF END GROUP ON THE BANDED STRUCTURE OF PLLA SPHERULITES",
       "authors": "Fengbo ZHANG, Xuming XIE, Jinying YUAN, Weizhong YUAN, Qiang YAN",
@@ -1904,6 +2084,15 @@
       "year": 2011,
       "abstract": "",
       "url": "https://doi.org/10.3724/sp.j.1105.2011.10096"
+    },
+    {
+      "doi": "10.1016/j.polymer.2017.03.018",
+      "title": "Crystal polymorphism of polylactides and poly(Pro- alt -CO): The metastable beta and gamma phases. Formation of homochiral PLLA phases in the PLLA/PDLA blends",
+      "authors": "Bernard Lotz, Gao Li, Xuesi Chen, Jordi Puiggali",
+      "journal": "Polymer",
+      "year": 2017,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2017.03.018"
     },
     {
       "doi": "10.3390/polym18091127",
@@ -2014,15 +2203,6 @@
       "url": "https://doi.org/10.1002/pat.3841"
     },
     {
-      "doi": "10.1021/acs.macromol.2c02303",
-      "title": "Synthesis and Characterization of Well-Defined High-Molecular-Weight PDLA-<i>b</i>-PLLA and PDLA-<i>b</i>-PLLA-<i>b</i>-PDLA Stereo-Block Copolymers",
-      "authors": "Feijie Li, Fuhai Zhou, Dario Romano, Sanjay Rastogi",
-      "journal": "Macromolecules",
-      "year": 2023,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/acs.macromol.2c02303"
-    },
-    {
       "doi": "10.1039/c8ce01934g",
       "title": "Stereocomplex-affected crystallization behaviour of PDLA in PDLA/PLDLA blends",
       "authors": "Lu Cheng, Cunliang Hu, Jingqing Li, Shaoyong Huang, Shichun Jiang",
@@ -2030,6 +2210,15 @@
       "year": 2019,
       "abstract": "<p>In the presence of SC crystals, the spherulite growth rate of PDLA decreased, whereas its overall crystallization rate increased.</p>",
       "url": "https://doi.org/10.1039/c8ce01934g"
+    },
+    {
+      "doi": "10.1021/acs.macromol.2c02303",
+      "title": "Synthesis and Characterization of Well-Defined High-Molecular-Weight PDLA-<i>b</i>-PLLA and PDLA-<i>b</i>-PLLA-<i>b</i>-PDLA Stereo-Block Copolymers",
+      "authors": "Feijie Li, Fuhai Zhou, Dario Romano, Sanjay Rastogi",
+      "journal": "Macromolecules",
+      "year": 2023,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.macromol.2c02303"
     },
     {
       "doi": "10.2139/ssrn.7118395",
@@ -2318,6 +2507,186 @@
       "year": 1963,
       "abstract": "",
       "url": "https://doi.org/10.1360/csb1963-8-5-42"
+    },
+    {
+      "doi": "10.1016/s0032-3861(03)00583-4",
+      "title": "Controlled crystal nucleation in the melt-crystallization of poly(l-lactide) and poly(l-lactide)/poly(d-lactide) stereocomplex",
+      "authors": "Hiroshi Urayama, Takeshi Kanamori, Kazuki Fukushima, Yoshiharu Kimura",
+      "journal": "Polymer",
+      "year": 2003,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/s0032-3861(03)00583-4"
+    },
+    {
+      "doi": "10.1016/j.polymer.2020.123226",
+      "title": "Stereocomplex- and homo-crystallization behavior, structure, morphology, and thermal properties of crystalline and amorphous stereo diblock copolymers, enantiomeric Poly(l-lactide)-b-Poly(dl-lactide) and Poly(d-lactide)-b-Poly(dl-lactide)",
+      "authors": "Hideto Tsuji, Kazumasa Iguchi, Yuki Arakawa",
+      "journal": "Polymer",
+      "year": 2021,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2020.123226"
+    },
+    {
+      "doi": "10.1016/j.molstruc.2004.11.033",
+      "title": "Differences in the CH3⋯OC interactions among poly(l-lactide), poly(l-lactide)/poly(d-lactide) stereocomplex, and poly(3-hydroxybutyrate) studied by infrared spectroscopy",
+      "authors": "Jianming Zhang, Harumi Sato, Hideto Tsuji, Isao Noda, Yukihiro Ozaki",
+      "journal": "Journal of Molecular Structure",
+      "year": 2005,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.molstruc.2004.11.033"
+    },
+    {
+      "doi": "10.1002/masy.200950917",
+      "title": "Poly(<scp>D</scp>‐lactide)–Poly(menthide)–Poly(<scp>D</scp>‐lactide) Triblock Copolymers as Crystal Nucleating Agents for Poly(<scp>L</scp>‐lactide)",
+      "authors": "Carolyn L. Wanamaker, William B. Tolman, Marc A. Hillmyer",
+      "journal": "Macromolecular Symposia",
+      "year": 2009,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Poly(<jats:italic>d</jats:italic>‐lactide)–poly(menthide)–poly(<jats:italic>d</jats:italic>‐lactide) (PDLA–PM–PDLA) triblock copolymers were explored as novel nucleating agents for the crystallization of poly‐ (<jats:italic>l</jats:italic>‐lactide) (PLLA). PLLA/PDLA‐PM‐PDLA blends containing ≥85 wt% PLLA were prepared in a batch melt mixer. SAXS analysis was consistent with the ability of PDLA–PM–PDLA to form micelles when mixed with atactic polylactide. The presence of the stereocomplex in the PLLA matrix was confirmed by differential scanning calorimetry (DSC). The effectiveness of the putative stereocomplexed micelle crystallites for nucleating PLLA crystallization was also confirmed by DSC. Nucleation efficiencies near 100% were obtained when using a triblock copolymer with 15 kg/mol PDLA end blocks. In addition, fast crystallization kinetics were observed in isothermal crystallization experiments at 140 °C. Compared to PLLA/PDLA homopolymer",
+      "url": "https://doi.org/10.1002/masy.200950917"
+    },
+    {
+      "doi": "10.1080/00222349108245788",
+      "title": "Crystal structure of stereocomplex of poly(L-lactide) and poly(D-lactide)",
+      "authors": "Takumi Okihara, Masaki Tsuji, Akiyoshi Kawaguchi, Ken-Ichi Katayama, Hideto Tsuji, Suong-Hyu Hyon, Yoshito Ikada",
+      "journal": "Journal of Macromolecular Science, Part B",
+      "year": 1991,
+      "abstract": "",
+      "url": "https://doi.org/10.1080/00222349108245788"
+    },
+    {
+      "doi": "10.1016/j.polymer.2019.05.020",
+      "title": "Crystal structure and unique lamellar thickening for poly(l-lactide) induced by high pressure",
+      "authors": "Shaoyong Huang, Hongfei Li, Shichun Jiang",
+      "journal": "Polymer",
+      "year": 2019,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2019.05.020"
+    },
+    {
+      "doi": "10.2139/ssrn.4968029",
+      "title": "Understanding Nucleation Efficiency of Stereocomplex-Crystallites on Homochiral Crystallization in Poly (L-Lactide)/Poly (D-Lactide) Blends: Homogenization Near Crystal Growth Front",
+      "authors": "Qi Chen, Rafael Auras, Jacob  J.K. Kirkensgaard, Ilke Uysal Ünalan",
+      "journal": "",
+      "year": 2024,
+      "abstract": "",
+      "url": "https://doi.org/10.2139/ssrn.4968029"
+    },
+    {
+      "doi": "10.1021/ma001630o",
+      "title": "Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+      "authors": "C. Alemán, B. Lotz, J. Puiggali",
+      "journal": "Macromolecules",
+      "year": 2001,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma001630o"
+    },
+    {
+      "doi": "10.1021/ma0348674",
+      "title": "Helix Distortion and Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+      "authors": "S. Sasaki, T. Asakura",
+      "journal": "Macromolecules",
+      "year": 2003,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma0348674"
+    },
+    {
+      "doi": "10.1021/acs.macromol.6b02014.s001",
+      "title": "Uncontrolled Preparation of Disperse Poly(lactide)-block-poly(styrene)-block-poly(lactide) for Nanopatterning Applications",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.macromol.6b02014.s001"
+    },
+    {
+      "doi": "10.4095/104598",
+      "title": "An orthorhombic unit cell for tlalocite",
+      "authors": "A C Roberts",
+      "journal": "",
+      "year": 1978,
+      "abstract": "",
+      "url": "https://doi.org/10.4095/104598"
+    },
+    {
+      "doi": "10.1107/s0365110x57000961",
+      "title": "The unit cell of orthorhombic pentacalcium trialuminate, 5CaO.3Al203",
+      "authors": "E. Aruja",
+      "journal": "Acta Crystallographica",
+      "year": 1957,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0365110x57000961"
+    },
+    {
+      "doi": "10.1107/s0365110x58001997",
+      "title": "Unit cell and space group of orthorhombic SiB<sub>6</sub>",
+      "authors": "R. F. Adamsky",
+      "journal": "Acta Crystallographica",
+      "year": 1958,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0365110x58001997"
+    },
+    {
+      "doi": "10.1080/08927029808022043",
+      "title": "Coulomb Forces and Potentials in Systems with an Orthorhombic Unit Cell",
+      "authors": "John Lekner",
+      "journal": "Molecular Simulation",
+      "year": 1998,
+      "abstract": "",
+      "url": "https://doi.org/10.1080/08927029808022043"
+    },
+    {
+      "doi": "10.1016/0032-3861(86)90295-8",
+      "title": "Refinement of the structure of PEEK fibre in an orthorhombic unit cell",
+      "authors": "A.V. Fratini, E.M. Cross, R.B. Whitaker, W.W. Adams",
+      "journal": "Polymer",
+      "year": 1986,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(86)90295-8"
+    },
+    {
+      "doi": "10.1002/jrs.1250150211",
+      "title": "Unit cell group analysis of orthorhombic crystals: Detailed investigation of the effect of arbitrary choice of axes",
+      "authors": "A. Rulmont",
+      "journal": "Journal of Raman Spectroscopy",
+      "year": 1984,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The results of the group theoretical analysis of the normal vibrations of crystals having orthorhombic space groups can depend on the arbitrary choice of axes because there is no unambiguous way to define a unique axis. This situation creates some confusion in the results published by different authors. We have investigated in detail the problem of the unit cell group analysis of the orthorhombic structures <jats:italic>D</jats:italic><jats:sub>2h</jats:sub> and <jats:italic>D</jats:italic><jats:sub>2</jats:sub> and the results are presented in two tables for practical applications. It is shown that it is possible to express the irreducible representations as a function of experimental parameters, which gives a clearer view of the physical situation than the conventional notation (<jats:italic>A</jats:italic><jats:sub><jats:italic>g</jats:italic></jats:sub> etc.).</jats:p>",
+      "url": "https://doi.org/10.1002/jrs.1250150211"
+    },
+    {
+      "doi": "10.1142/s0217984990000362",
+      "title": "TETRAGONAL-ORTHORHOMBIC UNIT CELL TRANSFORMATION IN THE HYDROGEN-DOPED Y–Ba–Cu–OXIDE",
+      "authors": "H. DRULIS, J. KLAMUT, Z. BUKOWSKI",
+      "journal": "Modern Physics Letters B",
+      "year": 1990,
+      "abstract": "<jats:p> A hydride sample with nominal composition H <jats:sub>0.7</jats:sub> YBa <jats:sub>2</jats:sub> Cu <jats:sub>3</jats:sub> O <jats:sub>6.1</jats:sub> was synthesized. An X-ray diffraction study showed a phase transition from the tetragonal to orthorhombic cell. It is the first example of such transition among Y–Ba–Cu–O ceramics induced by non-oxygen atoms. </jats:p>",
+      "url": "https://doi.org/10.1142/s0217984990000362"
+    },
+    {
+      "doi": "10.2465/minerj.13.500",
+      "title": "Unit cell parameters and densities of non-doped and 2mol% Y2O3 doped orthorhombic (high pressure form) ZrO2.",
+      "authors": "Hideo TORAYA, Osamu OHTAKA, Shoichi KUME",
+      "journal": "Mineralogical Journal",
+      "year": 1987,
+      "abstract": "",
+      "url": "https://doi.org/10.2465/minerj.13.500"
+    },
+    {
+      "doi": "10.1016/0022-4596(80)90593-9",
+      "title": "The structure of orthorhombic Na2Ti9O19, a unit cell twinning of monoclinic Na2Ti9O19, determined by 1-MV high-resolution electron microscopy",
+      "authors": "",
+      "journal": "Journal of Solid State Chemistry",
+      "year": 1980,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0022-4596(80)90593-9"
+    },
+    {
+      "doi": "10.1039/a908903i",
+      "title": "Stability and electronic property investigations of the graphitic C3N4 system showing an orthorhombic unit cell",
+      "authors": "Maurizio Mattesini, Samir F. Matar, Jean Etourneau",
+      "journal": "Journal of Materials Chemistry",
+      "year": 2000,
+      "abstract": "",
+      "url": "https://doi.org/10.1039/a908903i"
     }
   ],
   "PGA": [
@@ -2466,15 +2835,6 @@
       "url": "https://doi.org/10.2210/pdb4dec/pdb"
     },
     {
-      "doi": "10.2116/xraystruct.25.3",
-      "title": "Crystal Structure of Guanfacine Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.3"
-    },
-    {
       "doi": "10.2116/xraystruct.25.23",
       "title": "Crystal Structure of Meclofenoxate Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -2482,6 +2842,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.23"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.3",
+      "title": "Crystal Structure of Guanfacine Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.3"
     },
     {
       "doi": "10.2210/pdb4y6n/pdb",
@@ -2727,13 +3096,13 @@
       "url": "https://doi.org/10.1360/csb1980-25-20-934"
     },
     {
-      "doi": "10.3724/j.issn.1000-0518.1985.1.87",
-      "title": "&amp;alpha;-羟基乙酸氧钒钾的晶体和分子结构",
-      "authors": "康靖 周",
-      "journal": "Chinese Journal of Applied Chemistry",
-      "year": 1985,
+      "doi": "10.1360/csb1982-27-15-922",
+      "title": "3-乙基-5-[2-(3-乙基-2-苯并亚噻唑啉基)亚乙基]罗丹宁的晶体结构与分子结构",
+      "authors": "春礼 白",
+      "journal": "Chinese Science Bulletin",
+      "year": 1982,
       "abstract": "",
-      "url": "https://doi.org/10.3724/j.issn.1000-0518.1985.1.87"
+      "url": "https://doi.org/10.1360/csb1982-27-15-922"
     },
     {
       "doi": "10.3724/j.issn.1000-0518.1985.1.8788",
@@ -2745,13 +3114,13 @@
       "url": "https://doi.org/10.3724/j.issn.1000-0518.1985.1.8788"
     },
     {
-      "doi": "10.1360/csb1982-27-15-922",
-      "title": "3-乙基-5-[2-(3-乙基-2-苯并亚噻唑啉基)亚乙基]罗丹宁的晶体结构与分子结构",
-      "authors": "春礼 白",
-      "journal": "Chinese Science Bulletin",
-      "year": 1982,
+      "doi": "10.3724/j.issn.1000-0518.1985.1.87",
+      "title": "&amp;alpha;-羟基乙酸氧钒钾的晶体和分子结构",
+      "authors": "康靖 周",
+      "journal": "Chinese Journal of Applied Chemistry",
+      "year": 1985,
       "abstract": "",
-      "url": "https://doi.org/10.1360/csb1982-27-15-922"
+      "url": "https://doi.org/10.3724/j.issn.1000-0518.1985.1.87"
     },
     {
       "doi": "10.1360/csb1997-42-3-285",
@@ -3312,6 +3681,249 @@
       "year": 1958,
       "abstract": "",
       "url": "https://doi.org/10.1360/csb1958-3-22-699-x"
+    },
+    {
+      "doi": "10.1016/b978-1-895198-47-8.50155-7",
+      "title": "PPT poly(propylene terephthalate)",
+      "authors": "George Wypych",
+      "journal": "Handbook of Polymers",
+      "year": 2012,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/b978-1-895198-47-8.50155-7"
+    },
+    {
+      "doi": "10.1016/b978-1-895198-92-8.50168-3",
+      "title": "PPT poly(propylene terephthalate)",
+      "authors": "George Wypych",
+      "journal": "Handbook of Polymers",
+      "year": 2016,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/b978-1-895198-92-8.50168-3"
+    },
+    {
+      "doi": "10.1002/9783527809080.cataz13326",
+      "title": "poly(propylene terephthalate)",
+      "authors": "",
+      "journal": "Catalysis from A to Z",
+      "year": 2020,
+      "abstract": "",
+      "url": "https://doi.org/10.1002/9783527809080.cataz13326"
+    },
+    {
+      "doi": "10.1002/macp.1988.021890321",
+      "title": "Influence of chemical structure on glass transition temperatures of poly(propylene terephthalate) and poly(propylene isophthalate)",
+      "authors": "Crisantos Pérez, Julio Guzmán, Evaristo Riande, José G. De la Campa, Javier de Abajo",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1988,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Poly(propylene terephthalate)<jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#note1\"/><jats:fn><jats:p>Systematic IUPAC name: poly(oxypropyleneoxyterephthaloyl).</jats:p></jats:fn>\n (PPTP) and poly(propylene isophthalate)<jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#note2\"/><jats:fn><jats:p>Systematic IUPAC name: poly(oxypropyleneoxyisophthaloyl).</jats:p></jats:fn>\n (PPIP) were prepared by melt polycondensation. Different fractions with number‐average molar masses in the range 5 000 − 20 000 g·mol<jats:sup>−1</jats:sup> were obtained and their respective glass transition temperatures (<jats:italic>T</jats:italic><jats:sub>g</jats:sub>) determined by calorimetry. The solubility parameters of the polymers were obtained by viscosity measurements in different solvents and were found to be 9,4 and 9,5 cal<jats:sup>1/2</jats:sup>·cm<jats:sup>−3/2</jats:sup> (19,2·10<jats:sup>3</jats:sup> and 19,4·10<jats",
+      "url": "https://doi.org/10.1002/macp.1988.021890321"
+    },
+    {
+      "doi": "10.1021/acs.macromol.3c01081.s001",
+      "title": "Crystal Domains and Crystallization Kinetics of Poly(butylene terephthalate)",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.macromol.3c01081.s001"
+    },
+    {
+      "doi": "10.2210/pdb9kl9/pdb",
+      "title": "crystal structure of a mutant Poly(Ethylene terephthalate) hydrolase",
+      "authors": "H. Wang, Y. Feng, X.Y. Du",
+      "journal": "Worldwide Protein Data Bank",
+      "year": 2025,
+      "abstract": "",
+      "url": "https://doi.org/10.2210/pdb9kl9/pdb"
+    },
+    {
+      "doi": "10.1002/crat.201300369",
+      "title": "Isothermal crystallization behavior and crystal structure of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters",
+      "authors": "Tingting Chen, Guodong Jiang, Jun Zhang",
+      "journal": "Crystal Research and Technology",
+      "year": 2014,
+      "abstract": "<jats:p>Poly(ethylene terephthalate) (PET) and a series of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters with different molar ratios of ethylene glycol (EG) to 1,4‐cyclohexanedimethanol (1,4‐CHDM) were investigated by their isothermal crystallization behavior, transparency, crystal structure and morphology changes in different isothermal crystallization process using differential scanning calorimetry (DSC), digital photos, wide‐angle X‐ray diffraction (WAXD) and polarized optical microscopy (POM). The results revealed that P(ET/CT) copolyesters with ≤ 15 mol% 1,4‐CHDM and ≥ 50 mol% 1,4‐CHDM, such as P(ET/CT)(85/15), P(ET/CT)(50/50) and P(ET/CT)(30/70), were crystallizable, while that with 30 mol% 1,4‐CHDM, namely P(ET/CT)(70/30), was amorphous. The crystallization rate, crystallinity and transparency of these copolyesters underwent the same isothermal crystallization process, i.e. it first decreased and then increased remarkably wit",
+      "url": "https://doi.org/10.1002/crat.201300369"
+    },
+    {
+      "doi": "10.1002/(sici)1522-9505(19990501)266:1<30::aid-apmc30>3.0.co;2-3",
+      "title": "Multiblock terephthalate copolymer as impact modifier for poly(propylene)/poly(butylene terephthalate) blends",
+      "authors": "Miroslawa El Fray, Jerzy Słonecki",
+      "journal": "Die Angewandte Makromolekulare Chemie",
+      "year": 1999,
+      "abstract": "",
+      "url": "https://doi.org/10.1002/(sici)1522-9505(19990501)266:1<30::aid-apmc30>3.0.co;2-3"
+    },
+    {
+      "doi": "10.1016/0032-3861(82)90224-5",
+      "title": "On the crystal structure of poly(1,4-trans-cyclohexanediyl-dimethylene terephthalate)",
+      "authors": "Bruno Rémillard, François Brisse",
+      "journal": "Polymer",
+      "year": 1982,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(82)90224-5"
+    },
+    {
+      "doi": "10.1080/03602559.2017.1354219",
+      "title": "Melt Crystallization Behavior and Spherulitic Morphology of Poly(Trimethylene Terephthalate)/Poly(Propylene Glycol) Copolymers with Different Poly(Propylene Glycol) Molecular Weights",
+      "authors": "Peng Li, Chenguang Yao, Guisheng Yang",
+      "journal": "Polymer-Plastics Technology and Engineering",
+      "year": 2018,
+      "abstract": "",
+      "url": "https://doi.org/10.1080/03602559.2017.1354219"
+    },
+    {
+      "doi": "10.1007/978-3-642-36199-9_239-1",
+      "title": "PET (Poly(ethylene terephthalate)) and PTT (Poly(trimethylene terephthalate))",
+      "authors": "Tomoyuki Ohishi, Hideyuki Otsuka",
+      "journal": "Encyclopedia of Polymeric Nanomaterials",
+      "year": 2014,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-3-642-36199-9_239-1"
+    },
+    {
+      "doi": "10.58837/chula.the.2004.2118",
+      "title": "Crystallization kinetics of poly(trimethylene terephthalate) : macroscopic and microscopic studies",
+      "authors": ", Nattapol Apiwanthanakorn",
+      "journal": "",
+      "year": null,
+      "abstract": "<jats:p>Macroscopic crystallization kinetics was investigated using differential scanning calorimetry (DSC). Non-isothermal crystallization of poly(trimethylene terephthalate) (PTT) was considered in this study. The kinetics of crystallization process was evaluated by the macrokinetic models, namely Avrami, Tobin, Ozawa, Ziabicki. The effective energy barrier was determined by the differential isoconvesional method of Friedman. For the crystallization from the melt state, the evaluated crystallization rate was found to increase as the cooling rate increased. In case of the crystallization from the glassy state, the evaluated crystallization rate was found to increase as eating rate increased. Moreover, the miscibility, melting, crystallization kinetics behavior, and morphologies of PTT/PEN blends were also studied. A single composition-dependent glass transition temperature (Tg)was observed in these blends system, implying that these blends are fully miscible in the amorphous phase. Th",
+      "url": "https://doi.org/10.58837/chula.the.2004.2118"
+    },
+    {
+      "doi": "10.1007/978-3-642-29648-2_239",
+      "title": "PET (Poly(ethylene terephthalate)) and PTT (Poly(trimethylene terephthalate))",
+      "authors": "Tomoyuki Ohishi, Hideyuki Otsuka",
+      "journal": "Encyclopedia of Polymeric Nanomaterials",
+      "year": 2015,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-3-642-29648-2_239"
+    },
+    {
+      "doi": "10.1007/978-981-19-7303-1_1",
+      "title": "Poly(Trimethylene Terephthalate): Introduction",
+      "authors": "A. R. Ajitha, V. K. Abitha, Sabu Thomas",
+      "journal": "Materials Horizons: From Nature to Nanomaterials",
+      "year": 2023,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-981-19-7303-1_1"
+    },
+    {
+      "doi": "10.1007/978-981-19-7303-1_7",
+      "title": "Crystallization and Solid-State Characterization of Poly(Trimethylene Terephthalate) and Its Nanocomposites",
+      "authors": "Nadarajah Vasanthan",
+      "journal": "Materials Horizons: From Nature to Nanomaterials",
+      "year": 2023,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/978-981-19-7303-1_7"
+    },
+    {
+      "doi": "10.1016/b978-1-895198-47-8.50172-7",
+      "title": "PTT poly(trimethylene terephthalate)",
+      "authors": "George Wypych",
+      "journal": "Handbook of Polymers",
+      "year": 2012,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/b978-1-895198-47-8.50172-7"
+    },
+    {
+      "doi": "10.1016/b978-1-895198-92-8.50185-3",
+      "title": "PTT poly(trimethylene terephthalate)",
+      "authors": "George Wypych",
+      "journal": "Handbook of Polymers",
+      "year": 2016,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/b978-1-895198-92-8.50185-3"
+    },
+    {
+      "doi": "10.1021/acsomega.8b00490.s001",
+      "title": "Effect of Compatibilization on Biobased Rubber-Toughened Poly(trimethylene terephthalate): Miscibility, Morphology, and Mechanical Properties",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acsomega.8b00490.s001"
+    },
+    {
+      "doi": "10.4095/102121",
+      "title": "A Triclinic Unit Cell For Oboyerite",
+      "authors": "A C Roberts",
+      "journal": "",
+      "year": 1980,
+      "abstract": "",
+      "url": "https://doi.org/10.4095/102121"
+    },
+    {
+      "doi": "10.1107/s0365110x56000905",
+      "title": "The choice of the unit cell in the triclinic system",
+      "authors": "V. Balashov",
+      "journal": "Acta Crystallographica",
+      "year": 1956,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0365110x56000905"
+    },
+    {
+      "doi": "10.1017/s0885715600014019",
+      "title": "Exhaustive indexing of triclinic powder diffraction patterns with known unit cell parameters",
+      "authors": "Ludo K. Frevel",
+      "journal": "Powder Diffraction",
+      "year": 1994,
+      "abstract": "<jats:p>\n                    A novel algorithm has been developed for obtaining directly the applicable indices\n                    <jats:italic>hkl</jats:italic>\n                    for any interplanar spacing,\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    ±Δ\n                    <jats:italic>d</jats:italic>\n                    <jats:sub>obs</jats:sub>\n                    , of a triclinic phase with known unit cell parameters. This method is particularly useful for indexing back reflections for triclinic phases with unit cell volumes greater than 500 Å\n                    <jats:sup>3</jats:sup>\n                    .\n                  </jats:p>",
+      "url": "https://doi.org/10.1017/s0885715600014019"
+    },
+    {
+      "doi": "10.1107/s0365110x57002054",
+      "title": "The choice of the standard unit cell in a triclinic lattice",
+      "authors": "V. Balashov, H. D. Ursell",
+      "journal": "Acta Crystallographica",
+      "year": 1957,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0365110x57002054"
+    },
+    {
+      "doi": "10.1107/s0021889876011850",
+      "title": "Estimating unit cell volumes from powder diffraction data: the triclinic case",
+      "authors": "G. S. Smith",
+      "journal": "Journal of Applied Crystallography",
+      "year": 1976,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0021889876011850"
+    },
+    {
+      "doi": "10.2138/am-2002-11-1215",
+      "title": "Structure of synthetic Na-birnessite: Evidence for a triclinic one-layer unit cell",
+      "authors": "Bruno Lanson, Victor A. Drits, Qi Feng, Alain Manceau",
+      "journal": "American Mineralogist",
+      "year": 2002,
+      "abstract": "",
+      "url": "https://doi.org/10.2138/am-2002-11-1215"
+    },
+    {
+      "doi": "10.1016/s0022-2836(95)80065-4",
+      "title": "Type I collagen packing, conformation of the triclinic unit cell",
+      "authors": "T.J. Wess, A. Hammersley, L. Wess, A. Miller",
+      "journal": "Journal of Molecular Biology",
+      "year": 1995,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/s0022-2836(95)80065-4"
+    },
+    {
+      "doi": "10.1107/s0021889877013442",
+      "title": "Estimating the unit-cell volume from one line in a powder diffraction pattern: the triclinic case",
+      "authors": "G. S. Smith",
+      "journal": "Journal of Applied Crystallography",
+      "year": 1977,
+      "abstract": "",
+      "url": "https://doi.org/10.1107/s0021889877013442"
+    },
+    {
+      "doi": "10.1017/s0885715600009714",
+      "title": "Systematic crystallographic refinement of triclinic unit cells",
+      "authors": "Ludo K. Frevel",
+      "journal": "Powder Diffraction",
+      "year": 1998,
+      "abstract": "<jats:p>Combining the exhaustive indexing of triclinic powder diffraction patterns with a crystallographic determination of unit cell parameters from pinacoid and prism reflections yields unit cell parameters with realistic limits of error. Additionally a referee method has been developed by which the six reciprocal cell parameters of a triclinic phase are determined by solving an exhaustive set of linear simultaneous equations in six unknowns.</jats:p>",
+      "url": "https://doi.org/10.1017/s0885715600009714"
     }
   ],
   "PBN": [
@@ -3424,15 +4036,6 @@
       "url": "https://doi.org/10.2116/xraystruct.25.51"
     },
     {
-      "doi": "10.2116/xraystruct.25.3",
-      "title": "Crystal Structure of Guanfacine Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.3"
-    },
-    {
       "doi": "10.2116/xraystruct.25.23",
       "title": "Crystal Structure of Meclofenoxate Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -3440,6 +4043,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.23"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.3",
+      "title": "Crystal Structure of Guanfacine Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.3"
     },
     {
       "doi": "10.2210/pdb9k2j/pdb",
@@ -3451,15 +4063,6 @@
       "url": "https://doi.org/10.2210/pdb9k2j/pdb"
     },
     {
-      "doi": "10.2116/xraystruct.27.21",
-      "title": "Synthesis and Crystal Structure of LiLaP4O12",
-      "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2011,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.27.21"
-    },
-    {
       "doi": "10.1021/om700344q.s001",
       "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
       "authors": "",
@@ -3467,6 +4070,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/om700344q.s001"
+    },
+    {
+      "doi": "10.2116/xraystruct.27.21",
+      "title": "Synthesis and Crystal Structure of LiLaP4O12",
+      "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2011,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.27.21"
     },
     {
       "doi": "10.1021/om700344q.s002",
@@ -3685,15 +4297,6 @@
       "url": "https://doi.org/10.1360/csb1986-31-12-960"
     },
     {
-      "doi": "10.3724/j.issn.1000-0518.1986.5.9696",
-      "title": "聚[芳基二甲酸(聚四亚甲基醚二醇)酯]的激基缔合物荧光谱和结晶形态",
-      "authors": "锑 曹",
-      "journal": "Chinese Journal of Applied Chemistry",
-      "year": 1986,
-      "abstract": "",
-      "url": "https://doi.org/10.3724/j.issn.1000-0518.1986.5.9696"
-    },
-    {
       "doi": "10.1360/zb1994-24-9-930",
       "title": "聚碳酸酯/聚对苯二甲酸乙二醇酯共混体酯交换反应机理",
       "authors": "",
@@ -3701,6 +4304,15 @@
       "year": 1994,
       "abstract": "",
       "url": "https://doi.org/10.1360/zb1994-24-9-930"
+    },
+    {
+      "doi": "10.3724/j.issn.1000-0518.1986.5.9696",
+      "title": "聚[芳基二甲酸(聚四亚甲基醚二醇)酯]的激基缔合物荧光谱和结晶形态",
+      "authors": "锑 曹",
+      "journal": "Chinese Journal of Applied Chemistry",
+      "year": 1986,
+      "abstract": "",
+      "url": "https://doi.org/10.3724/j.issn.1000-0518.1986.5.9696"
     },
     {
       "doi": "10.1360/csb1981-26-17-1045",
@@ -3739,15 +4351,6 @@
       "url": "https://doi.org/10.1360/csb1989-34-8-587"
     },
     {
-      "doi": "10.1360/zb1986-16-4-337",
-      "title": "2,3-二氰基-2,3-二苯基丁二酸二乙酯的两种异构体的晶体结构和分子结构",
-      "authors": "清传 杨, 第伦 杨, 有祺 唐, 美成 邵, 王真 韩, 有成 刘",
-      "journal": "Science in China Series B-Chemistry, Biological, Agricultural, Medical &amp; Earth Sciences (in Chinese)",
-      "year": 1986,
-      "abstract": "",
-      "url": "https://doi.org/10.1360/zb1986-16-4-337"
-    },
-    {
       "doi": "10.3724/j.issn.1000-0518.2007.6.660",
       "title": "二正丁基锡二2-(2-甲酰基苯氧基)乙酸酯的合成、晶体结构及杀菌活性",
       "authors": "文华 闫, 万利 康, 金环 李",
@@ -3755,6 +4358,15 @@
       "year": 2007,
       "abstract": "",
       "url": "https://doi.org/10.3724/j.issn.1000-0518.2007.6.660"
+    },
+    {
+      "doi": "10.1360/zb1986-16-4-337",
+      "title": "2,3-二氰基-2,3-二苯基丁二酸二乙酯的两种异构体的晶体结构和分子结构",
+      "authors": "清传 杨, 第伦 杨, 有祺 唐, 美成 邵, 王真 韩, 有成 刘",
+      "journal": "Science in China Series B-Chemistry, Biological, Agricultural, Medical &amp; Earth Sciences (in Chinese)",
+      "year": 1986,
+      "abstract": "",
+      "url": "https://doi.org/10.1360/zb1986-16-4-337"
     },
     {
       "doi": "10.1360/csb1977-22-11-504",
@@ -3912,15 +4524,6 @@
       "url": "https://doi.org/10.2116/xraystruct.25.51"
     },
     {
-      "doi": "10.2116/xraystruct.25.3",
-      "title": "Crystal Structure of Guanfacine Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.3"
-    },
-    {
       "doi": "10.2116/xraystruct.25.23",
       "title": "Crystal Structure of Meclofenoxate Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -3928,6 +4531,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.23"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.3",
+      "title": "Crystal Structure of Guanfacine Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.3"
     },
     {
       "doi": "10.2210/pdb9k2j/pdb",
@@ -4807,15 +5419,6 @@
       "url": "https://doi.org/10.1021/acsbiomaterials.6b00050.s001"
     },
     {
-      "doi": "10.1021/bm025575y",
-      "title": "Molecular Mobility and Phase Structure of Biodegradable Poly(butylene succinate) and Poly(butylene succinate-<i>co</i>-butylene adipate)",
-      "authors": "Kazuhiro Kuwabara, Zhihua Gan, Takashi Nakamura, Hideki Abe, Yoshiharu Doi",
-      "journal": "Biomacromolecules",
-      "year": 2002,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/bm025575y"
-    },
-    {
       "doi": "10.1021/acssusresmgt.4c00440.s002",
       "title": "Oceanic Biodegradation Mechanisms of Chemosynthetic Biodegradable Polyesters: Focusing on Poly(butylene succinate-co-adipate)",
       "authors": "",
@@ -4823,6 +5426,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/acssusresmgt.4c00440.s002"
+    },
+    {
+      "doi": "10.1021/bm025575y",
+      "title": "Molecular Mobility and Phase Structure of Biodegradable Poly(butylene succinate) and Poly(butylene succinate-<i>co</i>-butylene adipate)",
+      "authors": "Kazuhiro Kuwabara, Zhihua Gan, Takashi Nakamura, Hideki Abe, Yoshiharu Doi",
+      "journal": "Biomacromolecules",
+      "year": 2002,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/bm025575y"
     },
     {
       "doi": "10.3390/polym13152489",
@@ -4897,6 +5509,15 @@
       "url": "https://doi.org/10.2210/pdb9k2j/pdb"
     },
     {
+      "doi": "10.1021/om700344q.s001",
+      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/om700344q.s001"
+    },
+    {
       "doi": "10.2116/xraystruct.27.21",
       "title": "Synthesis and Crystal Structure of LiLaP4O12",
       "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
@@ -4913,15 +5534,6 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/om700344q.s002"
-    },
-    {
-      "doi": "10.1021/om700344q.s001",
-      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
-      "authors": "",
-      "journal": "",
-      "year": null,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/om700344q.s001"
     },
     {
       "doi": "10.2116/xraystruct.25.47",
@@ -5113,13 +5725,13 @@
       "url": "https://doi.org/10.1021/acs.jctc.9b00106.s002"
     },
     {
-      "doi": "10.1021/acs.jcim.9b00095.s001",
-      "title": "Rescoring Virtual Screening Results with the MM-PBSA Methods: Beware of Internal Dielectric Constants",
+      "doi": "10.7717/peerj.15022/table-2",
+      "title": "Table 2: The results of MM/PBSA free energy calculation (kcal/mol).",
       "authors": "",
       "journal": "",
       "year": null,
       "abstract": "",
-      "url": "https://doi.org/10.1021/acs.jcim.9b00095.s001"
+      "url": "https://doi.org/10.7717/peerj.15022/table-2"
     }
   ],
   "PHB": [
@@ -5268,15 +5880,6 @@
       "url": "https://doi.org/10.2116/xraystruct.25.51"
     },
     {
-      "doi": "10.2116/xraystruct.25.23",
-      "title": "Crystal Structure of Meclofenoxate Hydrochloride",
-      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
-      "journal": "X-ray Structure Analysis Online",
-      "year": 2009,
-      "abstract": "",
-      "url": "https://doi.org/10.2116/xraystruct.25.23"
-    },
-    {
       "doi": "10.2116/xraystruct.25.3",
       "title": "Crystal Structure of Guanfacine Hydrochloride",
       "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
@@ -5284,6 +5887,15 @@
       "year": 2009,
       "abstract": "",
       "url": "https://doi.org/10.2116/xraystruct.25.3"
+    },
+    {
+      "doi": "10.2116/xraystruct.25.23",
+      "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+      "authors": "Tomoko KAWAMURA, Noriaki HIRAYAMA",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.2116/xraystruct.25.23"
     },
     {
       "doi": "10.2210/pdb9k2j/pdb",
@@ -5295,13 +5907,13 @@
       "url": "https://doi.org/10.2210/pdb9k2j/pdb"
     },
     {
-      "doi": "10.1021/om700344q.s001",
-      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
-      "authors": "",
-      "journal": "",
-      "year": null,
+      "doi": "10.2116/xraystruct.27.21",
+      "title": "Synthesis and Crystal Structure of LiLaP4O12",
+      "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
+      "journal": "X-ray Structure Analysis Online",
+      "year": 2011,
       "abstract": "",
-      "url": "https://doi.org/10.1021/om700344q.s001"
+      "url": "https://doi.org/10.2116/xraystruct.27.21"
     },
     {
       "doi": "10.1021/acs.langmuir.6b04683.s001",
@@ -5439,15 +6051,6 @@
       "url": "https://doi.org/10.1021/acs.inorgchem.5c03503.s002"
     },
     {
-      "doi": "10.1021/acs.inorgchem.5c03503.s001",
-      "title": "NMR Crystallographic Journey from Light to Heavy Atoms of Mercury(II)-DOTAM Complexes and Extraction of Related Structural Parameters",
-      "authors": "",
-      "journal": "",
-      "year": null,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/acs.inorgchem.5c03503.s001"
-    },
-    {
       "doi": "10.22215/etd/2026-17137",
       "title": "Acidogenic Co-fermentation of Polyhydroxybutyrate (PHB) bioplastic pellets and Food Waste for production of Short-Chain Fatty Acids: Effects of varying PHB loadings, PHB Pretreatment, and Enrichment of Inoculum",
       "authors": "Chinmay Shah",
@@ -5455,6 +6058,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.22215/etd/2026-17137"
+    },
+    {
+      "doi": "10.1021/acs.inorgchem.5c03503.s001",
+      "title": "NMR Crystallographic Journey from Light to Heavy Atoms of Mercury(II)-DOTAM Complexes and Extraction of Related Structural Parameters",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.inorgchem.5c03503.s001"
     },
     {
       "doi": "10.1021/acssuschemeng.1c03299.s001",
@@ -5711,15 +6323,6 @@
       "url": "https://doi.org/10.2210/pdb9k2j/pdb"
     },
     {
-      "doi": "10.1021/om700344q.s001",
-      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
-      "authors": "",
-      "journal": "",
-      "year": null,
-      "abstract": "",
-      "url": "https://doi.org/10.1021/om700344q.s001"
-    },
-    {
       "doi": "10.2116/xraystruct.27.21",
       "title": "Synthesis and Crystal Structure of LiLaP4O12",
       "authors": "Mohamed BOUJELBENE, Tahar MHIRI",
@@ -5736,6 +6339,15 @@
       "year": null,
       "abstract": "",
       "url": "https://doi.org/10.1021/om700344q.s002"
+    },
+    {
+      "doi": "10.1021/om700344q.s001",
+      "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+      "authors": "",
+      "journal": "",
+      "year": null,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/om700344q.s001"
     },
     {
       "doi": "10.2116/xraystruct.25.47",
@@ -5792,15 +6404,6 @@
       "url": "https://doi.org/10.2139/ssrn.5280102"
     },
     {
-      "doi": "10.3390/molecules24193538",
-      "title": "Mechanical and Hydrothermal Aging Behaviour of Polyhydroxybutyrate-Co-Valerate (PHBV) Composites Reinforced by Natural Fibres",
-      "authors": "Karolina Mazur, Stanisław Kuciel",
-      "journal": "Molecules",
-      "year": 2019,
-      "abstract": "<jats:p>Biodegradable composites based on poly (3-hydroxybutyrate-co-3-hydroxyvalerate), reinforced with 7.5% or 15% by weight of wood fibers (WF) or basalt fibers (BF) were fabricated by injection molding. BF reinforced composites showed improvement in all properties, whereas WF composites showed an increase in Young’s modulus values, but a drop in strength and impact properties. When compared with the unmodified polymer, composites with 15% by weight of BF showed an increase of 74% in Young’s modulus and 41% in impact strength. Furthermore, the experimentally measured values of Young’s modulus were compared with values obtained in various theoretical micromechanical models. The Haplin-Kardas model was found to be in near approximation to the experimental data. The morphological aspect of the biocomposites was studied using scanning electron microscopy to obtain the distribution and interfacial adhesion of the fibers. Additionally, biodegradation tests of the biocomposites were perfor",
-      "url": "https://doi.org/10.3390/molecules24193538"
-    },
-    {
       "doi": "10.1021/acs.biomac.7b00150",
       "title": "κ-Carrageenan Enhances the Biomineralization and Osteogenic Differentiation of Electrospun Polyhydroxybutyrate and Polyhydroxybutyrate Valerate Fibers",
       "authors": "Nowsheen Goonoo, Behnam Khanbabaee, Marc Steuber, Archana Bhaw-Luximon, Ulrich Jonas, Ullrich Pietsch, Dhanjay Jhurry, Holger Schönherr",
@@ -5808,6 +6411,15 @@
       "year": 2017,
       "abstract": "",
       "url": "https://doi.org/10.1021/acs.biomac.7b00150"
+    },
+    {
+      "doi": "10.3390/molecules24193538",
+      "title": "Mechanical and Hydrothermal Aging Behaviour of Polyhydroxybutyrate-Co-Valerate (PHBV) Composites Reinforced by Natural Fibres",
+      "authors": "Karolina Mazur, Stanisław Kuciel",
+      "journal": "Molecules",
+      "year": 2019,
+      "abstract": "<jats:p>Biodegradable composites based on poly (3-hydroxybutyrate-co-3-hydroxyvalerate), reinforced with 7.5% or 15% by weight of wood fibers (WF) or basalt fibers (BF) were fabricated by injection molding. BF reinforced composites showed improvement in all properties, whereas WF composites showed an increase in Young’s modulus values, but a drop in strength and impact properties. When compared with the unmodified polymer, composites with 15% by weight of BF showed an increase of 74% in Young’s modulus and 41% in impact strength. Furthermore, the experimentally measured values of Young’s modulus were compared with values obtained in various theoretical micromechanical models. The Haplin-Kardas model was found to be in near approximation to the experimental data. The morphological aspect of the biocomposites was studied using scanning electron microscopy to obtain the distribution and interfacial adhesion of the fibers. Additionally, biodegradation tests of the biocomposites were perfor",
+      "url": "https://doi.org/10.3390/molecules24193538"
     },
     {
       "doi": "10.1016/j.polymer.2023.126358",

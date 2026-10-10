@@ -51,26 +51,43 @@ PER_POLYMER = 5
 
 # 建议起点文献（仅书目信息，**不**内置数值；金标准数值必须由人工从原文逐条核验）
 # 标注时请打开原文，把表/图中的晶胞参数、热力学量抄入，并填好 ref_table。
+#
+# ⚠️ 2026-10-10 修正：此前的 DOI 系凭记忆填写，经 CrossRef 核验全部错误
+#    （如 PET 的旧 DOI 实为 "Transport and relaxation phenomena"，与 PET 晶体结构无关）。
+#    以下 DOI 均已通过 CrossRef API 核验题录（年份 / 期刊 / 标题）一致。
 SUGGESTED_START = {
     "PET": [
-        {"doi": "10.1098/rspa.1954.0231",
-         "cite": "Daubeny, Bunn & Brown (1954) Proc. R. Soc. A — PET 三斜 P-1 经典晶胞",
-         "note": "教科书级基准；务必从原文表核对 a/b/c/α/β/γ 与 ρ"},
+        {"doi": "10.1098/rspa.1954.0273",
+         "cite": "The crystal structure of polyethylene terephthalate (1954) Proc. R. Soc. A",
+         "note": "PET 三斜 P-1 经典晶胞的源头文献；务必从原文表核对 a/b/c/α/β/γ 与 ρ"},
+        {"doi": "10.1007/bf01202554",
+         "cite": "Refinement of the crystal structure of polyethylene terephthalate (1975) J. Cryst. Mol. Struct.",
+         "note": "对 1954 晶胞的精修，可与上一条互为交叉校验"},
     ],
     "PTT": [
-        {"doi": "10.1002/(sici)1097-481x(1977)13:1<1::aid-pol.1977.23313.0102>3.0.co;2-0",
-         "cite": "Desborough & Hall (1977) Polymer — PTT 三斜(tggt)晶胞",
-         "note": "PTT 近反-旁-旁-反构象，晶胞需从原文核对"},
+        {"doi": "10.1016/0032-3861(79)90064-8",
+         "cite": "The crystal structure of poly(trimethylene terephthalate) by X-ray (1979) Polymer",
+         "note": "PTT 晶胞经典文献；注意其近 tggt 构象"},
+        {"doi": "10.1021/ma000210w",
+         "cite": "Crystal Structure and Banded Spherulite of Poly(trimethylene terephthalate) (2000) Macromolecules",
+         "note": "同时给晶胞与环带球晶信息"},
     ],
     "PBT": [
-        {"doi": "10.1002/pol.1975.180130904",
-         "cite": "Mencik (1975) J. Polym. Sci. Polym. Phys. — PBT α 三斜晶胞",
-         "note": "PBT α 型三斜；数值以原文为准"},
+        {"doi": "10.1016/j.polymer.2017.07.076",
+         "cite": "Crystal reorganization of poly (butylene terephthalate) (2017) Polymer",
+         "note": "⚠️ PBT 的"聚合物本体"晶胞经典文献（Yokouchi/Mencik 1970s）在现有检索集中覆盖薄弱，"
+                "已补 tetramethylene terephthalate / PTMT 同义词重新检索；若仍不足需人工补检"},
+        {"doi": "10.1295/polymj.23.949",
+         "cite": "Crystal Structure of Cyclic Dimer of Poly(butylene terephthalate) (1991) Polymer Journal",
+         "note": "这是环状二聚体（模型化合物）而非聚合物本体，作结构参考时务必注明，勿当作 PBT 晶胞"},
     ],
     "PLA": [
-        {"doi": "10.1021/ma00010a026",
-         "cite": "Hoogsteen et al. (2000) Macromolecules — PLLA α 正交晶胞",
-         "note": "PLLA α 型；立构复合晶(sc)另见 tsuji/ikada 文献"},
+        {"doi": "10.1021/ma001630o",
+         "cite": "Crystal Structure of the α-Form of Poly(L-lactide) (2001) Macromolecules",
+         "note": "PLLA α 型晶胞的权威来源"},
+        {"doi": "10.1080/00222349108245788",
+         "cite": "Crystal structure of stereocomplex of poly(L-lactide) and poly(D-lactide) (1991) J. Macromol. Sci. B",
+         "note": "立构复合晶(sc)；与 α 型分属不同 polymorph_label"},
     ],
 }
 
