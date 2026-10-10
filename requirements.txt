@@ -1,0 +1,30 @@
+# === 数据库 ===
+# sqlite3 是 Python 标准库，无需 pip 安装（指南原稿里把这行写进来了，会导致 pip 报错，已移除）
+
+# === 晶体学数据处理 ===
+pymatgen>=2024.1.1
+gemmi>=0.6.0
+
+# === 数据处理 ===
+pandas>=2.0.0
+numpy>=1.24.0
+
+# === 文献处理 ===
+PyPDF2>=3.0.0
+pdfplumber>=0.9.0
+
+# === AI/ML（P2–P4 阶段使用） ===
+torch>=2.0.0
+torch-geometric>=2.3.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+
+# === Web 前端（P5 阶段使用） ===
+gradio>=4.0.0
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# === 其他 ===
+tqdm>=4.65.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0

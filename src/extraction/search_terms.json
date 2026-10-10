@@ -1,0 +1,152 @@
+{
+  "PET": {
+    "name_en": "Poly(ethylene terephthalate)",
+    "name_zh": "聚对苯二甲酸乙二醇酯",
+    "family_branch": "aromatic",
+    "search_terms": [
+      "poly(ethylene terephthalate) crystal structure",
+      "PET crystal structure X-ray",
+      "polyethylene terephthalate unit cell",
+      "PET crystallographic parameters triclinic",
+      "PET crystal density",
+      "聚对苯二甲酸乙二醇酯 晶体结构"
+    ]
+  },
+  "PBT": {
+    "name_en": "Poly(butylene terephthalate)",
+    "name_zh": "聚对苯二甲酸丁二醇酯",
+    "family_branch": "aromatic",
+    "search_terms": [
+      "poly(butylene terephthalate) crystal structure",
+      "PBT crystal structure X-ray",
+      "polybutylene terephthalate unit cell",
+      "PBT alpha beta crystal stress induced",
+      "PBT crystallographic parameters",
+      "聚对苯二甲酸丁二醇酯 晶体结构"
+    ]
+  },
+  "PEN": {
+    "name_en": "Poly(ethylene naphthalate)",
+    "name_zh": "聚萘二甲酸乙二醇酯",
+    "family_branch": "aromatic",
+    "search_terms": [
+      "poly(ethylene naphthalate) crystal structure",
+      "PEN crystal structure X-ray",
+      "polyethylene naphthalate unit cell",
+      "PEN alpha beta gamma polymorph",
+      "PEN crystallographic parameters",
+      "聚萘二甲酸乙二醇酯 晶体结构"
+    ]
+  },
+  "PLA": {
+    "name_en": "Poly(lactic acid)",
+    "name_zh": "聚乳酸",
+    "family_branch": "aliphatic",
+    "search_terms": [
+      "poly(lactic acid) crystal structure",
+      "PLA crystal structure X-ray",
+      "polylactic acid unit cell",
+      "PLLA crystal structure",
+      "PDLA crystal structure",
+      "PLA alpha prime crystal",
+      "PLA stereocomplex crystal",
+      "聚乳酸 晶体结构"
+    ]
+  },
+  "PGA": {
+    "name_en": "Poly(glycolic acid)",
+    "name_zh": "聚乙醇酸",
+    "family_branch": "aliphatic",
+    "search_terms": [
+      "poly(glycolic acid) crystal structure",
+      "PGA crystal structure X-ray",
+      "polyglycolic acid unit cell",
+      "PGA crystallographic parameters",
+      "聚乙醇酸 晶体结构"
+    ]
+  },
+  "PTT": {
+    "name_en": "Poly(trimethylene terephthalate)",
+    "name_zh": "聚对苯二甲酸丙二醇酯",
+    "family_branch": "aromatic",
+    "search_terms": [
+      "poly(trimethylene terephthalate) crystal structure",
+      "PTT crystal structure X-ray",
+      "polytrimethylene terephthalate unit cell",
+      "PTT crystal structure electron diffraction",
+      "PTT crystallographic parameters",
+      "聚对苯二甲酸丙二醇酯 晶体结构"
+    ]
+  },
+  "PBN": {
+    "name_en": "Poly(butylene naphthalate)",
+    "name_zh": "聚萘二甲酸丁二醇酯",
+    "family_branch": "aromatic",
+    "search_terms": [
+      "poly(butylene naphthalate) crystal structure",
+      "PBN crystal structure X-ray",
+      "polybutylene naphthalate unit cell",
+      "PBN crystallographic parameters",
+      "聚萘二甲酸丁二醇酯 晶体结构"
+    ]
+  },
+  "PCL": {
+    "name_en": "Poly(ε-caprolactone)",
+    "name_zh": "聚己内酯",
+    "family_branch": "aliphatic",
+    "search_terms": [
+      "poly(epsilon-caprolactone) crystal structure",
+      "PCL crystal structure X-ray",
+      "polycaprolactone unit cell",
+      "PCL crystallographic parameters",
+      "聚己内酯 晶体结构"
+    ]
+  },
+  "PBS": {
+    "name_en": "Poly(butylene succinate)",
+    "name_zh": "聚丁二酸丁二醇酯",
+    "family_branch": "aliphatic",
+    "search_terms": [
+      "poly(butylene succinate) crystal structure",
+      "PBS crystal structure X-ray",
+      "polybutylene succinate unit cell",
+      "PBS alpha beta crystal",
+      "PBS crystallographic parameters",
+      "聚丁二酸丁二醇酯 晶体结构"
+    ]
+  },
+  "PBSA": {
+    "name_en": "Poly(butylene succinate-co-adipate)",
+    "name_zh": "聚丁二酸-己二酸丁二醇酯",
+    "family_branch": "copolyester",
+    "search_terms": [
+      "poly(butylene succinate-co-adipate) crystal structure",
+      "PBSA crystal structure X-ray",
+      "polybutylene succinate adipate unit cell",
+      "PBSA crystallization"
+    ]
+  },
+  "PHB": {
+    "name_en": "Poly(hydroxybutyrate)",
+    "name_zh": "聚羟基丁酸酯",
+    "family_branch": "aliphatic",
+    "search_terms": [
+      "poly(hydroxybutyrate) crystal structure",
+      "PHB crystal structure X-ray",
+      "polyhydroxybutyrate unit cell",
+      "PHB crystallographic parameters",
+      "聚羟基丁酸酯 晶体结构"
+    ]
+  },
+  "PHBV": {
+    "name_en": "Poly(hydroxybutyrate-co-valerate)",
+    "name_zh": "聚(羟基丁酸-co-羟基戊酸)",
+    "family_branch": "copolyester",
+    "search_terms": [
+      "poly(hydroxybutyrate-co-valerate) crystal structure",
+      "PHBV crystal structure X-ray",
+      "polyhydroxybutyrate valerate unit cell",
+      "PHBV crystallization"
+    ]
+  }
+}

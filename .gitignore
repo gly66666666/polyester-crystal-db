@@ -1,0 +1,17 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# === 不入库：原始 PDF（受版权限制，且体积大） ===
+data/literature/*.pdf
+
+# === 不入库：原始 CIF 抓取目录（多来自 COD/CCDC，受各自许可约束） ===
+data/raw_cifs/
+
+# === IDE / 操作系统 ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
