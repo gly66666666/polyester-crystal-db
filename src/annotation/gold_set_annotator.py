@@ -75,7 +75,7 @@ SUGGESTED_START = {
     "PBT": [
         {"doi": "10.1016/j.polymer.2017.07.076",
          "cite": "Crystal reorganization of poly (butylene terephthalate) (2017) Polymer",
-         "note": "⚠️ PBT 的"聚合物本体"晶胞经典文献（Yokouchi/Mencik 1970s）在现有检索集中覆盖薄弱，"
+         "note": "⚠️ PBT 的「聚合物本体」晶胞经典文献（Yokouchi/Mencik 1970s）在现有检索集中覆盖薄弱，"
                 "已补 tetramethylene terephthalate / PTMT 同义词重新检索；若仍不足需人工补检"},
         {"doi": "10.1295/polymj.23.949",
          "cite": "Crystal Structure of Cyclic Dimer of Poly(butylene terephthalate) (1991) Polymer Journal",

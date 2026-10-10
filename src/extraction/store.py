@@ -15,9 +15,15 @@ import sqlite3
 from datetime import datetime, timezone
 from typing import Optional
 
+from . import units
+from .sanity import STRUCT_FIELDS
+
 HERE = Path(__file__).resolve().parent
 PROJECT_ROOT = HERE.parents[1]
 DB_PATH = PROJECT_ROOT / "data" / "polymer_crystal.db"
+
+# 同一晶型两条记录的相对偏差超过此值 → 判定为"分歧"，后到的值写入 properties 保留
+DIVERGE_TOL = 0.02
 
 # observations 表中本模块写入的列（实测 + provenance，不含晶胞结构）
 OBS_COLS = [
@@ -112,6 +118,17 @@ def persist_record(conn: sqlite3.Connection, normalized: dict) -> str:
 
     polymer_id = abbr2id[abbr]
     _upsert_literature(conn, lit)
+
+    # 先取同标签 L1 行的既有值（用于分歧判定）。若不存在则为首次创建，无分歧可言。
+    label = poly.get("polymorph_label")
+    prev = None
+    if label:
+        prev = conn.execute(
+            f"SELECT {', '.join(STRUCT_FIELDS)} FROM polymorphs "
+            "WHERE polymer_id=? AND polymorph_label=?",
+            (polymer_id, label),
+        ).fetchone()
+
     polymorph_id = _find_or_create_polymorph(conn, polymer_id, poly)
     obs["polymer_id"] = polymer_id
     obs["polymorph_id"] = polymorph_id
@@ -123,7 +140,32 @@ def persist_record(conn: sqlite3.Connection, normalized: dict) -> str:
     placeholders = ", ".join("?" for _ in cols)
     col_sql = ", ".join(cols)
     vals = [obs.get(c) for c in cols]
-    conn.execute(
+    cur = conn.execute(
         f"INSERT INTO observations ({col_sql}) VALUES ({placeholders})", vals
     )
+    obs_id = cur.lastrowid
+
+    # §4.4 规则1：保留全部分歧，不删除、不覆盖。
+    # L1 按 (polymer, 晶型标签) 去重，若后到的文献给出不同晶胞，
+    # 直接写入会覆盖、丢弃则丢数据 —— 故把后到的分歧值存入 properties(L2.5) 并打冲突标记。
+    if prev:
+        prev_map = dict(zip(STRUCT_FIELDS, prev))
+        divergent = []
+        for f in STRUCT_FIELDS:
+            nv, ov = poly.get(f), prev_map.get(f)
+            if nv is None or ov is None:
+                continue
+            denom = abs(ov) if ov else 0.0
+            if denom and abs(nv - ov) / denom > DIVERGE_TOL:
+                divergent.append(f)
+                conn.execute(
+                    "INSERT INTO properties (obs_id, property_name, property_value,"
+                    " property_unit, measurement_condition) VALUES (?,?,?,?,?)",
+                    (obs_id, f, nv, units.CANONICAL_UNIT.get(f),
+                     f"与本晶型既有代表值 {ov:g} 分歧 >{DIVERGE_TOL:.0%}（依 §4.4 保留，未覆盖）"),
+                )
+        if divergent:
+            conn.execute(
+                "UPDATE observations SET conflict_flag=1 WHERE obs_id=?", (obs_id,)
+            )
     return "inserted"
