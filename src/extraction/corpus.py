@@ -28,9 +28,14 @@ def _sanitize(doi: str) -> str:
     return re.sub(r"[^A-Za-z0-9._-]", "_", doi or "")
 
 
+def pdf_path_for(doi: str) -> Path:
+    """该 DOI 对应的本地 PDF 路径（corpus 与 fetch_pdf 共用，保证命名一致）。"""
+    return LIT_DIR / f"{_sanitize(doi)}.pdf"
+
+
 def _pdf_text(doi: str) -> Optional[str]:
     """若本地有该 DOI 的 PDF，用 pdfplumber 提取文本（可选依赖，缺失则跳过）。"""
-    pdf = LIT_DIR / f"{_sanitize(doi)}.pdf"
+    pdf = pdf_path_for(doi)
     if not pdf.exists():
         return None
     try:
