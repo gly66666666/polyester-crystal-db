@@ -390,6 +390,17 @@ def export_db() -> None:
     cur = conn.cursor()
     abbr2id = dict(cur.execute("SELECT abbr, polymer_id FROM polymers").fetchall())
 
+    # 幂等：gold 观测行只由本工具从 gold_set.json 产生，重跑前先清空，避免重复累积。
+    # （polymorphs 用 find-or-create，不清空，可复用。）
+    n_cleared = cur.execute(
+        "DELETE FROM observations WHERE review_status='gold'"
+    ).rowcount
+    if n_cleared:
+        print(f"  · 已清空 {n_cleared} 条旧 gold 观测行（幂等重导）")
+
+    # confidence 文本 → 数值（便于下游区分"自动预填"与"人工核验"）
+    CONF_MAP = {"high": 0.9, "medium": 0.5, "low": 0.2}
+
     n_insert = 0
     for rec in payload["records"]:
         if rec.get("status") != "filled":
@@ -425,21 +436,28 @@ def export_db() -> None:
                 polymorph_id = cur.lastrowid
 
         # 写入 observations（金标准行）
+        # reviewed_by 保留"auto-pre-fill"标记、extraction_confidence 保留 medium=0.5，
+        # 使下游能区分"自动预填·需人工复核"与真正人工核验的 gold，避免误当最终真值。
+        conf = CONF_MAP.get(rec.get("confidence"))
+        reviewed_by = rec.get("annotator") or "auto-pre-fill"
         cur.execute(
             """INSERT INTO observations
                (polymer_id, polymorph_id, doi, ref_year, ref_source, ref_table,
                 source_field, tm, tm0, delta_hf, tg, xtallinity_pct,
-                growth_rate, reviewed_by, review_status, conflict_flag)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,'gold',0)""",
+                growth_rate, reviewed_by, extraction_confidence,
+                review_status, conflict_flag)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'gold',0)""",
             (pid, polymorph_id, rec.get("doi"), rec.get("ref_year"),
              rec.get("ref_source"), rec.get("ref_table"), rec.get("source_field"),
              rec.get("tm"), rec.get("tm0"), rec.get("delta_hf"), rec.get("tg"),
-             rec.get("xtallinity_pct"), rec.get("growth_rate"), rec.get("annotator")),
+             rec.get("xtallinity_pct"), rec.get("growth_rate"),
+             reviewed_by, conf),
         )
         n_insert += 1
     conn.commit()
     conn.close()
-    print(f"✓ 已向主库写入 {n_insert} 条 gold observations（review_status='gold'）")
+    print(f"✓ 已向主库写入 {n_insert} 条 gold observations（review_status='gold'，"
+          f"其中 reviewed_by='auto-pre-fill' / extraction_confidence=0.5 标记自动预填，需人工复核）")
 
 
 # --------------------------------------------------------------------------- #
