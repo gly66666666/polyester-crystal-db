@@ -20,8 +20,12 @@ data/processed/extraction_output.json
 .DS_Store
 Thumbs.db
 
-# LaTeX 中间产物
+# LaTeX 中间产物（编译产物不入库，只留 .tex 与 .pdf）
 paper/*.aux
 paper/*.log
 paper/*.out
 paper/*.toc
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc

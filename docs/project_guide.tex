@@ -1,0 +1,617 @@
+% =====================================================================
+%  聚酯家族高分子结晶数据库 —— 项目详解
+%  内容：背景 / 意义 / 范围 / 四层数据模型 / 技术流程 / 工程要点 /
+%        实测进展 / 运行手册 / 展望 / 合规红线
+%  编译引擎：XeLaTeX（需编译两遍以生成目录与交叉引用）
+%   xelatex -interaction=nonstopmode project_guide.tex   （×2）
+% =====================================================================
+\documentclass[11pt,a4paper]{ctexart}
+
+% ---------- 页面与基础 ----------
+\usepackage[top=2.2cm,bottom=2.2cm,left=2.4cm,right=2.4cm]{geometry}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+
+% ---------- 中文字体 ----------
+\setCJKmainfont{Microsoft YaHei}[AutoFakeBold=true, AutoFakeSlant=true]
+\setCJKsansfont{Microsoft YaHei}[AutoFakeBold=true]
+% Consolas 无中文字形，代码块中文注释会丢字符，故 CJK 等宽族回退雅黑
+\setCJKmonofont{Microsoft YaHei}
+
+% ---------- 提示框 ----------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\newtcolorbox{warnbox}[1]{%
+  breakable, colback=red!5!white, colframe=red!60!black,
+  coltitle=white, fonttitle=\bfseries, title={#1},
+  boxrule=0.5pt, arc=1.5mm, left=3mm, right=3mm, top=2mm, bottom=2mm,
+}
+\newtcolorbox{tipbox}[1]{%
+  breakable, colback=blue!5!white, colframe=blue!55!black,
+  coltitle=white, fonttitle=\bfseries, title={#1},
+  boxrule=0.5pt, arc=1.5mm, left=3mm, right=3mm, top=2mm, bottom=2mm,
+}
+\newtcolorbox{okbox}[1]{%
+  breakable, colback=green!5!white, colframe=green!45!black,
+  coltitle=white, fonttitle=\bfseries, title={#1},
+  boxrule=0.5pt, arc=1.5mm, left=3mm, right=3mm, top=2mm, bottom=2mm,
+}
+
+% ---------- 代码块 ----------
+\usepackage{listings}
+\definecolor{codebg}{gray}{0.955}
+\definecolor{codeframe}{gray}{0.72}
+\lstdefinestyle{common}{%
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codebg}, frame=single, rulecolor=\color{codeframe},
+  framerule=0.4pt, framesep=4pt, breaklines=true, breakatwhitespace=false,
+  breakindent=1.2em, columns=fullflexible, keepspaces=true,
+  showstringspaces=false, tabsize=2, aboveskip=6pt, belowskip=6pt,
+  extendedchars=true,
+}
+
+% ---------- 页眉页脚 ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 聚酯家族高分子结晶数据库——项目详解}
+\fancyhead[R]{\small 南京大学「金种子」早期科研训练}
+\setlength{\headheight}{13.5pt}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black,
+            urlcolor=blue!60!black, bookmarksnumbered=true}
+
+% ---------- 标题 ----------
+\title{\textbf{聚酯家族高分子结晶数据库项目详解}\\[6pt]
+{\large 背景 · 意义 · 数据模型 · 技术流程 · 工程要点 · 运行手册 · 展望}}
+\author{葛陆熠\quad 朱芷卿\quad 指导教师：胡文兵\\[4pt]
+{\small 南京大学匡亚明学院 / 化学化工学院，南京 210023}\\[2pt]
+{\small 代码仓库：\url{https://github.com/gly66666666/polyester-crystal-db}}}
+\date{2026 年 10 月}
+
+\begin{document}
+\maketitle
+
+% ============================== 摘要 ==============================
+\begin{abstract}
+\noindent
+本文是「AI 驱动的高分子结晶数据库构建与智能检索系统」项目的完整技术说明，
+面向项目成员本人、指导教师与后续接手者。内容覆盖：选题背景与科学意义、
+研究范围与「一条数据」的口径定义、四层数据模型、LLM 抽取流水线的完整流程、
+工程实现中真实踩过的坑（DOI 核验、单位换算、幂等重跑、API 错误分类、
+合规红线）、当前实测进展（开放获取可获取性、Gold Set 基准、主库状态）、
+可复现的运行手册，以及后续展望。文末给出合规红线速查表与模块清单。
+
+\textbf{与学术论文的分工：}本文是「工程与操作文档」，
+\texttt{paper/main.tex} 是「研究论文」；两者共享同一套数据与方法，
+但本文包含大量实现细节与内部约定，不作为投稿内容。
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ============================== 1 项目速览 ==============================
+\section{项目速览}
+
+\begin{tipbox}{一句话概括}
+用大语言模型从高分子结晶文献中\textbf{自动抽取}晶体结构与热/动力学实测数据，
+建成一个\textbf{可回溯、可复核、单位统一}的聚酯家族结晶数据库，
+并用人工核验的 \textbf{Gold Set} 基准来量化抽取质量。
+\end{tipbox}
+
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{性质}：南京大学「金种子」早期科研训练项目。
+  \item \textbf{周期}：2026.05 -- 2027.05。
+  \item \textbf{范围}：半结晶性\textbf{聚酯家族}（先做 4 个成员，规划 12 个 Tier1），
+        不是「所有高分子」，也不是「单一聚合物」——是\textbf{一类}。
+  \item \textbf{目标规模}：\textbf{$\ge 300$ 条} L2 观测行。
+  \item \textbf{当前状态}：数据模型 + 抽取流水线 + 评测框架已代码完备并贯通验证；
+        Gold Set 20 条已预填并落库；\textbf{真实抽取待密钥与全文 PDF}。
+\end{itemize}
+
+\subsection*{仓库与目录}
+\begin{lstlisting}[style=common]
+https://github.com/gly66666666/polyester-crystal-db
+
+polyester-crystal-db/
+  data/          # 数据（gold_set / literature / processed / polymer_crystal.db）
+  src/annotation/# 文献检索、引文核验、OA 实测、Gold Set 标注
+  src/database/  # schema.sql + init_db.py
+  src/extraction/# 抽取流水线（corpus/extractor/llm_client/normalizer/store/evaluate/...）
+  paper/         # 研究论文 LaTeX
+  docs/          # 工程文档（本文、全文获取、Gold Set 策展）
+\end{lstlisting}
+
+% ============================== 2 背景与意义 ==============================
+\section{科学背景与研究意义}
+
+\subsection{高分子结晶为什么重要}
+
+半结晶性高分子的性能（力学强度、阻隔性、耐热性、降解速率）
+几乎全部由\textbf{凝聚态结构}决定，而不仅仅是化学组成。关键结构量包括：
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{晶胞参数}（$a,b,c,\alpha,\beta,\gamma$、空间群、$Z$、晶体密度 $\rho_c$）；
+  \item \textbf{晶型}（如 PBT 的 $\alpha$ 与 $\beta$ 型、PLLA 的 $\alpha/\beta/\gamma/\alpha'$）；
+  \item \textbf{热力学量}（平衡熔点 $T_m^0$、熔融焓 $\Delta H_f$、玻璃化温度 $T_g$）；
+  \item \textbf{动力学量}（结晶温度 $T_c$、Avrami 指数 $n$、球晶生长速率）；
+  \item \textbf{形态量}（SAXS 长周期、片晶厚度、结晶度）。
+\end{itemize}
+这些量\textbf{强依赖热历史}：同一聚合物在不同 $T_c$、降温速率、拉伸比下
+会得到不同晶型与不同结晶度。因此「某聚合物的熔点是多少」这个问题本身不严谨——
+必须\textbf{连同测量条件一起记录}。这正是本项目把「一条数据」定义为
+「一个 $T_c$ / 一组结构」的根本原因。
+
+\subsection{现有数据资源的缺口}
+
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{小分子晶体学有成熟开放库}（COD、CCDC、ICSD），
+        但\textbf{高分子没有对应的开放晶体学数据库}：晶胞参数散落在数十年文献的表格里，
+        没有统一单位、没有统一热历史记录。
+  \item \textbf{PoLyInfo}（日本 NIMS）是目前最完整的聚合物数据库，但为\textbf{注册制、闭源}，
+        数据不可再分发。本项目\textbf{仅可用于交叉校验，绝不可入库}。
+  \item 文献中的晶胞参数\textbf{几乎只出现在全文表格}里，摘要通常不含——
+        这决定了自动化的最大瓶颈是\textbf{全文获取}（见第 \ref{sec:oa} 节实测）。
+\end{itemize}
+
+\subsection{本项目的意义}
+
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{数据层面}：把散落的聚酯家族结晶数据聚成结构化、单位统一、
+        可回溯单一 DOI 的数据集，填补「一类高分子」的开放数据空白。
+  \item \textbf{方法层面}：给出一套\textbf{可复用}的 LLM 抽取 + 质量治理流水线
+        （单位归一、越界标记、冲突保留、人工复核队列、Gold Set 评测），
+        这套方法论对其它材料体系同样适用。
+  \item \textbf{可信度层面}：以「宁可 null 不许编」为硬约束，
+        用 Gold Set 给出\textbf{量化的}抽取准确率，而不是宣称「AI 抽得很准」。
+  \item \textbf{训练层面}：作为本科早期科研训练，覆盖文献计量、
+        数据库设计、LLM 工程、合规与版权意识等完整科研链条。
+\end{enumerate}
+
+% ============================== 3 范围与口径 ==============================
+\section{研究范围与数据口径}
+
+\subsection{聚酯家族成员}
+
+\begin{table}[htbp]
+\centering
+\caption{Tier1 必收的 12 个半结晶性聚酯家族成员}
+\label{tab:members}
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+缩写 & 类别 & 英文名称 \\
+\midrule
+PET  & 芳香族 & Poly(ethylene terephthalate) \\
+PBT  & 芳香族 & Poly(butylene terephthalate) \\
+PTT  & 芳香族 & Poly(trimethylene terephthalate) \\
+PEN  & 芳香族 & Poly(ethylene naphthalate) \\
+PBN  & 芳香族 & Poly(butylene naphthalate) \\
+PLA  & 脂肪族 & Poly(lactic acid) \\
+PGA  & 脂肪族 & Poly(glycolic acid) \\
+PCL  & 脂肪族 & Poly($\varepsilon$-caprolactone) \\
+PBS  & 脂肪族 & Poly(butylene succinate) \\
+PBSA & 脂肪族 & Poly(butylene succinate-co-adipate) \\
+PHB  & 脂肪族 & Poly(hydroxybutyrate) \\
+PHBV & 脂肪族 & Poly(hydroxybutyrate-co-valerate) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+当前 Gold Set 与流水线验证\textbf{聚焦 PET / PTT / PBT / PLA 四个成员}（PLA 取 PLLA），
+其余 8 个成员已在 \texttt{polymers} 表（L0）建好槽位，待规模化时填充。
+
+\subsection{「一条数据」的口径}
+
+\begin{tipbox}{核心约定}
+\textbf{一条 = 一个 L2 观测行 = 一个 $T_c$（或一组测量条件）下的一组结构/物性观测。}
+晶胞参数本身\textbf{不属于} L2，而是上提到 L1（晶型层），
+L2 通过 \texttt{polymorph\_id} 外键引用。
+\end{tipbox}
+
+这样设计的理由：同一晶型（如 PET 三斜 $\alpha$）在不同文献/不同条件下
+会被反复观测；若把晶胞塞进每一条观测，既冗余又会因「同一晶型不同文献给出略不同晶胞」
+而产生假冲突。把晶胞放在 L1、观测放在 L2，才能干净地表达
+「同一晶型 + 多次观测」以及「同晶型的晶胞分歧」。
+
+% ============================== 4 四层数据模型 ==============================
+\section{四层数据模型}
+
+\begin{table}[htbp]
+\centering
+\caption{四层模型（含 L2.5 扩展层）的职责划分}
+\label{tab:layers}
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+层 & 表名 & 职责 / 典型字段 \\
+\midrule
+L0 & \texttt{polymers} & 家族成员：缩写、中英文名、重复单元 SMILES、分子量、手性、Tier \\
+L1 & \texttt{polymorphs} & 晶型：晶胞 $a,b,c,\alpha,\beta,\gamma$、空间群、$Z$、$\rho_c$、
+                            纤维周期、链构象、螺旋类型 \\
+L2 & \texttt{observations} & 实测观测：DOI/年/期刊/表号、热历史（$T_c$、降温速率、退火、
+                            拉伸比）、结晶度、$T_m/T_m^0/\Delta H_f/T_g$、Avrami、生长速率 \\
+L2.5 & \texttt{atomic\_coordinates} / \texttt{properties} &
+                            原子坐标（高分子 CIF 罕见，预留）；\\
+    &  & \texttt{properties} 存放 L2 未列的其它实测值 \textbf{及被判定为分歧而保留的晶胞值} \\
+L3 & \texttt{literature\_sources} & 文献来源与抽取溯源：DOI（唯一）、题录、抽取模型版本、
+                            抽取时间、数值片段 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{单位约定（必须遵守）}
+\begin{table}[htbp]
+\centering
+\caption{入库值的规范单位}
+\label{tab:units}
+\begin{tabularx}{\textwidth}{l c l c}
+\toprule
+量 & 规范单位 & 量 & 规范单位 \\
+\midrule
+$a,b,c$, 纤维周期 & \AA{} & $T_c,T_m,T_m^0,T_g$, 退火温度 & $^\circ$C \\
+$\alpha,\beta,\gamma$ & $^\circ$ & $\Delta H_f$ & J/g \\
+$\rho_c$ & g/cm$^3$ & 生长速率 & nm/s \\
+长周期 / 片晶厚度 & nm & $t_{1/2}$ / 退火时间 & min / h \\
+结晶度 & \% & $M_w,M_n$ & g/mol \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{warnbox}{单位换算的三个陷阱（真实踩过）}
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{$\Delta H_f$：kJ/mol $\to$ J/g 必须除以重复单元分子量 MW}
+        （$\Delta H_f[\mathrm{J/g}]=\Delta H_f[\mathrm{kJ/mol}]\times1000/\mathrm{MW}$）。
+        忘记这一步会得到差 1--2 个数量级的值，是本项目\textbf{最容易出现的系统性错误}。
+        \texttt{units.py} 在缺 MW 时会\textbf{拒绝换算并置空}，而不是猜。
+  \item \textbf{K $\to$ $^\circ$C 是偏移而非比例}（$-273.15$）；
+        $^\circ$F 需 $(v-32)\times5/9$。写成乘法会得到荒谬结果。
+  \item \textbf{nm 与 \AA{} 差 10 倍}：晶胞用 \AA{}，而 SAXS 长周期常用 nm，两者极易混。
+\end{enumerate}
+\end{warnbox}
+
+% ============================== 5 技术流程 ==============================
+\section{技术流程}
+
+\begin{figure}[htbp]
+\centering
+\caption{抽取流水线总体流程}
+\begin{tikzpicture}[
+  node distance=1.6cm and 1.3cm,
+  box/.style={rectangle, draw=blue!55!black, fill=blue!6!white,
+              rounded corners=2mm, minimum height=0.9cm, minimum width=2.5cm,
+              font=\scriptsize, align=center},
+  arr/.style={-{Stealth[length=2.2mm]}, thick, blue!60!black},
+]
+% 上排
+\node[box] (a) {文献检索\\(CrossRef)};
+\node[box, right=of a] (b) {语料装配\\(PDF/摘要)};
+\node[box, right=of b] (c) {LLM 抽取\\(JSON 合约)};
+\node[box, right=of c] (d) {单位归一\\+ 数值清洗};
+% 下排（反向）
+\node[box, below=of d] (e) {sanity 校验\\(范围标记)};
+\node[box, left=of e] (f) {冲突消解\\(保留分歧)};
+\node[box, left=of f] (g) {落库\\L3$\to$L1$\to$L2};
+\node[box, left=of g] (h) {Gold Set\\评测 F1};
+% 连线
+\draw[arr] (a) -- (b);
+\draw[arr] (b) -- (c);
+\draw[arr] (c) -- (d);
+\draw[arr] (d) -- (e);
+\draw[arr] (e) -- (f);
+\draw[arr] (f) -- (g);
+\draw[arr] (g) -- (h);
+% Gold Set 旁路
+\node[box, below=1.0cm of h, draw=red!55!black, fill=red!6!white] (gs) {人工核验\\Gold Set};
+\draw[arr, red!55!black] (gs) -- (h);
+\end{tikzpicture}
+\end{figure}
+
+\subsection{阶段一：文献检索与语料装配}
+\begin{itemize}[leftmargin=1.2em]
+  \item 通过 CrossRef 检索各成员的候选文献，结果存 \texttt{data/literature/search\_results.json}。
+  \item \texttt{corpus.py} 把检索结果装配成 \texttt{job}：
+        \textbf{优先}读取本地 PDF（\texttt{data/literature/<DOI 消毒名>.pdf}，pdfplumber 提取全文），
+        \textbf{无 PDF 时用 CrossRef 摘要兜底}。
+  \item 摘要兜底只能抽到部分热/动力学量；\textbf{晶胞基本抽不到}——这是全流程最大瓶颈。
+\end{itemize}
+
+\subsection{阶段二：LLM 抽取（输出合约）}
+当前实现为\textbf{单次调用 + 严格 JSON 合约}（\texttt{response\_format=json\_object}，
+温度 0）。合约字段用\textbf{后缀固定单位}（\texttt{\_A}=\AA{}、\texttt{\_deg}=$^\circ$、
+\texttt{\_celsius}=$^\circ$C、\texttt{\_jg}=J/g、\texttt{\_nms}=nm/s 等），
+再由 \texttt{FIELD\_MAP} 映射到 schema 列名。
+
+\begin{warnbox}{三条硬规则（写进 system prompt）}
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{宁可 null 不许编}：拿不准的数值填 null 并列入 \texttt{unknown\_fields}，
+        禁止插值或猜测。
+  \item \textbf{置信度必须自评}：$\text{confidence}<0.7$ 视为不可信，\textbf{强制进入人工复核队列}。
+  \item \textbf{每条必须能回溯}：\texttt{evidence} 写清表号/图号（$\le 200$ 字符），
+        不得大段复制原文。
+\end{enumerate}
+\end{warnbox}
+
+\subsection{阶段三：归一化、sanity 与冲突消解}
+\begin{itemize}[leftmargin=1.2em]
+  \item \texttt{normalizer.py}：数值清洗 + 范围 sanity（\textbf{只标记不拦截}，保留全部记录）
+        + 按置信度分流（auto / pending\_review），并把结构字段拆到 L1、实测拆到 L2。
+  \item \texttt{store.py} 的\textbf{冲突消解（\S 4.4 规则 1）}：
+        L1 按 \texttt{(polymer\_id, polymorph\_label)} 去重，
+        若后来文献给出的晶胞相对既有值偏差 $>2\%$（\texttt{DIVERGE\_TOL}），
+        \textbf{不覆盖、不删除}，而是把分歧值写入 \texttt{properties} 并置
+        \texttt{conflict\_flag=1}——「分歧记录本身就是本项目的数据价值」。
+\end{itemize}
+
+\subsection{阶段四：落库与溯源}
+写入顺序 \texttt{L3 $\to$ L1 $\to$ L2}：
+\texttt{literature\_sources} 按 DOI upsert（记录抽取模型版本与时间）；
+\texttt{polymorphs} find-or-create；\texttt{observations} 按
+\texttt{(doi, polymer, polymorph, $T_c$)} \textbf{幂等去重}。
+
+\subsection{阶段五：Gold Set 与评测}
+\texttt{evaluate.py} 按 \texttt{(polymer\_abbr, doi)} 匹配 Gold Set 与抽取结果，
+逐数值字段算 P/R/F1（相对误差 $\le 2\%$ 视为命中），
+微平均 F1 与 \textbf{P1 验收线 80\%} 比对。Gold 未标注的字段\textbf{不计入}
+（避免惩罚抽取出的额外正确数据）。
+
+% ============================== 6 工程要点 ==============================
+\section{工程实现要点（真实踩过的坑）}
+
+\subsection{DOI 必须机器核验}
+\begin{warnbox}{血泪教训}
+凭记忆写的「经典文献」DOI \textbf{全部错误}（4/4 错，例如 PET 的某个 DOI
+实为另一篇无关论文）。\textbf{任何 DOI 写入代码/数据前，必须经 CrossRef API 核验题录}：
+\texttt{https://api.crossref.org/works/<DOI>}。
+型号、人名、卷期页的记忆都不可靠。
+\end{warnbox}
+
+\subsection{幂等与断点续跑}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{落库幂等}：同 \texttt{(doi, polymer, polymorph, $T_c$)} 已存在则跳过，
+        避免重复跑批产生脏数据。
+  \item \textbf{checkpoint}：已处理 DOI 落盘
+        \texttt{data/processed/extraction\_checkpoint.json}，
+        可 \texttt{--resume} 断点续跑，\textbf{避免重复调 API 花钱}。
+  \item \textbf{Gold Set 重导幂等}：\texttt{export-db} 先清旧 \texttt{gold} 行再插入，
+        改完 gold 可安全重导而不会累积重复。
+\end{itemize}
+
+\subsection{API 错误处理（429 要分类）}
+\begin{itemize}[leftmargin=1.2em]
+  \item \texttt{429 rate\_limit\_exceeded} $\to$ \textbf{指数退避重试}。
+  \item \texttt{429 quota\_exceeded} $\to$ \textbf{不重试}，直接抛错并提示补额度。
+  \item \texttt{401/403/404}、参数错误 $\to$ \textbf{不重试}（检查 Key / 模型 ID / 路径）。
+  \item \texttt{5xx} / 网络层错误 $\to$ 有限次退避重试。
+  \item 非流式；流式一旦吐字不重试（本项目用非流式即可）。
+\end{itemize}
+
+\subsection{稳健离群检测}
+用\textbf{中位数 + MAD}（$\mathrm{MAD}$ 乘以 $1.4826$）而非均值$\pm$标准差——
+后者本身会被离群值污染。配合 sanity 区间宽松标记（\textbf{只标记不删}）。
+
+\subsection{合规与版权}
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{PoLyInfo 仅交叉校验，绝不可入库}（NIMS 版权 + 注册制）。
+  \item 只存\textbf{数值性事实 + 出处定位}，不整段复制原文、不复制图表。
+  \item PDF \textbf{已 gitignore，不入库不分发}；CIF 原始抓取目录同样排除。
+  \item 每条抽取值\textbf{必须可回溯单一 DOI}；无 DOI 不入库。
+\end{itemize}
+
+% ============================== 7 当前进展 ==============================
+\section{当前进展与实测数据}
+
+\subsection{开放获取可获取性实测}
+\label{sec:oa}
+对 60 条候选文献做分层抽样实测\textbf{「是否真能自动下载到 PDF」}，
+而非只看 Unpaywall 的 \texttt{is\_oa} 标记：
+
+\begin{table}[htbp]
+\centering
+\caption{全文可获取性实测（$N=60$）}
+\label{tab:oa}
+\begin{tabular}{l c c l}
+\toprule
+状态 & 条数 & 占比 & 含义 \\
+\midrule
+closed      & 49 & 81.7\% & 完全封闭，需订阅/馆际互借 \\
+oa\_landing &  9 & 15.0\% & 标为 OA 但只有落地页，需浏览器会话，\textbf{脚本下不到} \\
+oa\_pdf     &  2 &  3.3\% & 确有直链可自动下载 PDF \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{warnbox}{结论：不要把 \texttt{is\_oa} 当作「可自动获取」}
+\texttt{is\_oa} 会把「只有落地页」也算作开放，\textbf{高估自动化获取能力约 5.5 倍}。
+真实可自动下载 PDF 的仅 \textbf{3.3\%}。
+自动抓取\textbf{无法}支撑规模化（需 $\ge 300$ 条）；
+必须走\textbf{学校图书馆订阅 / 馆际互借 / 人工下载 PDF}。
+\end{warnbox}
+
+\subsection{Gold Set 基准：20 条权威晶胞}
+Gold Set 20 条（PET/PTT/PBT/PLA 各 5 条）已预填，
+数值取自 CrossRef 核验过的\textbf{经典结构文献}：
+
+\begin{table}[htbp]
+\centering
+\caption{四成员的权威晶胞与热力学参考值（预填，待人工复核）}
+\label{tab:cells}
+\footnotesize
+\begin{tabular}{l l c c c c c c c}
+\toprule
+成员 & 晶系 / 空间群 & $a$ & $b$ & $c$ & $\alpha$ & $\beta$ & $\gamma$ & $\rho_c$ \\
+     &              & \AA{} & \AA{} & \AA{} & $^\circ$ & $^\circ$ & $^\circ$ & g/cm$^3$ \\
+\midrule
+PET  & 三斜 / $P\bar{1}$   & 4.56  & 5.94  & 10.75 & 98.5 & 118.0 & 112.0 & 1.455 \\
+PBT  & 三斜 / $P1$ ($\alpha$) & 4.83  & 5.94  & 11.59 & 99.7 & 115.2 & 110.8 & 1.40  \\
+PTT  & 三斜 / $P\bar{1}$   & 4.64  & 6.22  & 18.64 & 98.4 & 93.0  & 111.5 & 1.43  \\
+PLLA & 正交 / $P2_12_12_1$ ($\alpha$) & 10.68 & 6.17 & 28.86 & 90 & 90 & 90 & 1.29 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{对应热力学量与来源 DOI}
+\begin{tabular}{l c c c c l}
+\toprule
+成员 & $T_m$ & $T_m^0$ & $T_g$ & $\Delta H_f$ & 来源 DOI \\
+     & $^\circ$C & $^\circ$C & $^\circ$C & J/g & \\
+\midrule
+PET  & 256 & --  & 80 & 140 & \texttt{10.1098/rspa.1954.0273} \\
+PBT  & 223 & --  & 45 & 140 & \texttt{10.1002/pol.1975.180131109} \\
+PTT  & 228 & 237 & 40 & --  & \texttt{10.1016/0032-3861(79)90064-8} \\
+PLLA & 175 & --  & 60 & 93  & \texttt{10.1021/ma001630o} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}[leftmargin=1.2em]
+  \item 校验：\texttt{validate} \textbf{0 问题}，20/20 全填。
+  \item 状态：\texttt{confidence=medium}，\texttt{notes} 标注「自动预填·需人工复核」；
+        \texttt{ref\_table}（表/图号）\textbf{仍为空}，需打开原文补。
+  \item 主库：\texttt{observations} 已写入 \textbf{20 条 gold}，
+        \texttt{polymorphs} \textbf{4 条}（每成员一个 $\alpha$ 晶型）。
+  \item 落库时把预填标记带入（\texttt{reviewed\_by='auto-pre-fill'}、
+        \texttt{extraction\_confidence=0.5}），
+        \textbf{避免未核验预填被误当最终真值}。
+\end{itemize}
+
+\subsection{流水线贯通验证}
+无需密钥即可用 \texttt{mock} 后端跑通全链路（已实测 5 篇，全部正确产出）：
+\begin{lstlisting}[style=common]
+python -m src.extraction.pipeline --backend mock --limit 5 --dry-run \
+       --out data/processed/extraction_output_mock.json
+# -> 处理 5 篇 | 解析失败 0 | 置信>=0.7(auto) 0 | 待人工复核 5
+\end{lstlisting}
+mock 后端置信度固定 0.6 $<0.7$，因此全部进入 \texttt{pending\_review}，
+正好验证了「低置信强制进人工复核队列」的逻辑。
+
+\begin{warnbox}{已发现的关键缺口：基准对齐}
+\texttt{evaluate.py} 按 \texttt{(polymer, doi)} 匹配，
+但当前 Gold Set 每成员 5 条\textbf{共用同一个经典 DOI}（共 4 个 DOI），
+导致（a）与真实抽取产出的文献 DOI 对不上，\textbf{实测匹配 0 条}；
+（b）\texttt{\_load\_gold} 按 DOI 建索引会把同 DOI 的 5 条\textbf{压成 1 条}。
+\begin{itemize}
+  \item 当前 Gold Set 实质是「经典值知识库」，\textbf{尚不是}「20 篇文档的基准」。
+  \item 修复方向：给 20 条各分配一个\textbf{独立且确为均聚物晶体}的真实 DOI，
+        并从\textbf{对应论文}填值，使 \texttt{(polymer, doi)} 能与抽取结果对齐。
+\end{itemize}
+\end{warnbox}
+
+% ============================== 8 运行手册 ==============================
+\section{如何运行下去（操作手册）}
+
+\subsection{前置条件}
+\begin{enumerate}[leftmargin=1.6em]
+  \item Python 依赖：\texttt{pip install -r requirements.txt}（pdfplumber 等）。
+  \item \textbf{真实抽取}需环境变量 \texttt{TOKENPLAN\_API\_KEY}\\
+        （墨点计划 OpenAI 兼容接口，默认模型 \texttt{deepseek-v4-flash-0731}）。\\
+        无密钥时只能用 \texttt{mock} 后端跑框架自测。
+  \item \textbf{晶胞抽取}需把 PDF 全文放到\\
+        \texttt{data/literature/<DOI~消毒名>.pdf}\\
+        （命名与 \texttt{corpus.pdf\_path\_for} 一致：非字母数字换成下划线）。
+\end{enumerate}
+
+\subsection{常用命令}
+\begin{lstlisting}[style=common]
+# --- Gold Set ---
+python src/annotation/gold_set_annotator.py stats      # 覆盖情况
+python src/annotation/gold_set_annotator.py validate   # 校验（0 问题才可用）
+python src/annotation/gold_set_annotator.py export-db  # 幂等写入主库（gold）
+
+# --- 流水线：先 mock 自测（无需密钥）---
+python -m src.extraction.pipeline --backend mock --limit 10 --dry-run
+
+# --- 流水线：真实抽取（需密钥 + PDF）---
+export TOKENPLAN_API_KEY=<你的密钥>
+python -m src.extraction.pipeline --backend tokenplan \
+       --polymers PET,PBT,PTT,PLA --resume
+
+# --- 评测 ---
+python -m src.extraction.evaluate \
+       --extracted data/processed/extraction_output.json --tol 0.02
+
+# --- 论文编译（需两遍）---
+cd paper && xelatex -interaction=nonstopmode main.tex && xelatex -interaction=nonstopmode main.tex
+\end{lstlisting}
+
+\subsection{验收指标}
+\textbf{P1 验收：字段级 F1 $\ge 80\%$}。未达标则\textbf{不进入规模化}，
+需提高人工复核比例或改进 prompt。
+
+% ============================== 9 展望 ==============================
+\section{展望}
+
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{规模化到 $\ge 300$ 条}：先把 12 个 Tier1 成员全部铺开，
+        重点解决全文获取（图书馆订阅 / 馆际互借）。
+  \item \textbf{把 Gold Set 变成真正的 20-文档基准}：补齐独立 DOI 与 \texttt{ref\_table}，
+        让 \texttt{evaluate} 真正跑出可信 F1。
+  \item \textbf{改进抽取}：在当前单轮 JSON 合约基础上探索\textbf{两阶段}
+        （先定位候选表/图，再精抽数值），提升晶胞抽取召回。
+  \item \textbf{补 L2.5}：接入原子坐标（若有高分子 CIF）与更多物性（\texttt{properties}）。
+  \item \textbf{检索与可视化前端}：把四层模型暴露为查询接口，
+        支持「按聚合物 + 晶型 + $T_c$ 区间」检索与冲突可视化。
+  \item \textbf{交付}：中文核心期刊论文（结题硬交付）+
+        后续英文投稿（锁定\textbf{非 OA} 免/低版面费期刊，OA 版面费约 1.8 万元超预算）。
+\end{enumerate}
+
+% ============================== 10 合规红线 ==============================
+\section{合规红线速查}
+
+\begin{table}[htbp]
+\centering
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+红线 & 说明 \\
+\midrule
+单一 DOI 可回溯 & 每个抽取值必须挂单一 DOI；无 DOI 不入库 \\
+DOI 必机器核验 & 写库前经 CrossRef 核验题录，禁止凭记忆写 DOI \\
+PoLyInfo 不入库 & 仅作交叉校验，NIMS 版权 + 注册制 \\
+不复制原文 & 只存数值性事实 + 表/图号定位，不整段复制、不复制图表 \\
+PDF 不入库 & \texttt{.gitignore} 已排除，不分发受版权全文 \\
+金标准须人工 & Gold Set 数值必须由人工打开原文核验；脚本只能填书目，
+                \textbf{不得臆测晶胞/热力学数值} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================== 附录 ==============================
+\appendix
+\section{模块一览}
+\begin{table}[htbp]
+\centering
+\footnotesize
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+模块 & 职责 \\
+\midrule
+\texttt{src/database/schema.sql} & 四层表结构与单位注释（v1.1） \\
+\texttt{src/database/init\_db.py} & 建库与 12 个 Tier1 成员初始化 \\
+\texttt{src/annotation/shortlist.py} & 文献候选排序（已覆盖 12 成员同义词） \\
+\texttt{src/annotation/verify\_refs.py} & CrossRef DOI 题录核验 \\
+\texttt{src/annotation/oa\_survey.py} & 开放获取可获取性分层实测 \\
+\texttt{src/annotation/gold\_set\_annotator.py} & Gold Set 标注、校验、\textbf{幂等}落库、基准对比 \\
+\texttt{src/annotation/fill\_gold\_set\_prefill.py} & Gold Set 经典值预填 \\
+\texttt{src/annotation/repoint\_offtopic\_dois.py} & off-topic 记录 DOI 改挂 \\
+\texttt{src/extraction/corpus.py} & 语料装配（PDF 优先，摘要兜底） \\
+\texttt{src/extraction/extractor.py} & 调 LLM + 解析 JSON + 映射 schema 列名 \\
+\texttt{src/extraction/llm\_client.py} & backends: mock / tokenplan（429 分类、退避） \\
+\texttt{src/extraction/normalizer.py} & 单位归一、清洗、sanity、置信分流、L1/L2 拆分 \\
+\texttt{src/extraction/units.py} & 单位换算（含 kJ/mol$\to$J/g 需 MW） \\
+\texttt{src/extraction/store.py} & 落库（L3$\to$L1$\to$L2）、去重、冲突消解 \\
+\texttt{src/extraction/pipeline.py} & 编排 + checkpoint + dry-run \\
+\texttt{src/extraction/evaluate.py} & 与 Gold Set 对比，字段级 P/R/F1 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
