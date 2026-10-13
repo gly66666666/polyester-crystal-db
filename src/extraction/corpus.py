@@ -49,17 +49,40 @@ def _pdf_text(doi: str) -> Optional[str]:
         return None
 
 
+def _classify_fn():
+    """延迟导入语料质量分类器（跨目录：src/annotation/corpus_quality.py）。
+
+    背景：search_results.json 含大量无关条目（缩写歧义、小分子晶体结构、
+    补充材料 .s001、PDB、审稿文件），直接跑会白白消耗 API 额度。
+    """
+    import sys
+    ann = PROJECT_ROOT / "src" / "annotation"
+    s = str(ann)
+    if s not in sys.path:
+        sys.path.insert(0, s)
+    from corpus_quality import classify  # noqa: E402
+    return classify
+
+
 def build_jobs(polymers: list[str] | None = None, limit: int | None = None,
-               require_text: bool = False) -> list[dict]:
+               require_text: bool = False, on_topic_only: bool = False) -> list[dict]:
+    """装配抽取任务。
+
+    on_topic_only=True 时只保留确为该均聚物晶体/结晶研究的条目
+    （过滤缩写歧义、小分子晶体结构、补充材料、PDB、审稿文件、共聚/共混等）。
+    """
     if not SEARCH_PATH.exists():
         raise FileNotFoundError("未找到 search_results.json，请先完成任务8文献检索。")
     data = json.loads(SEARCH_PATH.read_text(encoding="utf-8"))
 
+    clf = _classify_fn() if on_topic_only else None
     jobs: list[dict] = []
     for poly, items in data.items():
         if polymers and poly not in polymers:
             continue
         for it in items:
+            if clf and clf(it.get("title", ""), it.get("doi", ""), poly) != "ontopic":
+                continue
             text = _pdf_text(it.get("doi")) or it.get("abstract") or ""
             if require_text and not text.strip():
                 continue

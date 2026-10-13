@@ -34,13 +34,22 @@ OUT_PATH = PROJECT_ROOT / "data" / "processed" / "corpus_quality.json"
 
 TARGETS = ["PET", "PTT", "PBT", "PLA"]
 
-# 成员同义词（标题里出现任一即认为在谈该聚合物）
+# 成员同义词（标题里出现任一即认为在谈该聚合物）—— 覆盖全部 12 个 Tier1 成员
 SYNONYMS = {
-    "PET": ["ethylene terephthalate", "(pet)", "poly(ethylene terephthalate)"],
-    "PTT": ["trimethylene terephthalate", "polytrimethylene", "(ptt)", "3gt"],
-    "PBT": ["butylene terephthalate", "tetramethylene terephthalate",
-            "(pbt)", "polybutylene terephthalate"],
-    "PLA": ["lactic acid", "lactide", "polylactide", "(pla)"],
+    "PET":  ["ethylene terephthalate", "(pet)", "poly(ethylene terephthalate)"],
+    "PTT":  ["trimethylene terephthalate", "polytrimethylene", "(ptt)", "3gt"],
+    "PBT":  ["butylene terephthalate", "tetramethylene terephthalate",
+             "(pbt)", "polybutylene terephthalate"],
+    "PEN":  ["ethylene naphthalate", "(pen)", "poly(ethylene naphthalate)"],
+    "PBN":  ["butylene naphthalate", "(pbn)", "poly(butylene naphthalate)"],
+    "PLA":  ["lactic acid", "lactide", "polylactide", "(pla)"],
+    "PGA":  ["glycolic acid", "polyglycolide", "(pga)", "poly(glycolic acid)"],
+    "PCL":  ["caprolactone", "(pcl)", "poly(caprolactone)"],
+    "PBS":  ["butylene succinate", "(pbs)", "poly(butylene succinate)"],
+    "PBSA": ["succinate-co-adipate", "butylene succinate-co-adipate", "(pbsa)"],
+    "PHB":  ["hydroxybutyrate", "(phb)", "poly(3-hydroxybutyrate)"],
+    "PHBV": ["hydroxybutyrate-co-valerate", "(phbv)",
+             "poly(3-hydroxybutyrate-co-3-hydroxyvalerate)"],
 }
 
 # 缩写歧义/医学影像/光热治疗 —— 与高分子结晶无关
@@ -81,7 +90,9 @@ def classify(title: str, doi: str, polymer: str) -> str:
         return "junk"
     if any(k in t for k in OFFTOPIC_TERMS):
         return "offtopic"
-    ident = any(s in t for s in SYNONYMS[polymer])
+    # 防御：未知成员不至于 KeyError，退化为按缩写匹配
+    syns = SYNONYMS.get(polymer, [polymer.lower()])
+    ident = any(s in t for s in syns)
     cryst = any(k in t for k in CRYST_TERMS)
     return "ontopic" if (ident and cryst) else "offtopic"
 

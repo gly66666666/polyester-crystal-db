@@ -58,10 +58,14 @@ def main() -> None:
     ap.add_argument("--resume", dest="resume", action="store_true", default=True)
     ap.add_argument("--no-resume", dest="resume", action="store_false")
     ap.add_argument("--require-text", action="store_true", help="跳过无文本（无PDF且无摘要）的条目")
+    ap.add_argument("--on-topic-only", action="store_true",
+                    help="只处理 on-topic 条目（过滤缩写歧义/小分子晶体结构/补充材料/PDB/审稿文件/共聚共混），"
+                         "强烈建议开启以免浪费 API 额度")
     args = ap.parse_args()
 
     polymers = [p.strip().upper() for p in args.polymers.split(",")] if args.polymers else None
-    jobs = build_jobs(polymers=polymers, limit=args.limit, require_text=args.require_text)
+    jobs = build_jobs(polymers=polymers, limit=args.limit, require_text=args.require_text,
+                      on_topic_only=args.on_topic_only)
     if not jobs:
         print("✗ 没有可处理的任务，请检查 --polymers / 文献检索结果。")
         sys.exit(1)
