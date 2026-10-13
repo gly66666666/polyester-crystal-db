@@ -1,0 +1,76 @@
+{
+  "_note": "公开权威来源的同晶型参考值（非逐篇核验），仅供 sanity 检查与教学参考。**不可**作为 evaluate 的 gold，也**未**绑定到下列任何单一 DOI。逐篇精确值请以各文献原文为准。",
+  "PET": {
+    "crystal_system": "triclinic",
+    "space_group": "P-1",
+    "a": 4.56,
+    "b": 5.94,
+    "c": 10.75,
+    "alpha": 98.5,
+    "beta": 118.0,
+    "gamma": 112.0,
+    "z": 1,
+    "rho_crystal": 1.455,
+    "tm": 256.0,
+    "tg": 80.0,
+    "delta_hf": 140.0,
+    "sources": [
+      "Daubeny/Bunn/Brown 1954 (10.1098/rspa.1954.0273)"
+    ]
+  },
+  "PBT": {
+    "crystal_system": "triclinic",
+    "space_group": "P1",
+    "a": 4.83,
+    "b": 5.94,
+    "c": 11.59,
+    "alpha": 99.7,
+    "beta": 115.2,
+    "gamma": 110.8,
+    "z": 1,
+    "rho_crystal": 1.4,
+    "tm": 223.0,
+    "tg": 45.0,
+    "delta_hf": 140.0,
+    "sources": [
+      "Yokouchi 1976 / Mencik 1975 系列；注意 Mencik 1975 单篇报 c≈11.3~11.62、γ≈113.8"
+    ]
+  },
+  "PTT": {
+    "crystal_system": "triclinic",
+    "space_group": "P-1",
+    "a": 4.64,
+    "b": 6.22,
+    "c": 18.64,
+    "alpha": 98.4,
+    "beta": 93.0,
+    "gamma": 111.5,
+    "z": 2,
+    "rho_crystal": 1.43,
+    "tm": 228.0,
+    "tm0": 237.0,
+    "tg": 40.0,
+    "sources": [
+      "Poulin-Dandurand 系列；注意 Desborough 1979 报 a=4.59/b=6.21/c=18.31/β≈90"
+    ]
+  },
+  "PLA": {
+    "crystal_system": "orthorhombic",
+    "space_group": "P212121",
+    "a": 10.68,
+    "b": 6.17,
+    "c": 28.86,
+    "alpha": 90.0,
+    "beta": 90.0,
+    "gamma": 90.0,
+    "z": 2,
+    "rho_crystal": 1.29,
+    "tm": 175.0,
+    "tg": 60.0,
+    "delta_hf": 93.0,
+    "helix_type": "10_3",
+    "sources": [
+      "Alemán 2001 (10.1021/ma001630o) 等 α 型报道"
+    ]
+  }
+}

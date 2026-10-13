@@ -1,0 +1,2040 @@
+{
+  "PET": {
+    "ontopic": [
+      {
+        "doi": "10.1016/0032-3861(88)90201-7",
+        "title": "The crystal modulus and structure of oriented poly(ethylene terephthalate)",
+        "year": 1988,
+        "journal": "Polymer",
+        "verified": true,
+        "cr_title": "The crystal modulus and structure of oriented poly(ethylene terephthalate)",
+        "cr_year": 1988,
+        "cr_journal": "Polymer"
+      },
+      {
+        "doi": "10.1016/0032-3861(95)91437-c",
+        "title": "Morphology and crystal structure of an a axis oriented, highly crystalline poly(ethylene terephthalate)",
+        "year": 1995,
+        "journal": "Polymer",
+        "verified": true,
+        "cr_title": "Morphology and crystal structure of an a axis oriented, highly crystalline poly(ethylene terephthalate)",
+        "cr_year": 1995,
+        "cr_journal": "Polymer"
+      }
+    ],
+    "offtopic": [
+      {
+        "doi": "10.1002/crat.201300369",
+        "title": "Isothermal crystallization behavior and crystal structure of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters",
+        "year": 2014,
+        "journal": "Crystal Research and Technology"
+      },
+      {
+        "doi": "10.1002/polb.21032",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/butylene terephthalate) copolyesters compared with poly(ethylene/trimethylene terephthalate) copolyesters",
+        "year": 2007,
+        "journal": "Journal of Polymer Science Part B: Polymer Physics"
+      },
+      {
+        "doi": "10.1201/b21419-23",
+        "title": "The Influence of Structure Molecular Level on Properties for Blends Poly(Ethylene Terephthalate)/Poly(Butylene Terephthalate)",
+        "year": 2016,
+        "journal": "Chemical Analysis"
+      },
+      {
+        "doi": "10.1016/j.polymer.2005.04.030",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+        "year": 2005,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1515/9783110610833-007",
+        "title": "7 Single crystal methods",
+        "year": 2021,
+        "journal": "X-Ray Structure Analysis"
+      },
+      {
+        "doi": "10.2116/xraystruct.26.3",
+        "title": "Synthesis and Crystal Structure of [C6H4OCH3NH3]2BiCl5",
+        "year": 2010,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1515/9783110640304-006",
+        "title": "6. Recycling technologies for polyethylene terephthalate",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1515/9783110640304-001",
+        "title": "1. Introduction to polyethylene terephthalate recycling",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1007/978-0-387-30160-0_8932",
+        "title": "Polyethylene terephthalate (PET, polyethylene glycol terephthalate)",
+        "year": 2007,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.1515/9783110640304-009",
+        "title": "9. Other products manufactured from recycled polyethylene terephthalate",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1515/9783110640304-003",
+        "title": "3. Brief history of the recycling of polyethylene terephthalate",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1515/9783110640304-007",
+        "title": "7. Testing and characterisation of recycled polyethylene terephthalate products",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1515/9783110640304-008",
+        "title": "8. Food-grade products made from recycled polyethylene terephthalate",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1515/9783110640304-002",
+        "title": "2. Overview of the world market for recycled polyethylene terephthalate",
+        "year": 2019,
+        "journal": "Recycling of Polyethylene Terephthalate"
+      },
+      {
+        "doi": "10.1107/s0365110x65004164",
+        "title": "Crystallographic data for triclinic 5-formylvanillic acid",
+        "year": 1965,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1017/s0885715600009714",
+        "title": "Systematic crystallographic refinement of triclinic unit cells",
+        "year": 1998,
+        "journal": "Powder Diffraction"
+      },
+      {
+        "doi": "10.1039/d0ce01813a",
+        "title": "Unveiling the crystallographic origin of mechanochemically induced monoclinic to triclinic phase transformation in WO\n                    <sub>3</sub>",
+        "year": 2021,
+        "journal": "CrystEngComm"
+      },
+      {
+        "doi": "10.1016/0022-2836(76)90063-2",
+        "title": "Structures of triclinic mono- and Di-N-Acetylglucosamine: Lysozyme complexes—A crystallographic study",
+        "year": 1976,
+        "journal": "Journal of Molecular Biology"
+      },
+      {
+        "doi": "10.1016/0927-6513(95)00087-9",
+        "title": "Crystallographic site probing in the triclinic CHA-like AlPO4 by 27Al 2D quintuple-quantum NMR",
+        "year": 1996,
+        "journal": "Microporous Materials"
+      },
+      {
+        "doi": "10.1107/s0365110x6600416x",
+        "title": "Triclinic cell parameters from one crystal setting",
+        "year": 1966,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1021/bi00626a028",
+        "title": "Crystallographic studies of protein denaturation and renaturation. 2. Sodium dodecyl sulfate induced structural changes in triclinic lysozyme",
+        "year": 1977,
+        "journal": "Biochemistry"
+      },
+      {
+        "doi": "10.1017/s0885715600014019",
+        "title": "Exhaustive indexing of triclinic powder diffraction patterns with known unit cell parameters",
+        "year": 1994,
+        "journal": "Powder Diffraction"
+      },
+      {
+        "doi": "10.1021/ic50116a005",
+        "title": "Crystallographic determination of stereochemistry for the triclinic and tetragonal modifications of a bis-bidentate metal complex, bis(N-tert-butylpyrrole-2-carbaldimino)copper(II)",
+        "year": 1972,
+        "journal": "Inorganic Chemistry"
+      },
+      {
+        "doi": "10.1016/s0921-4526(03)00401-0",
+        "title": "The minimal number of parameters in triclinic crystal-field potentials",
+        "year": 2003,
+        "journal": "Physica B: Condensed Matter"
+      },
+      {
+        "doi": "10.7554/elife.06744.005",
+        "title": "Figure 1—figure supplement 2. Electron density for different crystal forms of the MutSΔC800/MutLLN40 complex.",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1360/zb1994-24-9-930",
+        "title": "聚碳酸酯/聚对苯二甲酸乙二醇酯共混体酯交换反应机理",
+        "year": 1994,
+        "journal": "Science in China Series B-Chemistry, Life Sciences &amp; Earth Sciences (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1987-32-18-1396",
+        "title": "对苯二酚及己二醇对苯二甲酸共聚酯的液晶行为",
+        "year": 1987,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1981-26-17-1045",
+        "title": "聚对苯二甲酸聚四亚甲基醚二酯的结晶",
+        "year": 1981,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1992-37-1-43",
+        "title": "聚对苯二甲酸乙二醇酯驻极体TSC谱中&amp;tau;峰的本质研究",
+        "year": 1992,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1986-31-12-960",
+        "title": "二元酚及丁二醇对苯二甲酸共聚酯的液晶性质",
+        "year": 1986,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1977-22-11-504",
+        "title": "五味子醇甲对溴苯甲酸酯晶体结构的测定",
+        "year": 1977,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1980-25-20-960",
+        "title": "低温等离子体对聚对苯二甲酸乙二酯的变性处理",
+        "year": 1980,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.3724/j.issn.1000-0518.2007.6.660",
+        "title": "二正丁基锡二2-(2-甲酰基苯氧基)乙酸酯的合成、晶体结构及杀菌活性",
+        "year": 2007,
+        "journal": "Chinese Journal of Applied Chemistry"
+      },
+      {
+        "doi": "10.1360/zb1986-16-4-337",
+        "title": "2,3-二氰基-2,3-二苯基丁二酸二乙酯的两种异构体的晶体结构和分子结构",
+        "year": 1986,
+        "journal": "Science in China Series B-Chemistry, Biological, Agricultural, Medical &amp; Earth Sciences (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1989-34-8-587",
+        "title": "5-取代丙二酸亚异丙酯的结构研究&amp;mdash;&amp;mdash;5-(苯亚甲基)-2,2-二甲基-1,3-二氧杂环己烷-4,6-二酮的晶体结构和电子结构以及分子力学构象分析",
+        "year": 1989,
+        "journal": "Chinese Science Bulletin"
+      }
+    ],
+    "junk": [
+      {
+        "doi": "10.2210/pdb9kl9/pdb",
+        "title": "crystal structure of a mutant Poly(Ethylene terephthalate) hydrolase",
+        "year": 2025,
+        "journal": "Worldwide Protein Data Bank"
+      },
+      {
+        "doi": "10.1021/acs.macromol.0c00646.s001",
+        "title": "Effects of Rigid Amorphous Fraction and Lamellar Crystal Orientation on Electrical Insulation of Poly(ethylene terephthalate) Films",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.3c02511.s001",
+        "title": "Xray Scattering Analyses on an Aggregation Structure of Poly(ethylene terephthalate) Films under Bending Deformation",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsomega.8b03280.s001",
+        "title": "Higher-Order Structure in Amorphous Poly(ethylene terephthalate)/Graphene Nanocomposites and Its Correlation with Bulk Mechanical Properties",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.51",
+        "title": "Crystal Structure of Ganciclovir",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.3",
+        "title": "Crystal Structure of Guanfacine Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.23",
+        "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2210/pdb9k2j/pdb",
+        "title": "X-ray crystal structure of 3-hydroxyisobutyrate dehydrogenase",
+        "year": 2025,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/om700344q.s001",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.27.21",
+        "title": "Synthesis and Crystal Structure of LiLaP4O12",
+        "year": 2011,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/om700344q.s002",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.47",
+        "title": "Addendum: Crystal Structure of Guanfacine Hydrochloride [X-ray Structure Analysis Online, Vol. 25, p. 3 (2009)]",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/acs.estlett.5c00190.s001",
+        "title": "Complete Enzymatic Depolymerization of Polyethylene Terephthalate (PET) Plastic Using a Saccharomyces cerevisiae-Based Whole-Cell Biocatalyst",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acssuschemeng.4c00363.s001",
+        "title": "One-Pot Microbial Cell Factory Strategy for the Production of Protocatechuic Acid from Polyethylene Terephthalate Waste",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1109/nssmic.2011.6152661",
+        "title": "Evaluation of high density pixilated crystal blocks with SiPM readout as candidates for PET/MR detectors in a small animal PET insert",
+        "year": 2011,
+        "journal": "2011 IEEE Nuclear Science Symposium Conference Record"
+      },
+      {
+        "doi": "10.1109/trpms.2026.3666031/mm1",
+        "title": "Deep learning for PET detector crystal segmentation_supp1-3666031.docx",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/cbmi.5c00147.s001",
+        "title": "Targeted PET Imaging of Atherosclerosis via Low-Density Lipoprotein Click Chemistry with Nanoparticles",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1109/tns.2012.2201958",
+        "title": "Evaluation of High Density Pixellated Crystal Blocks With SiPM Readout as Candidates for PET/MR Detectors in a Small Animal PET Insert",
+        "year": 2012,
+        "journal": "IEEE Transactions on Nuclear Science"
+      },
+      {
+        "doi": "10.1002/jnr.25253/v1/review1",
+        "title": "Review for \"PET imaging of synaptic density in Parkinsonian disorders\"",
+        "year": 2023,
+        "journal": ""
+      },
+      {
+        "doi": "10.1002/jnr.25253/v2/review1",
+        "title": "Review for \"PET imaging of synaptic density in Parkinsonian disorders\"",
+        "year": 2023,
+        "journal": ""
+      },
+      {
+        "doi": "10.1109/trpms.2026.3690934/mm1",
+        "title": "Generation of brain PET synaptic density imaging from MRI and FDG-PET using a 3D Multi-stage Residual U-Net_supp1-3690934.pdf",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c00245.s001",
+        "title": "Toward Monodomain Nematic Liquid Crystal Elastomers of Arbitrary Thickness through PET-RAFT Polymerization",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1002/jnr.25253/v1/decision1",
+        "title": "Decision letter for \"PET imaging of synaptic density in Parkinsonian disorders\"",
+        "year": 2023,
+        "journal": ""
+      }
+    ]
+  },
+  "PTT": {
+    "ontopic": [
+      {
+        "doi": "10.1021/ma000210w",
+        "title": "Crystal Structure and Banded Spherulite of Poly(trimethylene terephthalate)",
+        "year": 2000,
+        "journal": "Macromolecules",
+        "verified": true,
+        "cr_title": "Crystal Structure and Banded Spherulite of Poly(trimethylene terephthalate)",
+        "cr_year": 2000,
+        "cr_journal": "Macromolecules"
+      },
+      {
+        "doi": "10.1016/0032-3861(79)90064-8",
+        "title": "The crystal structure of poly(trimethylene terephthalate) by X-ray and electron diffraction",
+        "year": 1979,
+        "journal": "Polymer",
+        "verified": true,
+        "cr_title": "The crystal structure of poly(trimethylene terephthalate) by X-ray and electron diffraction",
+        "cr_year": 1979,
+        "cr_journal": "Polymer"
+      },
+      {
+        "doi": "10.58837/chula.the.2003.1976",
+        "title": "Shear-induced crystallization in poly (trimethylene terephthalate)",
+        "year": null,
+        "journal": "",
+        "verified": true,
+        "cr_title": "Shear-induced crystallization in poly (trimethylene terephthalate)",
+        "cr_year": null,
+        "cr_journal": ""
+      },
+      {
+        "doi": "10.5604/01.3001.0015.6465",
+        "title": "Interfacial Structure of Polytrimethylene Terephthalate/Polyethylene Terephthalate Bicomponent Filament",
+        "year": 2022,
+        "journal": "Fibres and Textiles in Eastern Europe",
+        "verified": true,
+        "cr_title": "Interfacial Structure of Polytrimethylene Terephthalate/Polyethylene Terephthalate Bicomponent Filament",
+        "cr_year": 2022,
+        "cr_journal": "Fibres and Textiles in Eastern Europe"
+      },
+      {
+        "doi": "10.58837/chula.the.2004.2118",
+        "title": "Crystallization kinetics of poly(trimethylene terephthalate) : macroscopic and microscopic studies",
+        "year": null,
+        "journal": "",
+        "verified": true,
+        "cr_title": "Crystallization kinetics of poly(trimethylene terephthalate) : macroscopic and microscopic studies",
+        "cr_year": null,
+        "cr_journal": ""
+      }
+    ],
+    "offtopic": [
+      {
+        "doi": "10.1016/j.polymer.2005.04.030",
+        "title": "Sequence distribution and crystal structure of poly(ethylene/trimethylene terephthalate) copolyesters",
+        "year": 2005,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1515/9783110610833-007",
+        "title": "7 Single crystal methods",
+        "year": 2021,
+        "journal": "X-Ray Structure Analysis"
+      },
+      {
+        "doi": "10.1016/b978-0-443-24738-5.00096-3",
+        "title": "1,3-Propanediol and Polytrimethylene Terephthalate",
+        "year": 2026,
+        "journal": "Reference Module in Life Sciences"
+      },
+      {
+        "doi": "10.5805/ksci.2010.12.1.094",
+        "title": "A Study on the Dyeing of PTT(polytrimethylene terephthalate)/Silk Mixture Fabrics with Disperse Dyes/Acid Dyes",
+        "year": 2010,
+        "journal": "Journal of the Korean Society for Clothing Industry"
+      },
+      {
+        "doi": "10.2139/ssrn.4684567",
+        "title": "Cold Crystallization of Polytrimethylene Terephthalate and Copolymers",
+        "year": 2024,
+        "journal": ""
+      },
+      {
+        "doi": "10.4028/www.scientific.net/amr.320.191",
+        "title": "Purification of 1,3-Propanediol for Production of Polytrimethylene Terephthalate (PTT) from Biomass",
+        "year": 2011,
+        "journal": "Advanced Materials Research"
+      },
+      {
+        "doi": "10.1007/s12221-009-0508-8",
+        "title": "External configuration and crimp parameters of PTT (Polytrimethylene terephthalate)/PET (Polyethylene terephthalate) conjugated fiber",
+        "year": 2009,
+        "journal": "Fibers and Polymers"
+      },
+      {
+        "doi": "10.1016/j.supflu.2023.106026",
+        "title": "Waterless dyeing of polytrimethylene terephthalate and polybutylene terephthalate fabrics via supercritical carbon dioxide",
+        "year": 2023,
+        "journal": "The Journal of Supercritical Fluids"
+      },
+      {
+        "doi": "10.1002/mame.201900666",
+        "title": "An Insight into Phenomenology of Polytrimethylene Terephthalate Fibrillation",
+        "year": 2020,
+        "journal": "Macromolecular Materials and Engineering"
+      },
+      {
+        "doi": "10.1002/mame.202070006",
+        "title": "An Insight into Phenomenology of Polytrimethylene Terephthalate Fibrillation",
+        "year": 2020,
+        "journal": "Macromolecular Materials and Engineering"
+      },
+      {
+        "doi": "10.1186/s11671-024-03966-1",
+        "title": "Studies on (polytrimethylene terephthalate)/graphene oxide/f-MWCNT hybrid nanocomposites",
+        "year": 2024,
+        "journal": "Discover Nano"
+      },
+      {
+        "doi": "10.14293/apmc13-2025-0383",
+        "title": "Crystal Structure and Charge Density Analysis at Twin Boundary using Multiple Convergent-beam Electron Diffraction Patterns",
+        "year": 2025,
+        "journal": "Crystal Structure and Charge Density Analysis at Twin Boundary using Multiple Convergent-beam Electron Diffraction Patterns"
+      },
+      {
+        "doi": "10.1007/978-94-015-8971-0_27",
+        "title": "Electron Diffraction in Polymer Crystal Structure Analysis: Some Examples",
+        "year": 1997,
+        "journal": "Electron Crystallography"
+      },
+      {
+        "doi": "10.1093/acprof:oso/9780199580200.003.0003",
+        "title": "Crystal structure factors and symmetry",
+        "year": 2011,
+        "journal": "Electron CrystallographyElectron Microscopy and Electron Diffraction"
+      },
+      {
+        "doi": "10.1007/978-94-015-8971-0_46",
+        "title": "Electron Diffraction Patterns of Natural Antigorites: A Still Unknown Modulated Crystal Structure",
+        "year": 1997,
+        "journal": "Electron Crystallography"
+      },
+      {
+        "doi": "10.21706/ptt",
+        "title": "PTT – Persönlichkeitsstörungen. Theorie und Therapie",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1127/ejm/6/4/0465",
+        "title": "Crystal structure refinements of ilvaite: new relationships between chemical composition and crystallographic parameters",
+        "year": 1994,
+        "journal": "European Journal of Mineralogy"
+      },
+      {
+        "doi": "10.7717/peerjcs.408/fig-6",
+        "title": "Figure 6: The diagrammatic sketch of the stock board in the PTT forum (PTT-Forum, 2021).",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.33373/pta",
+        "title": "Petita",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.7816/ulakbilge-05-12-07",
+        "title": "YEŞİL LOJİSTİK UYGULAMALARI: PTT ÖRNEĞİ",
+        "year": 2017,
+        "journal": "Ulakbilge Dergisi"
+      },
+      {
+        "doi": "10.2139/ssrn.4969029",
+        "title": "Unraveling the Influence of Synthesis Parameters on the Crystallographic Characteristics and Lattice Parameters of Sapo-34/Zsm-5 Composite Zeolites",
+        "year": 2024,
+        "journal": ""
+      },
+      {
+        "doi": "10.1109/icicta.2009.528",
+        "title": "Parameters Optimization Design for the 4-PTT Parallel Robot Mechanism Based on Workspace and Dexterity",
+        "year": 2009,
+        "journal": "2009 Second International Conference on Intelligent Computation Technology and Automation"
+      },
+      {
+        "doi": "10.1360/csb1987-32-18-1396",
+        "title": "对苯二酚及己二醇对苯二甲酸共聚酯的液晶行为",
+        "year": 1987,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1981-26-17-1045",
+        "title": "聚对苯二甲酸聚四亚甲基醚二酯的结晶",
+        "year": 1981,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/zb1994-24-9-930",
+        "title": "聚碳酸酯/聚对苯二甲酸乙二醇酯共混体酯交换反应机理",
+        "year": 1994,
+        "journal": "Science in China Series B-Chemistry, Life Sciences &amp; Earth Sciences (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1986-31-12-960",
+        "title": "二元酚及丁二醇对苯二甲酸共聚酯的液晶性质",
+        "year": 1986,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1989-34-8-587",
+        "title": "5-取代丙二酸亚异丙酯的结构研究&amp;mdash;&amp;mdash;5-(苯亚甲基)-2,2-二甲基-1,3-二氧杂环己烷-4,6-二酮的晶体结构和电子结构以及分子力学构象分析",
+        "year": 1989,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1977-22-11-504",
+        "title": "五味子醇甲对溴苯甲酸酯晶体结构的测定",
+        "year": 1977,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1992-37-1-43",
+        "title": "聚对苯二甲酸乙二醇酯驻极体TSC谱中&amp;tau;峰的本质研究",
+        "year": 1992,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/zb2007-37-5-501",
+        "title": "草酸亚锡: 合成聚对苯二甲酸丙二醇酯的新催化剂",
+        "year": 2007,
+        "journal": "Science in China Series B-Chemistry (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1989-34-6-434",
+        "title": "二苯酮-胺端基聚甲基丙烯酸甲酯引发烯类单体光聚合",
+        "year": 1989,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1958-3-22-699-x",
+        "title": "对苯二甲酸和对苯二甲酸二甲酯的定量分析",
+        "year": 1958,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1016/b978-1-895198-47-8.50155-7",
+        "title": "PPT poly(propylene terephthalate)",
+        "year": 2012,
+        "journal": "Handbook of Polymers"
+      },
+      {
+        "doi": "10.1016/b978-1-895198-92-8.50168-3",
+        "title": "PPT poly(propylene terephthalate)",
+        "year": 2016,
+        "journal": "Handbook of Polymers"
+      },
+      {
+        "doi": "10.1002/9783527809080.cataz13326",
+        "title": "poly(propylene terephthalate)",
+        "year": 2020,
+        "journal": "Catalysis from A to Z"
+      },
+      {
+        "doi": "10.1002/macp.1988.021890321",
+        "title": "Influence of chemical structure on glass transition temperatures of poly(propylene terephthalate) and poly(propylene isophthalate)",
+        "year": 1988,
+        "journal": "Die Makromolekulare Chemie"
+      },
+      {
+        "doi": "10.1002/crat.201300369",
+        "title": "Isothermal crystallization behavior and crystal structure of poly(ethylene terephthalate‐co‐1,4‐cyclohexylene dimethylene terephthalate) (P(ET/CT)) copolyesters",
+        "year": 2014,
+        "journal": "Crystal Research and Technology"
+      },
+      {
+        "doi": "10.1002/(sici)1522-9505(19990501)266:1<30::aid-apmc30>3.0.co;2-3",
+        "title": "Multiblock terephthalate copolymer as impact modifier for poly(propylene)/poly(butylene terephthalate) blends",
+        "year": 1999,
+        "journal": "Die Angewandte Makromolekulare Chemie"
+      },
+      {
+        "doi": "10.1016/0032-3861(82)90224-5",
+        "title": "On the crystal structure of poly(1,4-trans-cyclohexanediyl-dimethylene terephthalate)",
+        "year": 1982,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1080/03602559.2017.1354219",
+        "title": "Melt Crystallization Behavior and Spherulitic Morphology of Poly(Trimethylene Terephthalate)/Poly(Propylene Glycol) Copolymers with Different Poly(Propylene Glycol) Molecular Weights",
+        "year": 2018,
+        "journal": "Polymer-Plastics Technology and Engineering"
+      },
+      {
+        "doi": "10.1007/978-3-642-36199-9_239-1",
+        "title": "PET (Poly(ethylene terephthalate)) and PTT (Poly(trimethylene terephthalate))",
+        "year": 2014,
+        "journal": "Encyclopedia of Polymeric Nanomaterials"
+      },
+      {
+        "doi": "10.1007/978-3-642-29648-2_239",
+        "title": "PET (Poly(ethylene terephthalate)) and PTT (Poly(trimethylene terephthalate))",
+        "year": 2015,
+        "journal": "Encyclopedia of Polymeric Nanomaterials"
+      },
+      {
+        "doi": "10.1007/978-981-19-7303-1_1",
+        "title": "Poly(Trimethylene Terephthalate): Introduction",
+        "year": 2023,
+        "journal": "Materials Horizons: From Nature to Nanomaterials"
+      },
+      {
+        "doi": "10.1007/978-981-19-7303-1_7",
+        "title": "Crystallization and Solid-State Characterization of Poly(Trimethylene Terephthalate) and Its Nanocomposites",
+        "year": 2023,
+        "journal": "Materials Horizons: From Nature to Nanomaterials"
+      },
+      {
+        "doi": "10.1016/b978-1-895198-47-8.50172-7",
+        "title": "PTT poly(trimethylene terephthalate)",
+        "year": 2012,
+        "journal": "Handbook of Polymers"
+      },
+      {
+        "doi": "10.1016/b978-1-895198-92-8.50185-3",
+        "title": "PTT poly(trimethylene terephthalate)",
+        "year": 2016,
+        "journal": "Handbook of Polymers"
+      },
+      {
+        "doi": "10.4095/102121",
+        "title": "A Triclinic Unit Cell For Oboyerite",
+        "year": 1980,
+        "journal": ""
+      },
+      {
+        "doi": "10.1107/s0365110x56000905",
+        "title": "The choice of the unit cell in the triclinic system",
+        "year": 1956,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1017/s0885715600014019",
+        "title": "Exhaustive indexing of triclinic powder diffraction patterns with known unit cell parameters",
+        "year": 1994,
+        "journal": "Powder Diffraction"
+      },
+      {
+        "doi": "10.1107/s0365110x57002054",
+        "title": "The choice of the standard unit cell in a triclinic lattice",
+        "year": 1957,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1107/s0021889876011850",
+        "title": "Estimating unit cell volumes from powder diffraction data: the triclinic case",
+        "year": 1976,
+        "journal": "Journal of Applied Crystallography"
+      },
+      {
+        "doi": "10.2138/am-2002-11-1215",
+        "title": "Structure of synthetic Na-birnessite: Evidence for a triclinic one-layer unit cell",
+        "year": 2002,
+        "journal": "American Mineralogist"
+      },
+      {
+        "doi": "10.1016/s0022-2836(95)80065-4",
+        "title": "Type I collagen packing, conformation of the triclinic unit cell",
+        "year": 1995,
+        "journal": "Journal of Molecular Biology"
+      },
+      {
+        "doi": "10.1107/s0021889877013442",
+        "title": "Estimating the unit-cell volume from one line in a powder diffraction pattern: the triclinic case",
+        "year": 1977,
+        "journal": "Journal of Applied Crystallography"
+      },
+      {
+        "doi": "10.1017/s0885715600009714",
+        "title": "Systematic crystallographic refinement of triclinic unit cells",
+        "year": 1998,
+        "journal": "Powder Diffraction"
+      }
+    ],
+    "junk": [
+      {
+        "doi": "10.1039/d6ce00128a/v1/review1",
+        "title": "Review for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1039/d6ce00128a/v1/review2",
+        "title": "Review for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1039/d6ce00128a/v2/review1",
+        "title": "Review for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1039/d6ce00128a/v2/review2",
+        "title": "Review for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1039/d6ce00128a/v2/decision1",
+        "title": "Decision letter for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1039/d6ce00128a/v1/decision1",
+        "title": "Decision letter for \"Spiral-Stacked Crystal Assembly Leading to Intensified Iridescence in Poly(trimethylene terephthalate)\"",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsami.7b15109.s001",
+        "title": "Degradable NIR-PTT Nanoagents with a Potential Cu@Cu2O@Polymer Structure",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.51",
+        "title": "Crystal Structure of Ganciclovir",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.23",
+        "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.3",
+        "title": "Crystal Structure of Guanfacine Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2210/pdb9k2j/pdb",
+        "title": "X-ray crystal structure of 3-hydroxyisobutyrate dehydrogenase",
+        "year": 2025,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.27.21",
+        "title": "Synthesis and Crystal Structure of LiLaP4O12",
+        "year": 2011,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/om700344q.s002",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/om700344q.s001",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.47",
+        "title": "Addendum: Crystal Structure of Guanfacine Hydrochloride [X-ray Structure Analysis Online, Vol. 25, p. 3 (2009)]",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/acs.inorgchem.6b01941.s001",
+        "title": "Assessment of the U3O7 Crystal Structure by Xray and Electron Diffraction",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.inorgchem.6b01941.s002",
+        "title": "Assessment of the U3O7 Crystal Structure by Xray and Electron Diffraction",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.cgd.1c00820.s001",
+        "title": "Crystal Structure of a Peculiar Polycyclic Aromatic Hydrocarbon Determined by 3D Electron Diffraction",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.cgd.4c01594.s002",
+        "title": "Revealing the Crystal Structure of the Purine Base Xanthine with Three-Dimensional (3D) Electron Diffraction",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.cgd.4c01594.s001",
+        "title": "Revealing the Crystal Structure of the Purine Base Xanthine with Three-Dimensional (3D) Electron Diffraction",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/jacs.3c14800.s001",
+        "title": "High Temperature Electron Diffraction on Organic Crystals: In Situ Crystal Structure Determination of Pigment Orange 34",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.inorgchem.5c03503.s002",
+        "title": "NMR Crystallographic Journey from Light to Heavy Atoms of Mercury(II)-DOTAM Complexes and Extraction of Related Structural Parameters",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2147/ptt",
+        "title": "Psoriasis: Targets and Therapy",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.inorgchem.5c03503.s001",
+        "title": "NMR Crystallographic Journey from Light to Heavy Atoms of Mercury(II)-DOTAM Complexes and Extraction of Related Structural Parameters",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.3c01081.s001",
+        "title": "Crystal Domains and Crystallization Kinetics of Poly(butylene terephthalate)",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb9kl9/pdb",
+        "title": "crystal structure of a mutant Poly(Ethylene terephthalate) hydrolase",
+        "year": 2025,
+        "journal": "Worldwide Protein Data Bank"
+      },
+      {
+        "doi": "10.1021/acsomega.8b00490.s001",
+        "title": "Effect of Compatibilization on Biobased Rubber-Toughened Poly(trimethylene terephthalate): Miscibility, Morphology, and Mechanical Properties",
+        "year": null,
+        "journal": ""
+      }
+    ]
+  },
+  "PBT": {
+    "ontopic": [
+      {
+        "doi": "10.1139/v85-510",
+        "title": "On the structure of poly(tetramethylene terephthalate). Structural, infrared, and Raman studies of three tetramethylene glycol dibenzoate derivatives, models for poly(tetramethylene terephthalate)",
+        "year": 1985,
+        "journal": "Canadian Journal of Chemistry",
+        "verified": true,
+        "cr_title": "On the structure of poly(tetramethylene terephthalate). Structural, infrared, and Raman studies of three tetramethylene glycol dibenzoate derivatives, models for poly(tetramethylene terephthalate)",
+        "cr_year": 1985,
+        "cr_journal": "Canadian Journal of Chemistry"
+      },
+      {
+        "doi": "10.1002/pol.1975.180131109",
+        "title": "The crystal structure of poly(tetramethylene terephthalate)",
+        "year": 1975,
+        "journal": "Journal of Polymer Science: Polymer Physics Edition",
+        "verified": true,
+        "cr_title": "The crystal structure of poly(tetramethylene terephthalate)",
+        "cr_year": 1975,
+        "cr_journal": "Journal of Polymer Science: Polymer Physics Edition"
+      },
+      {
+        "doi": "10.1021/ma00229a037",
+        "title": "Light scattering studies on the morphology and deformation mechanism of poly(tetramethylene oxide)-poly(tetramethylene terephthalate) block polymer",
+        "year": 1982,
+        "journal": "Macromolecules",
+        "verified": true,
+        "cr_title": "Light scattering studies on the morphology and deformation mechanism of poly(tetramethylene oxide)-poly(tetramethylene terephthalate) block polymer",
+        "cr_year": 1982,
+        "cr_journal": "Macromolecules"
+      }
+    ],
+    "offtopic": [
+      {
+        "doi": "10.1016/j.polymer.2005.11.051",
+        "title": "Structure development and properties of high-speed melt spun poly(butylene terephthalate)/poly(butylene adipate-co-terephthalate) bicomponent fibers",
+        "year": 2006,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1201/b21419-23",
+        "title": "The Influence of Structure Molecular Level on Properties for Blends Poly(Ethylene Terephthalate)/Poly(Butylene Terephthalate)",
+        "year": 2016,
+        "journal": "Chemical Analysis"
+      },
+      {
+        "doi": "10.1295/polymj.23.949",
+        "title": "Crystal Structure of Cyclic Dimer of Poly(butylene terephthalate)",
+        "year": 1991,
+        "journal": "Polymer Journal"
+      },
+      {
+        "doi": "10.1201/9780367694265-eppmpt56-1",
+        "title": "Poly(Butylene Adipate-Co-Terephthalate) (PBAT): A Biodegradable Polymer",
+        "year": 2025,
+        "journal": "Poly(Butylene Adipate-Co-Terephthalate) (PBAT): A Biodegradable Polymer"
+      },
+      {
+        "doi": "10.1201/9780367694265-eppmpt71-1",
+        "title": "Poly(Butylene Adipate-Co-Terephthalate) (PBAT) and Its Blends",
+        "year": 2025,
+        "journal": "Poly(Butylene Adipate-Co-Terephthalate) (PBAT) and Its Blends"
+      },
+      {
+        "doi": "10.4028/p-8jeg9d",
+        "title": "Correlation of Wear Behavior of PBT/PC Blend with Crystallographic Structure: A Comprehensive Study on Wear Rate and Crystal Structure",
+        "year": 2024,
+        "journal": "Materials Science Forum"
+      },
+      {
+        "doi": "10.1515/9783110610833-007",
+        "title": "7 Single crystal methods",
+        "year": 2021,
+        "journal": "X-Ray Structure Analysis"
+      },
+      {
+        "doi": "10.1002/0471743984.vse5683",
+        "title": "Polybutylene Terephthalate Polyesters",
+        "year": 2005,
+        "journal": "Van Nostrand's Scientific Encyclopedia"
+      },
+      {
+        "doi": "10.9713/kcer.2016.54.4.437",
+        "title": "Production of PBT(polybutylene terephthalate) Oligomer from Recycled PET(polyethylene terephthalate)",
+        "year": 2016,
+        "journal": "Korean Chemical Engineering Research"
+      },
+      {
+        "doi": "10.1002/0471740039.vec2037",
+        "title": "Polybutylene Terephthalate Polysters",
+        "year": 2005,
+        "journal": "Van Nostrand's Encyclopedia of Chemistry"
+      },
+      {
+        "doi": "10.1007/978-0-387-30160-0_8854",
+        "title": "Polybutylene terephthalate (PBTP, PBT, and polytetramethylene terephthalate)",
+        "year": 2007,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.1002/9780470114735.hawley13082",
+        "title": "Polybutylene Terephthalate",
+        "year": 2007,
+        "journal": "Hawley's Condensed Chemical Dictionary"
+      },
+      {
+        "doi": "10.1016/b978-188420717-4.50039-7",
+        "title": "Polybutylene Terephthalate",
+        "year": 1997,
+        "journal": "Handbook of Plastics Joining"
+      },
+      {
+        "doi": "10.2991/isees-18.2018.75",
+        "title": "Dynamics of Changes in Mechanical Properties of Polybutylene Terephthalate and Polybutylene Terephthalate-Polyethylene Compositions in Aggressive Liquid Media",
+        "year": 2018,
+        "journal": "Proceedings of the International Symposium “Engineering and Earth Sciences: Applied and Fundamental Research” (ISEES 2018)"
+      },
+      {
+        "doi": "10.1201/9781003066156-2",
+        "title": "Polybutylene Terephthalate",
+        "year": 2020,
+        "journal": "Engineering Thermoplastics"
+      },
+      {
+        "doi": "10.21236/ada398563",
+        "title": "(ALPHA) 2 (BETA) 1 Integrin-Induced Breast Cancer Differentiation",
+        "year": 2001,
+        "journal": ""
+      },
+      {
+        "doi": "10.21236/ada377910",
+        "title": "(ALPHA)2(BETA)1 Integrin-Induced Breast Cancer Differentiation.",
+        "year": 1999,
+        "journal": ""
+      },
+      {
+        "doi": "10.1201/b12142-4",
+        "title": "Degradation of PBT induced by various factors",
+        "year": 2006,
+        "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties"
+      },
+      {
+        "doi": "10.1128/jvi.68.11.7358-7366.1994",
+        "title": "Expression of alpha/beta interferons (IFN-alpha/beta) and their relationship to IFN-alpha/beta-induced genes in lymphocytic choriomeningitis",
+        "year": 1994,
+        "journal": "Journal of Virology"
+      },
+      {
+        "doi": "10.1201/b12142-5",
+        "title": "Stabilization of PBT",
+        "year": 2006,
+        "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties"
+      },
+      {
+        "doi": "10.1201/b12142-3",
+        "title": "Morphology of PBT",
+        "year": 2006,
+        "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties"
+      },
+      {
+        "doi": "10.1201/b12142-2",
+        "title": "Preparation of PBT",
+        "year": 2006,
+        "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties"
+      },
+      {
+        "doi": "10.1002/app.30930",
+        "title": "Mechanical and dielectric breakdown properties of PBT/TPE, PBT/PBT/PET, and PBT/antioxidant blends",
+        "year": 2009,
+        "journal": "Journal of Applied Polymer Science"
+      },
+      {
+        "doi": "10.1201/b12142-8",
+        "title": "PBT-based composite materials",
+        "year": 2006,
+        "journal": "Polybutilene Therephthalate (PBT), Synthesis and Properties"
+      },
+      {
+        "doi": "10.1127/ejm/6/4/0465",
+        "title": "Crystal structure refinements of ilvaite: new relationships between chemical composition and crystallographic parameters",
+        "year": 1994,
+        "journal": "European Journal of Mineralogy"
+      },
+      {
+        "doi": "10.1002/pc.20626",
+        "title": "Morphology, mechanical, and dielectric breakdown properties of PBT/PET/TPE, PBT/PET/PA66, PBT/PET/LMPE, and PBT/PET/TiO<sub>2</sub> blends",
+        "year": 2008,
+        "journal": "Polymer Composites"
+      },
+      {
+        "doi": "10.1201/b18757-4",
+        "title": "PBT determinations",
+        "year": 2015,
+        "journal": "Persistent, Bioaccumulative, and Toxic (PBT) Chemicals"
+      },
+      {
+        "doi": "10.1360/csb1986-31-12-960",
+        "title": "二元酚及丁二醇对苯二甲酸共聚酯的液晶性质",
+        "year": 1986,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1987-32-18-1396",
+        "title": "对苯二酚及己二醇对苯二甲酸共聚酯的液晶行为",
+        "year": 1987,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1981-26-17-1045",
+        "title": "聚对苯二甲酸聚四亚甲基醚二酯的结晶",
+        "year": 1981,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/zb1994-24-9-930",
+        "title": "聚碳酸酯/聚对苯二甲酸乙二醇酯共混体酯交换反应机理",
+        "year": 1994,
+        "journal": "Science in China Series B-Chemistry, Life Sciences &amp; Earth Sciences (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1977-22-11-504",
+        "title": "五味子醇甲对溴苯甲酸酯晶体结构的测定",
+        "year": 1977,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.12677/jocr.2018.62005",
+        "title": "Synthesis and Crystal Structure of Dibutyltin Esters of P-Nitrobenzoic Acid",
+        "year": 2018,
+        "journal": "Journal of Organic Chemistry Research"
+      },
+      {
+        "doi": "10.1360/csb1992-37-1-43",
+        "title": "聚对苯二甲酸乙二醇酯驻极体TSC谱中&amp;tau;峰的本质研究",
+        "year": 1992,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.3724/j.issn.1000-0518.2007.6.660",
+        "title": "二正丁基锡二2-(2-甲酰基苯氧基)乙酸酯的合成、晶体结构及杀菌活性",
+        "year": 2007,
+        "journal": "Chinese Journal of Applied Chemistry"
+      },
+      {
+        "doi": "10.1360/zb1986-16-4-337",
+        "title": "2,3-二氰基-2,3-二苯基丁二酸二乙酯的两种异构体的晶体结构和分子结构",
+        "year": 1986,
+        "journal": "Science in China Series B-Chemistry, Biological, Agricultural, Medical &amp; Earth Sciences (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1989-34-8-587",
+        "title": "5-取代丙二酸亚异丙酯的结构研究&amp;mdash;&amp;mdash;5-(苯亚甲基)-2,2-二甲基-1,3-二氧杂环己烷-4,6-二酮的晶体结构和电子结构以及分子力学构象分析",
+        "year": 1989,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1002/pi.1995.210380407",
+        "title": "Synthesis and properties of poly(tetramethylene terephthalate‐co‐ethylene terephthalate)–poly(tetramethylene ether) segmented copolymers",
+        "year": 1995,
+        "journal": "Polymer International"
+      },
+      {
+        "doi": "10.1007/978-0-387-30160-0_9079",
+        "title": "Poly(tetramethylene terephthalate)",
+        "year": 2007,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.1021/ma9701999",
+        "title": "Reversible Crystal Deformation of Poly(tetramethylene terephthalate) Segments in Semicrystalline Segmented Poly(ether ester) Thermoplastic Elastomers",
+        "year": 1998,
+        "journal": "Macromolecules"
+      },
+      {
+        "doi": "10.1002/macp.1979.021800913",
+        "title": "Diffusion of <i>p</i>‐nitroaniline in poly(tetramethylene oxide)‐poly(tetramethylene terephthalate) block copolymers",
+        "year": 1979,
+        "journal": "Die Makromolekulare Chemie"
+      },
+      {
+        "doi": "10.1007/978-1-4419-6247-8_9235",
+        "title": "Poly(Tetramethylene Terephthalate)",
+        "year": 2011,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.1016/0010-4361(79)90492-0",
+        "title": "Glass fiber-reinforced poly(tetramethylene terephthalate) resin composition",
+        "year": 1979,
+        "journal": "Composites"
+      },
+      {
+        "doi": "10.1002/macp.1985.021860317",
+        "title": "Crystallization behaviour of poly(ethylene terephthalate) and poly(tetramethylene terephthalate) blends",
+        "year": 1985,
+        "journal": "Die Makromolekulare Chemie"
+      },
+      {
+        "doi": "10.1007/978-0-387-30160-0_9407",
+        "title": "PTMT",
+        "year": 2007,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.31219/osf.io/zuv9p",
+        "title": "MENYONGSONG PTMT PADA DUNIA PENDIDIKAN",
+        "year": 2022,
+        "journal": ""
+      },
+      {
+        "doi": "10.31219/osf.io/mejkz",
+        "title": "EFEKTIVITAS PEMBELAJARAN SELAMA PELAKSANAAN PTMT",
+        "year": 2022,
+        "journal": ""
+      },
+      {
+        "doi": "10.31219/osf.io/upv2d",
+        "title": "MENYONGSONG PTMT PADA DUNIA PENDIDIKAN",
+        "year": 2022,
+        "journal": ""
+      },
+      {
+        "doi": "10.31219/osf.io/j9c7s",
+        "title": "AKADEMISI DALAM PENUANGAN GAGASAN, STRATEGI SERTA TANTANGAN DALAM PELAKSANAAN PTMT",
+        "year": 2022,
+        "journal": ""
+      },
+      {
+        "doi": "10.1007/978-1-4419-6247-8_9586",
+        "title": "PTMT",
+        "year": 2011,
+        "journal": "Encyclopedic Dictionary of Polymers"
+      },
+      {
+        "doi": "10.36989/didaktik.v9i04.1521",
+        "title": "EFEKTIVITAS EFEKTIVITAS PEMBELAJARAN TATAP MUKA TERBATAS (PTMT) PASCA PANDEMI DALAM MENINGKATKAN HASIL BELAJAR PESERTA DIDIK",
+        "year": 2023,
+        "journal": "Didaktik : Jurnal Ilmiah PGSD STKIP Subang"
+      },
+      {
+        "doi": "10.21831/pspmm.v6i2.216",
+        "title": "Analisis Kesulitan Siswa Menyelesaikan Soal Cerita Materi Perbandingan Pada Saat PTMT",
+        "year": 2022,
+        "journal": "Prosiding Seminar Pendidikan Matematika dan Matematika"
+      },
+      {
+        "doi": "10.1093/oso/9780199576340.003.0024",
+        "title": "Outline of a crystal structure determination",
+        "year": 2010,
+        "journal": "Crystal Structure Analysis"
+      },
+      {
+        "doi": "10.1002/app.1995.070571107",
+        "title": "Effects of catalyst on sequence distribution and transparency of poly(tetramethylene terephthalate)–poly(tetramethylene ether) segmented copolymers",
+        "year": 1995,
+        "journal": "Journal of Applied Polymer Science"
+      }
+    ],
+    "junk": [
+      {
+        "doi": "10.1021/acs.macromol.3c01081.s001",
+        "title": "Crystal Domains and Crystallization Kinetics of Poly(butylene terephthalate)",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsapm.4c00832.s001",
+        "title": "Chemical Recycling of Poly(butylene terephthalate) into Poly(ethylene brassylate-co-butylene terephthalate) with Tunable Thermal, Mechanical and Biodegradable Properties",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.8b02011.s001",
+        "title": "Stretch-Induced to Crystal Transition and Lamellae Structural Evolution of Poly(butylene adipate-ran-terephthalate) AliphaticAromatic Copolyester",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.iecr.4c03599.s001",
+        "title": "Robust Compatible Blend of Poly(butylene carbonate-co-terephthalate) and Poly(butylene adipate-co-terephthalate) toward a High Barrier Blown Film",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.0c02793.s001",
+        "title": "Effect of Block Number and Weight Fraction on the Structure and Properties of Poly(butylene terephthalate)-block-Poly(tetramethylene oxide) Multiblock Copolymers",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.8b01279.s001",
+        "title": "Process-Oriented Structure Tuning of PBT/PTHF Thermoplastic Elastomers",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.51",
+        "title": "Crystal Structure of Ganciclovir",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.3",
+        "title": "Crystal Structure of Guanfacine Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.23",
+        "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2210/pdb9k2j/pdb",
+        "title": "X-ray crystal structure of 3-hydroxyisobutyrate dehydrogenase",
+        "year": 2025,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/om700344q.s001",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.27.21",
+        "title": "Synthesis and Crystal Structure of LiLaP4O12",
+        "year": 2011,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/om700344q.s002",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsabm.4c02009.s001",
+        "title": "Cytocompatible 2D Graphitic Carbon Nitride-Modified Polybutylene Adipate Terephthalate/Polylactic Acid Hybrid Nanobiocomposites",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.iecr.9b04936.s001",
+        "title": "Heat Induced Grafting of Poly(glycidyl methacrylate) on Polybutylene Terephthalate Nonwovens for Bioseparations",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb4rt3/pdb",
+        "title": "Ternary complex crystal structure of DNA polymerase Beta with (alpha, beta)-NH-(beta,gamma)-CH2-dTTP",
+        "year": 2015,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb4rt2/pdb",
+        "title": "Ternary complex crystal structure of DNA polymerase Beta with (alpha,beta)-CH2-(beta,gamma)-NH-dTTP",
+        "year": 2015,
+        "journal": "Worldwide Protein Data Bank"
+      },
+      {
+        "doi": "10.1021/acs.jpcb.9b06859.s001",
+        "title": "Relative Solvent Exposure of the Alpha-Helix and Beta-Sheet in Water Determines the Initial Stages of Urea and Guanidinium Chloride-Induced Denaturation of Alpha/Beta Proteins",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb6imp/pdb",
+        "title": "Crystal structure of alpha-beta hydrolase (ABH) from Vibrio vulnificus",
+        "year": 2019,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb2ebn/pdb",
+        "title": "CRYSTAL STRUCTURE OF ENDO-BETA-N-ACETYLGLUCOSAMINIDASE F1, AN ALPHA(SLASH)BETA-BARREL ENZYME ADAPTED FOR A COMPLEX SUBSTRATE",
+        "year": 1995,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/ja029514j.s002",
+        "title": "A beta-Turn Structure Induced by Two Consecutive D, L-alpha-Aminoxy Acids",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.inorgchem.9b00758.s001",
+        "title": "Influence of Crystal Water on Crystal Structure, Electronic Structure, Band Structure, and Charge Separation of WO32H2O Nanosheets",
+        "year": null,
+        "journal": ""
+      }
+    ]
+  },
+  "PLA": {
+    "ontopic": [
+      {
+        "doi": "10.1021/scimeetings.1c00181",
+        "title": "Growth and dissolution of crystal nuclei in poly(L-lactic acid) (PLLA) in Tammann’s development method",
+        "year": 2021,
+        "journal": "",
+        "verified": true,
+        "cr_title": "Growth and dissolution of crystal nuclei in poly(L-lactic acid) (PLLA) in Tammann’s development method",
+        "cr_year": 2021,
+        "cr_journal": ""
+      },
+      {
+        "doi": "10.1016/j.polymer.2019.05.020",
+        "title": "Crystal structure and unique lamellar thickening for poly(l-lactide) induced by high pressure",
+        "year": 2019,
+        "journal": "Polymer",
+        "verified": true,
+        "cr_title": "Crystal structure and unique lamellar thickening for poly(l-lactide) induced by high pressure",
+        "cr_year": 2019,
+        "cr_journal": "Polymer"
+      },
+      {
+        "doi": "10.1021/ma001630o",
+        "title": "Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "year": 2001,
+        "journal": "Macromolecules",
+        "verified": true,
+        "cr_title": "Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "cr_year": 2001,
+        "cr_journal": "Macromolecules"
+      },
+      {
+        "doi": "10.1021/ma0348674",
+        "title": "Helix Distortion and Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "year": 2003,
+        "journal": "Macromolecules",
+        "verified": true,
+        "cr_title": "Helix Distortion and Crystal Structure of the α-Form of Poly(<scp>l</scp>-lactide)",
+        "cr_year": 2003,
+        "cr_journal": "Macromolecules"
+      }
+    ],
+    "offtopic": [
+      {
+        "doi": "10.1515/nano.0036.00080",
+        "title": "Structure and properties of poly(lactic acid)/poly(lactic acid)-α-cyclodextrin inclusion compound composites",
+        "year": 2018,
+        "journal": "nano Online"
+      },
+      {
+        "doi": "10.1002/9780470649848.ch5",
+        "title": "Structure and Properties of Stereocomplex‐Type Poly(Lactic Acid)",
+        "year": 2010,
+        "journal": "Poly(Lactic Acid)"
+      },
+      {
+        "doi": "10.1007/12_2016_14",
+        "title": "Amorphous Fractions of Poly(lactic acid)",
+        "year": 2017,
+        "journal": "Advances in Polymer Science"
+      },
+      {
+        "doi": "10.70675/a631a9a0z4a91z43bdzb509z18949828aa73",
+        "title": "Blends based on poly(lactic acid) : structure/rheology/processing relationship",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.58837/chula.the.2011.1123",
+        "title": "Biodegradability of microcrystalline cellulose/poly(lactic acid)-graftedmaleic anhydride/poly(lactic acid) composites",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1515/9783110610833-007",
+        "title": "7 Single crystal methods",
+        "year": 2021,
+        "journal": "X-Ray Structure Analysis"
+      },
+      {
+        "doi": "10.1201/9781003160458-11",
+        "title": "Polylactic Acid and Polylactic Acid-based Composites",
+        "year": 2022,
+        "journal": "Polylactic Acid-Based Nanocellulose and Cellulose Composites"
+      },
+      {
+        "doi": "10.1515/9783111067285-006",
+        "title": "Chapter 6. Heat-sealing properties of polylactic acid and polylactic acid composites",
+        "year": 2023,
+        "journal": "Polylactic Acid Composites"
+      },
+      {
+        "doi": "10.1016/c2010-0-65966-9",
+        "title": "Polylactic Acid",
+        "year": 2013,
+        "journal": ""
+      },
+      {
+        "doi": "10.1016/c2017-0-01057-1",
+        "title": "Polylactic Acid",
+        "year": 2019,
+        "journal": ""
+      },
+      {
+        "doi": "10.1016/c2024-0-03996-3",
+        "title": "Polylactic Acid",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1201/9781003160458-2",
+        "title": "Synthesis and Production of Polylactic Acid (PLA)",
+        "year": 2022,
+        "journal": "Polylactic Acid-Based Nanocellulose and Cellulose Composites"
+      },
+      {
+        "doi": "10.1007/s10965-020-02206-1",
+        "title": "Effect of thermal annealing on crystal structure and properties of PLLA/PCL blend",
+        "year": 2020,
+        "journal": "Journal of Polymer Research"
+      },
+      {
+        "doi": "10.3724/sp.j.1105.2011.10096",
+        "title": "INFLUENCE OF END GROUP ON THE BANDED STRUCTURE OF PLLA SPHERULITES",
+        "year": 2011,
+        "journal": "Acta Polymerica Sinica"
+      },
+      {
+        "doi": "10.1016/j.polymer.2017.03.018",
+        "title": "Crystal polymorphism of polylactides and poly(Pro- alt -CO): The metastable beta and gamma phases. Formation of homochiral PLLA phases in the PLLA/PDLA blends",
+        "year": 2017,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.3390/polym18091127",
+        "title": "Empirical Structure–Property Relationships of PLLA-b-PEG-b-PLLA Triblock Copolymers with Tunable Thermal, Tensile, and Swelling Behavior",
+        "year": 2026,
+        "journal": "Polymers"
+      },
+      {
+        "doi": "10.1021/acs.macromol.7b01468",
+        "title": "Crystal Structure of Poly(lactic acid) Stereocomplex: Random Packing Model of PDLA and PLLA Chains As Studied by X-ray Diffraction Analysis",
+        "year": 2017,
+        "journal": "Macromolecules"
+      },
+      {
+        "doi": "10.1016/j.actbio.2009.06.007",
+        "title": "Effect of electron beam irradiation on the structure and properties of electrospun PLLA and PLLA/PDLA blend nanofibers",
+        "year": 2010,
+        "journal": "Acta Biomaterialia"
+      },
+      {
+        "doi": "10.32657/10356/62178",
+        "title": "Core-shell structure alginate-PLGA/PLLA microparticles as a novel drug delivery system for water soluble drugs",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.3724/sp.j.1105.2012.11122",
+        "title": "INFLUENCES OF THERMODYNAMIC PROPERFIES OF BPU/PLLA/DO BLENDS ON FORMATION AND STRUCTURE OF THEIR MEMBRANES",
+        "year": 2012,
+        "journal": "Acta Polymerica Sinica"
+      },
+      {
+        "doi": "10.1021/acsami.5c02789",
+        "title": "PdLa Bimetallenes with Nonhomogeneous Crystal Structure for Flexible Isopropanol Sensors",
+        "year": 2025,
+        "journal": "ACS Applied Materials &amp; Interfaces"
+      },
+      {
+        "doi": "10.3390/polym12112515",
+        "title": "Formation of Stereocomplex Crystal and Its Effect on the Morphology and Property of PDLA/PLLA Blends",
+        "year": 2020,
+        "journal": "Polymers"
+      },
+      {
+        "doi": "10.1002/pat.3841",
+        "title": "Rheology and crystallization behavior of asymmetric PLLA/PDLA blends based on linear PLLA and PDLA with different structures",
+        "year": 2016,
+        "journal": "Polymers for Advanced Technologies"
+      },
+      {
+        "doi": "10.1039/c8ce01934g",
+        "title": "Stereocomplex-affected crystallization behaviour of PDLA in PDLA/PLDLA blends",
+        "year": 2019,
+        "journal": "CrystEngComm"
+      },
+      {
+        "doi": "10.1021/acs.macromol.2c02303",
+        "title": "Synthesis and Characterization of Well-Defined High-Molecular-Weight PDLA-<i>b</i>-PLLA and PDLA-<i>b</i>-PLLA-<i>b</i>-PDLA Stereo-Block Copolymers",
+        "year": 2023,
+        "journal": "Macromolecules"
+      },
+      {
+        "doi": "10.2139/ssrn.7118395",
+        "title": "Elastic properties of microbially synthesized poly(D-lactate) (PDLA) segment-containing block copolymer, poly(3-hydroxybutyrate-co-3-hydroxyhexanoate)-b-PDLA",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.2115/fiber.71.127",
+        "title": "Effect of the Take-Up Velocity on the Higher-Order Structure of the Melt-Electrospun PLLA/PDLA Blend Fibers",
+        "year": 2015,
+        "journal": "Sen'i Gakkaishi"
+      },
+      {
+        "doi": "10.1007/978-3-540-75234-9_16",
+        "title": "„ $$ X\\alpha \\lambda \\varepsilon \\pi \\mathop \\alpha \\limits^\\prime \\tau \\mathop \\alpha \\limits^\\prime \\kappa \\alpha \\lambda \\mathop \\alpha \\limits^\\prime $$ “ Das Konzept und die Rolle des Orients in Creuzers Werk im Vergleich zu Görres",
+        "year": null,
+        "journal": "Heidelberger Jahrbücher"
+      },
+      {
+        "doi": "10.29020/nybg.ejpam.v11i3.3275",
+        "title": "On alpha-prime and Weakly alpha-prime Submodules",
+        "year": 2018,
+        "journal": "European Journal of Pure and Applied Mathematics"
+      },
+      {
+        "doi": "10.1007/s44426-025-00016-w",
+        "title": "On $$\\alpha $$-prime and weakly $$\\alpha $$-prime subsemimodules",
+        "year": 2025,
+        "journal": "Acta Universitatis Sapientiae, Mathematica"
+      },
+      {
+        "doi": "10.2320/matertrans1989.41.923",
+        "title": "Effect of Magnetic Field on &amp;gamma;&amp;rarr;&amp;alpha;&amp;prime; Martensitic Transformation and Magnetization of &amp;alpha;&amp;prime; and &amp;alpha;&amp;Prime; Iron-Nitrides",
+        "year": 2000,
+        "journal": "Materials Transactions, JIM"
+      },
+      {
+        "doi": "10.12988/ija.2013.3762",
+        "title": "On generalized (\\alpha,\\alpha)-derivations of prime rings",
+        "year": 2013,
+        "journal": "International Journal of Algebra"
+      },
+      {
+        "doi": "10.2320/matertrans1960.25.420",
+        "title": "Structure of &amp;gamma;-&amp;gamma;&amp;prime;, &amp;gamma;-&amp;gamma;&amp;prime;-&amp;alpha; and &amp;gamma;&amp;prime;-&amp;alpha; Eutectic Ni Alloys Deformed at Elevated Temperatures",
+        "year": 1984,
+        "journal": "Transactions of the Japan Institute of Metals"
+      },
+      {
+        "doi": "10.2172/1376614",
+        "title": "Correlative Microscopy of Alpha Prime Precipitation in Neutron-Irradiated Fe-Cr-Al Alloys",
+        "year": 2016,
+        "journal": ""
+      },
+      {
+        "doi": "10.2320/matertrans.ma200912",
+        "title": "Microstructure and Mechanical Properties of &amp;alpha;&amp;prime; Martensite Type Ti Alloys Deformed under the &amp;alpha;&amp;prime; Processing",
+        "year": 2009,
+        "journal": "MATERIALS TRANSACTIONS"
+      },
+      {
+        "doi": "10.46936/aps-189069/60013501",
+        "title": "",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2139/ssrn.6276773",
+        "title": "Tailoring the Crystalline Structure of Stereocomplex PLA Foams for Technical Applications",
+        "year": 2026,
+        "journal": ""
+      },
+      {
+        "doi": "10.1360/csb1997-42-3-285",
+        "title": "正二十面体十二聚钨多酸的合成与晶体结构",
+        "year": 1997,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1991-36-5-345",
+        "title": "二-(间氯苯基)硼酸-DL-缬氨酸酐的晶体结构和分子结构",
+        "year": 1991,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1982-27-11-658",
+        "title": "氟硅酸脲的晶体结构",
+        "year": 1982,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1982-27-18-1126",
+        "title": "五磷酸铒的晶体结构",
+        "year": 1982,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/zb2008-38-8-700",
+        "title": "聚3-羟基丁酸酯从熔体薄膜及溶液中形成的球晶结构及生长机理",
+        "year": 2008,
+        "journal": "Science in China Series B-Chemistry (in Chinese)"
+      },
+      {
+        "doi": "10.1360/csb1994-39-17-1572",
+        "title": "草酸二过氧合钨酸铵的制备及晶体结构",
+        "year": 1994,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1981-26-19-1172",
+        "title": "二异丙基胺丙二酸根合铂晶体结构和分子结构",
+        "year": 1981,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1986-31-4-279",
+        "title": "苯并12-冠-4硝酸镨的晶体结构",
+        "year": 1986,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1982-27-18-1113",
+        "title": "棉酚&amp;middot;醋酸加合物的晶体结构",
+        "year": 1982,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1360/csb1963-8-5-42",
+        "title": "亚硒酸氢钠的晶体结构",
+        "year": 1963,
+        "journal": "Chinese Science Bulletin"
+      },
+      {
+        "doi": "10.1016/s0032-3861(03)00583-4",
+        "title": "Controlled crystal nucleation in the melt-crystallization of poly(l-lactide) and poly(l-lactide)/poly(d-lactide) stereocomplex",
+        "year": 2003,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.123226",
+        "title": "Stereocomplex- and homo-crystallization behavior, structure, morphology, and thermal properties of crystalline and amorphous stereo diblock copolymers, enantiomeric Poly(l-lactide)-b-Poly(dl-lactide) and Poly(d-lactide)-b-Poly(dl-lactide)",
+        "year": 2021,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1016/j.molstruc.2004.11.033",
+        "title": "Differences in the CH3⋯OC interactions among poly(l-lactide), poly(l-lactide)/poly(d-lactide) stereocomplex, and poly(3-hydroxybutyrate) studied by infrared spectroscopy",
+        "year": 2005,
+        "journal": "Journal of Molecular Structure"
+      },
+      {
+        "doi": "10.1002/masy.200950917",
+        "title": "Poly(<scp>D</scp>‐lactide)–Poly(menthide)–Poly(<scp>D</scp>‐lactide) Triblock Copolymers as Crystal Nucleating Agents for Poly(<scp>L</scp>‐lactide)",
+        "year": 2009,
+        "journal": "Macromolecular Symposia"
+      },
+      {
+        "doi": "10.1080/00222349108245788",
+        "title": "Crystal structure of stereocomplex of poly(L-lactide) and poly(D-lactide)",
+        "year": 1991,
+        "journal": "Journal of Macromolecular Science, Part B"
+      },
+      {
+        "doi": "10.2139/ssrn.4968029",
+        "title": "Understanding Nucleation Efficiency of Stereocomplex-Crystallites on Homochiral Crystallization in Poly (L-Lactide)/Poly (D-Lactide) Blends: Homogenization Near Crystal Growth Front",
+        "year": 2024,
+        "journal": ""
+      },
+      {
+        "doi": "10.4095/104598",
+        "title": "An orthorhombic unit cell for tlalocite",
+        "year": 1978,
+        "journal": ""
+      },
+      {
+        "doi": "10.1107/s0365110x57000961",
+        "title": "The unit cell of orthorhombic pentacalcium trialuminate, 5CaO.3Al203",
+        "year": 1957,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1107/s0365110x58001997",
+        "title": "Unit cell and space group of orthorhombic SiB<sub>6</sub>",
+        "year": 1958,
+        "journal": "Acta Crystallographica"
+      },
+      {
+        "doi": "10.1080/08927029808022043",
+        "title": "Coulomb Forces and Potentials in Systems with an Orthorhombic Unit Cell",
+        "year": 1998,
+        "journal": "Molecular Simulation"
+      },
+      {
+        "doi": "10.1016/0032-3861(86)90295-8",
+        "title": "Refinement of the structure of PEEK fibre in an orthorhombic unit cell",
+        "year": 1986,
+        "journal": "Polymer"
+      },
+      {
+        "doi": "10.1002/jrs.1250150211",
+        "title": "Unit cell group analysis of orthorhombic crystals: Detailed investigation of the effect of arbitrary choice of axes",
+        "year": 1984,
+        "journal": "Journal of Raman Spectroscopy"
+      },
+      {
+        "doi": "10.1142/s0217984990000362",
+        "title": "TETRAGONAL-ORTHORHOMBIC UNIT CELL TRANSFORMATION IN THE HYDROGEN-DOPED Y–Ba–Cu–OXIDE",
+        "year": 1990,
+        "journal": "Modern Physics Letters B"
+      },
+      {
+        "doi": "10.2465/minerj.13.500",
+        "title": "Unit cell parameters and densities of non-doped and 2mol% Y2O3 doped orthorhombic (high pressure form) ZrO2.",
+        "year": 1987,
+        "journal": "Mineralogical Journal"
+      },
+      {
+        "doi": "10.1016/0022-4596(80)90593-9",
+        "title": "The structure of orthorhombic Na2Ti9O19, a unit cell twinning of monoclinic Na2Ti9O19, determined by 1-MV high-resolution electron microscopy",
+        "year": 1980,
+        "journal": "Journal of Solid State Chemistry"
+      },
+      {
+        "doi": "10.1039/a908903i",
+        "title": "Stability and electronic property investigations of the graphitic C3N4 system showing an orthorhombic unit cell",
+        "year": 2000,
+        "journal": "Journal of Materials Chemistry"
+      }
+    ],
+    "junk": [
+      {
+        "doi": "10.1021/acssuschemeng.6b00191.s001",
+        "title": "Polymorphic Crystalline Structure and Crystal Morphology of Enantiomeric Poly(lactic acid) Blends Tailored by a Self-Assemblable Aryl Amide Nucleator",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.5c01278.s001",
+        "title": "How Biaxial Flow Modulates Crystal Nucleation Behavior in Poly(lactic acid)",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsmacrolett.9b00953.s001",
+        "title": "Structure and Morphology of Poly(lactic acid) Stereocomplex Nanofiber Shish Kebabs",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acssuschemeng.6b00582.s001",
+        "title": "Flexible Material Based on Poly(lactic acid) and Liquid Crystal with Multishape Memory Effects",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsomega.5c08696.s001",
+        "title": "Plasma-Treated Poly(Lactic Acid): Deciphering the Structure of a Versatile Engineering Material",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.51",
+        "title": "Crystal Structure of Ganciclovir",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2210/pdb4z8w/pdb",
+        "title": "Crystal Structure of the Major Plantain Pollen Allergen Pla l 1",
+        "year": 2016,
+        "journal": "Worldwide Protein Data Bank"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.23",
+        "title": "Crystal Structure of Meclofenoxate Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2116/xraystruct.25.3",
+        "title": "Crystal Structure of Guanfacine Hydrochloride",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.2210/pdb9k2j/pdb",
+        "title": "X-ray crystal structure of 3-hydroxyisobutyrate dehydrogenase",
+        "year": 2025,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.27.21",
+        "title": "Synthesis and Crystal Structure of LiLaP4O12",
+        "year": 2011,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/om700344q.s001",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/om700344q.s002",
+        "title": "Synthesis and X-ray Crystal Structure of a P-Confused Carbaporphyrinoid",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2116/xraystruct.25.47",
+        "title": "Addendum: Crystal Structure of Guanfacine Hydrochloride [X-ray Structure Analysis Online, Vol. 25, p. 3 (2009)]",
+        "year": 2009,
+        "journal": "X-ray Structure Analysis Online"
+      },
+      {
+        "doi": "10.1021/acsnano.4c00654.s001",
+        "title": "Tumor Vaccine Exploiting Membranes with Influenza Virus-Induced Immunogenic Cell Death to Decorate Polylactic Coglycolic Acid Nanoparticles",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsapm.0c00673.s001",
+        "title": "Silk and Wool Protein Microparticle-Reinforced Crystalline Polylactic Acid Biocomposites with Improved Cell Interaction for Targeted Biomedical Applications",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acssuschemeng.8b04264.s001",
+        "title": "Fabrication of Polylactic Acid-Modified Carbon Black Composites into Improvement of Levelness and Mechanical Properties of Spun-Dyeing Polylactic Acid Composites Membrane",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.5821/dissertation-2117-132765",
+        "title": "Cell derived-extracellular matrix scaffolds with polylactic acid microcarriers for tissue engineering and cell therapy",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.iecr.7b02348.s001",
+        "title": "Crystals in Situ Induced by Supercritical CO2 as Bubble Nucleation Sites on Spherulitic PLLA Foam Structure Controlling",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsami.5c02789.s002",
+        "title": "PdLa Bimetallenes with Nonhomogeneous Crystal Structure for Flexible Isopropanol Sensors",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsapm.1c00879.s001",
+        "title": "Stereocomplex-Induced Self-Assembly of PLLA-PEG-PLLA and PDLA-PEG-PDLA Triblock Copolymers in an Aqueous System",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.2210/pdb1uik/pdb",
+        "title": "Crystal structure of soybean beta-conglycinin alpha prime homotrimer",
+        "year": 2004,
+        "journal": "Worldwide Protein Data Bank"
+      },
+      {
+        "doi": "10.1036/1097-8542.br0924181",
+        "title": "Prime numbers and crystal-like materials display similar patterns",
+        "year": null,
+        "journal": "AccessScience"
+      },
+      {
+        "doi": "10.1021/acssuschemeng.5b00498.s001",
+        "title": "Homocomposites of Polylactide (PLA) with Induced Interfacial Stereocomplex Crystallites",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c02836.s003",
+        "title": "Formation of PLA Stereocomplex Crystals through Homorecrystallization and Mesophase Growth Mechanisms",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c02836.s004",
+        "title": "Formation of PLA Stereocomplex Crystals through Homorecrystallization and Mesophase Growth Mechanisms",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c02836.s002",
+        "title": "Formation of PLA Stereocomplex Crystals through Homorecrystallization and Mesophase Growth Mechanisms",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c02836.s005",
+        "title": "Formation of PLA Stereocomplex Crystals through Homorecrystallization and Mesophase Growth Mechanisms",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.4c02836.s001",
+        "title": "Formation of PLA Stereocomplex Crystals through Homorecrystallization and Mesophase Growth Mechanisms",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acsomega.5c00985.s001",
+        "title": "Composting Performance of lPoly(lactic acid), dPoly(lactic acid), Their Blends, and Stereocomplex PLA Films",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.8b01471.s001",
+        "title": "In Situ Homologous Polymerization of lLactide Having a Stereocomplex Crystal",
+        "year": null,
+        "journal": ""
+      },
+      {
+        "doi": "10.1021/acs.macromol.6b02014.s001",
+        "title": "Uncontrolled Preparation of Disperse Poly(lactide)-block-poly(styrene)-block-poly(lactide) for Nanopatterning Applications",
+        "year": null,
+        "journal": ""
+      }
+    ]
+  }
+}
