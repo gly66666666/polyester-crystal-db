@@ -1,0 +1,397 @@
+{
+  "PET": [
+    {
+      "doi": "10.1524/zkri.1998.213.9.445",
+      "title": "Direct methods in polymer fiber diffraction – the crystal structure of poly(ethylene terephthalate)",
+      "authors": "",
+      "journal": "Zeitschrift für Kristallographie - Crystalline Materials",
+      "year": 1998,
+      "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Using an x-ray fiber data set from poly(ethylene terephthalate) originally published in 1954, the crystal structure of the polymer was determined by direct methods, <jats:italic>via</jats:italic> symbolic addition. Of the 68 measured amplitudes, 62 were assigned phase values. Although eight of these terms were incorrectly determined, the ensuing electron density map was a sufficiently well-defined density envelope for fitting the polymer backbone, therefore directly establishing the validity of the earlier determined packing model. On the other hand, visualization of individual atomic positions in the benzene ring was not possible from the electron density map generated from this phase set, even though they would have been found if all phases had been correct.</jats:p>",
+      "url": "https://doi.org/10.1524/zkri.1998.213.9.445",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/macp.1975.021760821",
+      "title": "Unit cell dimensions of poly(ethylene terephthalate)",
+      "authors": "Stoyko Fakirov; Erhard W. Fischer; Günter F. Schmidt",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1975,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The density of crystals of poly(ethylene terephthalate), (PETP), <jats:italic>Q</jats:italic><jats:sub>c</jats:sub> is checked by X‐ray diffraction assuming a triclinic unit cell and the indices of reflections as found by <jats:italic>Bunn.</jats:italic> The following unit cell dimensions are found: <jats:italic>a</jats:italic> = 4,48Å, <jats:italic>b</jats:italic> = 5,85Å, <jats:italic>c</jats:italic> = 10,75 Å, α = 99,5°, β = 118,4°, and γ = 111,2°. This gives the density <jats:italic>Q</jats:italic><jats:sub>c</jats:sub> as 1,515g/cm<jats:sup>3</jats:sup> which is about 4% higher than that reported by <jats:italic>Bunn.</jats:italic></jats:p><jats:p>Negligible differences in spacings for samples annealed at different temperatures (120°C–260°C) have been found. Only for an annealing temperature of 100°C the higher <jats:italic>d</jats:italic>‐values lead to <jats:italic>Q</jats:italic><jats:sub>c</jats:sub> = 1,484g/cm<jats:sup>3</jats:sup>.</",
+      "url": "https://doi.org/10.1002/macp.1975.021760821",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/0032-3861(69)90047-0",
+      "title": "Structure of terephthalate polymers I—Infra-red spectra and molecular structure of poly(ethylene terephthalate)",
+      "authors": "T.R Manley; D.A Williams",
+      "journal": "Polymer",
+      "year": 1969,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(69)90047-0",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PTT": [
+    {
+      "doi": "10.1039/c6ce01261b",
+      "title": "Novel approaches to study the crystal assembly in banded spherulites of poly(trimethylene terephthalate)",
+      "authors": "Graecia Lugito; Eamor M. Woo",
+      "journal": "CrystEngComm",
+      "year": 2016,
+      "abstract": "",
+      "url": "https://doi.org/10.1039/c6ce01261b",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1007/s00396-012-2786-8",
+      "title": "Crystal structure and thermal behavior of cold-crystallized poly(trimethylene terephthalate)",
+      "authors": "Zhen Chen; Jun Luo; Shouke Yan",
+      "journal": "Colloid and Polymer Science",
+      "year": 2012,
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s00396-012-2786-8",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/s0032-3861(01)00044-1",
+      "title": "Morphology and crystal structure of CTFMP and bulk polymerized poly(trimethylene terephthalate)",
+      "authors": "J. Yang; G. Sidoti; J. Liu; P.H. Geil; C.Y. Li; S.Z.D. Cheng",
+      "journal": "Polymer",
+      "year": 2001,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/s0032-3861(01)00044-1",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/0032-3861(79)90163-0",
+      "title": "The structure of poly(trimethylene terephthalate)",
+      "authors": "I.J. Desborough; I.H. Hall; J.Z. Neisser",
+      "journal": "Polymer",
+      "year": 1979,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(79)90163-0",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PBT": [
+    {
+      "doi": "10.1016/j.polymer.2017.07.076",
+      "title": "Crystal reorganization of poly (butylene terephthalate)",
+      "authors": "Katalee Jariyavidyanont; René Androsch; Christoph Schick",
+      "journal": "Polymer",
+      "year": 2017,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2017.07.076",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1295/polymj.10.495",
+      "title": "Influence of the Crosslinking on the Crystallization of Poly(tetramethylene terephthalate)",
+      "authors": "Irena Daniewska",
+      "journal": "Polymer Journal",
+      "year": 1978,
+      "abstract": "",
+      "url": "https://doi.org/10.1295/polymj.10.495",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/0032-3861(77)90189-6",
+      "title": "A comparison of published crystalline structures of poly(tetramethylene terephthalate)",
+      "authors": "I.J. Desborough; I.H. Hall",
+      "journal": "Polymer",
+      "year": 1977,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(77)90189-6",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/macp.1990.021911012",
+      "title": "Poly(Ether/Ester)s based on poly(tetramethylene terephthalate) and poly(ethylene glycol), 3. Effect of thermal treatment and drawing on the structure of the poly(ether/ester)s",
+      "authors": "Stoyko Fakirov; Tanya Gogeva",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1990,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Annealed drawn and undrawn bristles of poly(ether/ester)s based on poly(tetramethylene terephthalate) (PTMT) and poly(ethylene glycol) PEG 1000 (in various ratios) are studied by means of small‐angle X‐ray scatering and differential scanning calorimetry (DSC). The samples with the lowest PTMT content (49 wt.‐% PTMT) show on abrupt increase of the scattering intensity and the long spacing with increasing annealing temperature <jats:italic>T</jats:italic><jats:sub>a</jats:sub>, this increase becoming less pronounced with increasing fraction of hard segment (PTMT). The DSC heating scans are characterized by a low‐temperature glass transition due to the soft polyether segments and a multiple melting behaviour at about 200°C due to the crystalline hard PTMT segments. The data suggest a dependence of the thermal behaviour on the chemical composition, annealing temperature, and orientation. The characteristics of the undrawn samples are similar to thos",
+      "url": "https://doi.org/10.1002/macp.1990.021911012",
+      "cell_signal": false,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1021/ma00139a024",
+      "title": "Light scattering studies on the morphology and deformation mechanism of poly(tetramethylene oxide)-poly(tetramethylene terephthalate) block polymer. 2. Rodlike textures",
+      "authors": "Chie Sawatari; Masayasu Iida; Masaru Matsuo",
+      "journal": "Macromolecules",
+      "year": 1984,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma00139a024",
+      "cell_signal": false,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/0032-3861(76)90036-7",
+      "title": "Chain conformation of poly(tetramethylene terephthalate) and its change with strain",
+      "authors": "I.H. Hall; M.G. Pass",
+      "journal": "Polymer",
+      "year": 1976,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/0032-3861(76)90036-7",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PEN": [
+    {
+      "doi": "10.1021/ma802804n",
+      "title": "Conformational Characteristics, Configurational Properties, and Thermodynamic Characteristics of Poly(ethylene terephthalate) and Poly(ethylene-2,6-naphthalate)",
+      "authors": "Yuji Sasanuma",
+      "journal": "Macromolecules",
+      "year": 2009,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma802804n",
+      "cell_signal": false,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1295/polymj.28.177",
+      "title": "Structure and Physical Properties of Naphthalene Containing Polyesters I. Structure of Poly(butylene 2,6-naphthalate) and Poly(ethylene 2,6-naphthalate) as Studied by Solid State NMR Spectroscopy",
+      "authors": "Takeshi Yamanobe; Hideo Matsuda; Katsue Imai; Akihiko Hirata; Shinichiro Mori; Tadashi Komoto",
+      "journal": "Polymer Journal",
+      "year": 1996,
+      "abstract": "",
+      "url": "https://doi.org/10.1295/polymj.28.177",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PBN": [
+    {
+      "doi": "10.1002/pen.70832",
+      "title": "Effect of Crystal Polymorphism on Elastic Modulus and Hardness of Poly(Butylene 2,6‐Naphthalate)\n                    <scp>(PBN)</scp>",
+      "authors": "Mengxue Du; Thomas Chudoba; Christina Wüstefeld; Ralf Lach; Katalee Jariyavidyanont; René Androsch",
+      "journal": "Polymer Engineering &amp; Science",
+      "year": 2026,
+      "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>The modulus of elasticity and hardness of poly(butylene 2,6‐naphthalate) (PBN) were investigated at different length scales using dynamic‐mechanical analysis (DMA), microhardness testing, and nanoindentation. By variation of the conditions of melt‐crystallization, PBN containing around 40% α‐crystals, β′‐crystals, or liquid crystals, beside glassy amorphous structure, was obtained. The absence of crystals and formation of liquid crystals, achieved by quenching the melt to ambient temperature, yield a material of relatively low stiffness and hardness of around 1/2 to 2/3 of PBN preparations containing crystals. The difference in modulus and hardness of PBN containing α‐ or β′‐crystals is minor, with slightly higher values observed for PBN composed of the amorphous glass and β′‐crystals. The higher values of the elastic modulus and hardness in case of presence of crystals are attributed to the higher packing density of molecular",
+      "url": "https://doi.org/10.1002/pen.70832",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/pol.20230810",
+      "title": "Effect of self‐seed crystal structure on growth of polymorphs in poly(butylene 2,6‐naphthalate): A cross‐nucleation study",
+      "authors": "Mengxue Du; René Androsch; Dario Cavallo",
+      "journal": "Journal of Polymer Science",
+      "year": 2024,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Cross‐nucleation between different crystal polymorphs is a particular, self‐seed assisted type of heterogeneous nucleation, where a fast‐growing polymorph nucleates at a pre‐existing crystal surface of another polymorph. Here, we present a study on cross‐nucleation between different crystalline phases of poly(butylene 2,6‐naphthalate) (PBN), employing hotstage polarized‐light optical microscopy and temperature‐resolved wide‐angle X‐ray scattering as analysis tools. PBN forms α‐crystals at relatively low temperature and β′‐crystals at rather high temperature, with cross‐nucleation experiments designed such to first obtain few α‐ or β′‐seed crystals (mother phase) which then are transferred to higher or lower temperature, respectively, to monitor the continuation of the crystallization process and possible growth of the other polymorph. In case of cooling β′‐crystals to lower temperature where typically α‐crystals form in the non‐seeded isotropic ",
+      "url": "https://doi.org/10.1002/pol.20230810",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/pcr2.10044",
+      "title": "Crystallization of poly(butylene 2,6‐naphthalate) containing diethylene 2,6‐naphthalate constitutional defects",
+      "authors": "Qian Ding; Michelina Soccio; Nadia Lotti; Nasir Mahmood; Dario Cavallo; René Androsch",
+      "journal": "POLYMER CRYSTALLIZATION",
+      "year": 2019,
+      "abstract": "",
+      "url": "https://doi.org/10.1002/pcr2.10044",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/pcr2.10120",
+      "title": "Cover Image: Crystallization of poly(butylene 2,6‐naphthalate) containing diethylene 2,6‐naphthalate constitutional defects",
+      "authors": "Qian Ding; Michelina Soccio; Nadia Lotti; Nasir Mahmood; Dario Cavallo; René Androsch",
+      "journal": "POLYMER CRYSTALLIZATION",
+      "year": 2019,
+      "abstract": "",
+      "url": "https://doi.org/10.1002/pcr2.10120",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/j.eurpolymj.2018.02.010",
+      "title": "Smectic liquid crystal Schlieren texture in rapidly cooled poly(butylene naphthalate)",
+      "authors": "Qian Ding; Dieter Jehnichen; Michael Göbel; Michelina Soccio; Nadia Lotti; Dario Cavallo",
+      "journal": "European Polymer Journal",
+      "year": 2018,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.eurpolymj.2018.02.010",
+      "cell_signal": true,
+      "query_hit": true
+    }
+  ],
+  "PLA": [
+    {
+      "doi": "10.1016/j.polymertesting.2016.11.017",
+      "title": "Characterizing polymorphism and crystal transformation of polylactide by terahertz time-domain spectroscopy",
+      "authors": "Han Li; Hai-Mu Ye; Yuping Yang",
+      "journal": "Polymer Testing",
+      "year": 2017,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymertesting.2016.11.017",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/j.polymer.2015.05.048",
+      "title": "Development of polylactide bead foams with double crystal melting peaks",
+      "authors": "Mohammadreza Nofar; Aboutaleb Ameli; Chul B. Park",
+      "journal": "Polymer",
+      "year": 2015,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2015.05.048",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1016/j.spmi.2015.10.038",
+      "title": "Synthesis, characterization and comparison of polyaniline 1D-structure controlled by poly(l-lactide) and poly(d-lactide)",
+      "authors": "Zhou-Jie Gu; Qing Shen",
+      "journal": "Superlattices and Microstructures",
+      "year": 2016,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.spmi.2015.10.038",
+      "cell_signal": false,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1134/s0965545x10100032",
+      "title": "Effect of the structure of the biodegradable triblock polymer polylactide-block-(polycaprolactone-stat-polylactide)-block-polylactide on its mechanical properties",
+      "authors": "V. T. Lipik; S. S. Venkatraman; M. J. M. Abadie",
+      "journal": "Polymer Science Series A",
+      "year": 2010,
+      "abstract": "",
+      "url": "https://doi.org/10.1134/s0965545x10100032",
+      "cell_signal": false,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1021/ma9806864",
+      "title": "Microstructure of Poly(lactide). Phase-Sensitive HETCOR Spectra of Poly(<i>meso</i>-lactide), Poly(<i>r</i><i>ac</i>-lactide), and Atactic Poly(lactide)",
+      "authors": "Malcolm H. Chisholm; Suri S. Iyer; David G. McCollum; Martin Pagel; Ulrike Werner-Zwanziger",
+      "journal": "Macromolecules",
+      "year": 1999,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma9806864",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PGA": [
+    {
+      "doi": "10.1016/j.polymer.2024.127517",
+      "title": "Crystal structural evolution and cavitation in biodegradable polyglycolide: An in-situ WAXD/SAXS study during hot-stretching",
+      "authors": "Jin Guo; Chenxia Fang; Yeshun Zhong; Yiru Shan; Weijun Miao; Zongbao Wang",
+      "journal": "Polymer",
+      "year": 2024,
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.polymer.2024.127517",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/macp.1968.021130119",
+      "title": "Structural studies of polyesters. I. Crystal structure of polyglycolide",
+      "authors": "Yôzô Chatani; Kazuaki Suehiro; Yasuo Ôkita; Hiroyuki Tadokoro; Kiyoshi Chujo",
+      "journal": "Die Makromolekulare Chemie",
+      "year": 1968,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>In the course of structural study of aliphatic polyesters, the crystal structure of polyglycolide, the simplest polyester of the type [(CH<jats:sub>2</jats:sub>)<jats:sub>z</jats:sub>COO]<jats:styled-content><jats:sub>n</jats:sub></jats:styled-content> was determined by interpretation of the X‐ray diffraction patterns of the fibers. The crystallographic data are: <jats:italic>a</jats:italic> = 5.22 Å, <jats:italic>b</jats:italic> = 6.19 Å, <jats:italic>c</jats:italic> (fiber axis) = 7.02 Å, the orthorhombic spacegroup, <jats:italic>Pcmn‐D</jats:italic><jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/tex2gif-stack-1.gif\" xlink:title=\"urn:x-wiley:0025116X:media:MACP021130119:tex2gif-stack-1\"/>. Two molecular chains pass through the unit cell. The crystal structure was determined by the help of two dimensional and three dimensional FOURIER syntheses. The planar zig‐zag chain molecules form a sheet structure p",
+      "url": "https://doi.org/10.1002/macp.1968.021130119",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1021/acs.macromol.9b00459",
+      "title": "Structure–Property Relationships of Poly(glycolic acid) and Poly(2-hydroxybutyrate)",
+      "authors": "Yuji Sasanuma; Hiromi Yamamoto; Somin Choi",
+      "journal": "Macromolecules",
+      "year": 2019,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.macromol.9b00459",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PCL": [
+    {
+      "doi": "10.1134/s0965545x24600133",
+      "title": "Peculiar Crystal Structure in Poly(ε-caprolactone) and Poly(ε-caprolactone)/Multi-Walled Carbon Nanotube Solvent-Cast Films",
+      "authors": "Chengwu Hua; Haijun Chen; Gang Deng; Chao Shen",
+      "journal": "Polymer Science, Series A",
+      "year": 2024,
+      "abstract": "",
+      "url": "https://doi.org/10.1134/s0965545x24600133",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1021/ma00223a017",
+      "title": "Crystal structure of poly(iε-caprolactone)",
+      "authors": "Hengliang Hu; Douglas L. Dorset",
+      "journal": "Macromolecules",
+      "year": 1990,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/ma00223a017",
+      "cell_signal": true,
+      "query_hit": true
+    }
+  ],
+  "PBS": [],
+  "PBSA": [],
+  "PHB": [
+    {
+      "doi": "10.1039/c6ce02177h",
+      "title": "Acceleration of the crystal growth rate of low molecular weight organic compounds in supercooled liquids in the presence of polyhydroxybutyrate",
+      "authors": "Takafumi Sato; Lynne S. Taylor",
+      "journal": "CrystEngComm",
+      "year": 2017,
+      "abstract": "",
+      "url": "https://doi.org/10.1039/c6ce02177h",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1021/acs.macromol.5b02310",
+      "title": "Reinvestigation of Crystal Structure and Intermolecular Interactions of Biodegradable Poly(3-Hydroxybutyrate) α-Form and the Prediction of Its Mechanical Property",
+      "authors": "Hai Wang; Kohji Tashiro",
+      "journal": "Macromolecules",
+      "year": 2016,
+      "abstract": "",
+      "url": "https://doi.org/10.1021/acs.macromol.5b02310",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.1002/mabi.200300004",
+      "title": "Characteristic Interactions between Poly(hydroxybutyrate) Depolymerase and Poly[(<i>R</i>)‐3‐hydroxybutyrate] Film Studied by a Quartz Crystal Microbalance",
+      "authors": "Koichi Yamashita; Takashi Funato; Yoichi Suzuki; Shinya Teramachi; Yoshiharu Doi",
+      "journal": "Macromolecular Bioscience",
+      "year": 2003,
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Enzymatic degradation of poly[(<jats:italic>R</jats:italic>)‐3‐hydroxybutyrate] (P(3HB)) film by the poly(hydroxybutyrate) (PHB) depolymerase from <jats:italic>Ralstonia picketti</jats:italic> T1 was studied in 0.01 M phosphate buffer solution (pH 7.4) at 37 °C by using a quartz crystal microbalance (QCM) technique. Enzymatic degradation of P(3HB) film was quantitatively followed by QCM as a positive frequency shift. While, the amount of depolymerases adsorbed on the film could be evaluated as a negative frequency shift by using a mutant enzyme which had no hydrolytic activity in a catalytic site. The degradation rate increased with enzyme concentration to reach a maximum value at 1.0 μg · mL<jats:sup>−1</jats:sup>, and then the rate decreased at higher enzyme concentration. This enzyme concentration dependence could be quantitatively explained in terms of a change of coverage of the film surface by the adsorbed enzyme. When the wild‐type enzyme",
+      "url": "https://doi.org/10.1002/mabi.200300004",
+      "cell_signal": true,
+      "query_hit": true
+    },
+    {
+      "doi": "10.3390/polym10080826",
+      "title": "Branched Polyurethanes Based on Synthetic Polyhydroxybutyrate with Tunable Structure and Properties",
+      "authors": "Joanna Brzeska; Anna Maria Elert; Magda Morawska; Wanda Sikorska; Marek Kowalczuk; Maria Rutkowska",
+      "journal": "Polymers",
+      "year": 2018,
+      "abstract": "<jats:p>Branched, aliphatic polyurethanes (PURs) were synthesized and compared to linear analogues. The influence of polycaprolactonetriol and synthetic poly([R,S]-3-hydroxybutyrate) (R,S-PHB) in soft segments on structure, thermal and sorptive properties of PURs was determined. Using FTIR and Raman spectroscopies it was found that increasing the R,S-PHB amount in the structure of branched PURs reduced a tendency of urethane groups to hydrogen bonding. Melting enthalpies (on DSC thermograms) of both soft and hard segments of linear PURs were higher than branched PURs, suggesting that linear PURs were more crystalline. Oil sorption by samples of linear and branched PURs, containing only polycaprolactone chains in soft segments, was higher than in the case of samples with R,S-PHB in their structure. Branched PUR without R,S-PHB absorbed the highest amount of oil. Introducing R,S-PHB into the PUR structure increased water sorption. Thus, by operating the number of branching and the amount",
+      "url": "https://doi.org/10.3390/polym10080826",
+      "cell_signal": false,
+      "query_hit": true
+    }
+  ],
+  "PHBV": []
+}

@@ -29,3 +29,6 @@ docs/*.aux
 docs/*.log
 docs/*.out
 docs/*.toc
+
+# 主语料备份（定向检索并入时自动生成，不入库）
+data/literature/*.bak
