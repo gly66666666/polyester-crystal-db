@@ -35,6 +35,188 @@
         "year": 1969,
         "journal": "Polymer",
         "cell_signal": false
+      },
+      {
+        "doi": "10.1016/0032-3861(92)90399-h",
+        "title": "Structural formation of poly (ethylene terephthalate) during the induction period of crystallization: 1. Ordered structure appearing before crystal nucleation",
+        "year": 1992,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pol.1980.180180613",
+        "title": "Morphology and melting behavior of semicrystalline poly(ethylene terephthalate). II. Annealed PET",
+        "year": 1980,
+        "journal": "Journal of Polymer Science Polymer Physics Edition",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym16141975",
+        "title": "Crystallization of Poly(ethylene terephthalate): A Review",
+        "year": 2024,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma00061a007",
+        "title": "Poly(ethylene terephthalate) fibers. 1. Crystal structure and morphology studies with full-pattern x-ray diffraction refinement",
+        "year": 1993,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma101035h",
+        "title": "Coupling between Crystal Melting and Rigid Amorphous Fraction Mobilization in Poly(ethylene terephthalate)",
+        "year": 2010,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma960466v",
+        "title": "New Aspects Concerning the Structure and Degree of Crystallinity in High-Pressure-Crystallized Poly(ethylene terephthalate)",
+        "year": 1996,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/macp.1994.021950236",
+        "title": "Structure analysis of the noncrystalline material in poly(ethylene terephthalate) fibers",
+        "year": 1994,
+        "journal": "Macromolecular Chemistry and Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1080/00222349708220415",
+        "title": "Crystal structure and morphology of poly(ethylene terephthalate) single crystals prepared by melt polymerization",
+        "year": 1997,
+        "journal": "Journal of Macromolecular Science Part B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.1987.070330504",
+        "title": "Crystalline structures of poly(ethylene terephthalate) fibers",
+        "year": 1987,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.1994.210350209",
+        "title": "Morphology and crystallization of poly(ethylene terephthalate)",
+        "year": 1994,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma961800q",
+        "title": "Thermomechanical Properties of the Crystal Phase of Poly(ethylene terephthalate) by Molecular Modeling",
+        "year": 1997,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/0032-3861(88)90099-7",
+        "title": "Crystal lattice deformation and the mesophase in poly(ethylene terephthalate) uniaxially drawn by solid-state coextrusion",
+        "year": 1988,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pol.1965.100030110",
+        "title": "Single crystals of poly(ethylene terephthalate)",
+        "year": 1965,
+        "journal": "Journal of Polymer Science Part A General Papers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.1381",
+        "title": "Crystallization of poly(ethylene terephthalate) modified with codiols",
+        "year": 2001,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3938/jkps.70.382",
+        "title": "Investigation of polymorphism for amorphous and semi-crystalline poly (-ethylene terephthalate-) using high-pressure Brillouin spectroscopy",
+        "year": 2017,
+        "journal": "Journal of the Korean Physical Society",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/(sici)1099-0488(19960415)34:5<963::aid-polb14>3.0.co;2-9",
+        "title": "On the mechanical properties of poly(ethylene terephthalate). Force-field parametrization and conformational analysis for the prediction of the crystal moduli",
+        "year": 1996,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1295/polymj.24.1099",
+        "title": "Crystal Structure of the Higher Temperature Phase (Type B) of Cyclic Trimer of Poly(ethylene terephthalate)",
+        "year": 1992,
+        "journal": "Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/s41428-017-0003-9",
+        "title": "3D structure of nano-oriented crystals of poly(ethylene terephthalate) formed by elongational crystallization from the melt",
+        "year": 2017,
+        "journal": "Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1295/polymj.27.840",
+        "title": "Crystal Structure of Cyclic Di(ethylene terephthalate)",
+        "year": 1995,
+        "journal": "Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.7498/aps.50.1132",
+        "title": "CHARACTERIZATION OF THE TWO-PHASE STRUCTURE IN SEMICRYSTALLINE POLY(ETHYLENE TEREPHTHALATE)",
+        "year": 2001,
+        "journal": "Acta Physica Sinica",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymdegradstab.2010.06.011",
+        "title": "Surface structure and properties of poly-(ethylene terephthalate) hydrolyzed by alkali and cutinase",
+        "year": 2010,
+        "journal": "Polymer Degradation and Stability",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/polb.1994.090321316",
+        "title": "Analysis of structure and properties of poly(ethylene terephthalate) fibers",
+        "year": 1994,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1295/polymj.5.72",
+        "title": "Morphological Studies of Cold Drawn Poly(ethylene terephthalate)",
+        "year": 1973,
+        "journal": "Polymer Journal",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/polb.1991.090290706",
+        "title": "Relating microhardness of poly(ethylene terephthalate) to microstructure",
+        "year": 1991,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/macp.1981.021820120",
+        "title": "Effect of chain composition of poly(ethylene terephthalate) structure and properties",
+        "year": 1981,
+        "journal": "Die Makromolekulare Chemie",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3144/expresspolymlett.2023.64",
+        "title": "Iridescence from tuned microstructures in poly(octamethylene terephthalate)",
+        "year": 2023,
+        "journal": "eXPRESS Polymer Letters",
+        "cell_signal": false
       }
     ],
     "offtopic": [
@@ -511,6 +693,167 @@
         "title": "The structure of poly(trimethylene terephthalate)",
         "year": 1979,
         "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s0032-3861(01)00042-8",
+        "title": "In situ study of structure development in poly(trimethylene terephthalate) fibers during stretching by simultaneous synchrotron small- and wide-angle X-ray scattering",
+        "year": 2001,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma902188c",
+        "title": "Cold Crystallization of Poly(trimethylene terephthalate) As Revealed by Simultaneous WAXS, SAXS, and Dielectric Spectroscopy",
+        "year": 2009,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(01)00045-3",
+        "title": "In situ study of structure development during continuous hot-drawing of poly(trimethylene terephthalate) fibers by simultaneous synchrotron small- and wide-angle X-ray scattering",
+        "year": 2001,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10965-006-0096-x",
+        "title": "Crystallization and melting behaviors of poly(trimethylene terephthalate)",
+        "year": 1999,
+        "journal": "Journal of Polymer Research",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(03)00282-9",
+        "title": "Effect of aging on the mechanical properties of cold-crystallized poly(trimethylene terephthalate)",
+        "year": 2003,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma801119n",
+        "title": "Cold-Crystallization of Poly(trimethylene terephthalate) Studied by Photoluminescence of Its Amorphous Portion",
+        "year": 2008,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/jp411560r",
+        "title": "Crystal Structure and Vibrational Spectra of Poly(trimethylene terephthalate) from Periodic Density Functional Theory Calculations",
+        "year": 2014,
+        "journal": "The Journal of Physical Chemistry B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s002890170061",
+        "title": "Crystal orientation function of poly(trimethylene terephthalate) by wide-angle x-ray diffraction",
+        "year": 2001,
+        "journal": "Polymer Bulletin",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2004.10.002",
+        "title": "Structural formation and gelation behavior of cold-crystallized poly(trimethylene terephthalate)",
+        "year": 2004,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.20487",
+        "title": "Effective nucleating chemical agents for the crystallization of poly(trimethylene terephthalate)",
+        "year": 2004,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/bf02874872",
+        "title": "Phase transformation of poly(trimethylene terephthalate) in crystalline state: An atomistic modeling approach",
+        "year": 2000,
+        "journal": "Fibers and Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/s41428-023-00777-6",
+        "title": "Lamellar crystallization of poly(trimethylene terephthalate)",
+        "year": 2023,
+        "journal": "Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma010317z",
+        "title": "Orientation and Structure Development in Poly(trimethylene terephthalate) Tensile Drawing",
+        "year": 2001,
+        "journal": "Macromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/app.1803",
+        "title": "Effect of zone drawing on the structure and properties of melt‐spun poly(trimethylene terephthalate) fiber",
+        "year": 2001,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2005.12.067",
+        "title": "High birefringence of poly(trimethylene terephthalate) spherulite",
+        "year": 2006,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/polb.24037",
+        "title": "Three types of banded structures in highly birefringent poly(trimethylene terephthalate) spherulites",
+        "year": 2016,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/cryst7020056",
+        "title": "Interior Lamellar Assembly and Optical Birefringence in Poly(trimethylene terephthalate) Spherulites: Mechanisms from Past to Present",
+        "year": 2017,
+        "journal": "Crystals",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1081/mb-200033308",
+        "title": "Miscibility, Morphology, and Thermal Properties of Poly(Trimethylene Terephthalate)/Polycarbonate",
+        "year": 2004,
+        "journal": "Journal of Macromolecular Science Part B",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2008.10.022",
+        "title": "Initial structure development in the CO2 laser-heated drawing of poly(trimethylene terephthalate) fiber",
+        "year": 2008,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1295/polymj.pj2007194",
+        "title": "Solvent Induced Cracking and Morphology in Banded Spherulite of Poly(trimethylene terephthalate)",
+        "year": 2008,
+        "journal": "Polymer Journal",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s0040-6031(02)00525-7",
+        "title": "Phase structure and sorption/de-sorption in poly(trimethylene terephthalate) (PTT)",
+        "year": 2003,
+        "journal": "Thermochimica Acta",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/app.54905",
+        "title": "Structure–property evolution of poly(ethylene terephthalate)/poly(trimethylene terephthalate) side‐by‐side self‐crimp filament",
+        "year": 2023,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.2115/fiber.69.107",
+        "title": "Structure and Mechanical Properties of Poly(trimethylene terephthalate)Fibers Obtained by CO2 Laser Drawing and a Secondary Contact Heater Drawing",
+        "year": 2013,
+        "journal": "Sen i Gakkaishi",
         "cell_signal": false
       }
     ],
@@ -1157,6 +1500,153 @@
         "year": 1976,
         "journal": "Polymer",
         "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s0032-3861(98)00573-4",
+        "title": "Time-resolved X-ray studies of structure development in poly(butylene terephthalate) during isothermal crystallization",
+        "year": 1999,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2015.02.013",
+        "title": "Density of heterogeneous and homogeneous crystal nuclei in poly (butylene terephthalate)",
+        "year": 2015,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pol.1979.180170613",
+        "title": "X‐ray investigation of the structure of poly(tetramethylene terephthalate)",
+        "year": 1979,
+        "journal": "Journal of Polymer Science Polymer Physics Edition",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma9017058",
+        "title": "Crystallization of Poly(butylene terephthalate) from the Glass",
+        "year": 2009,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1080/00222349708220430",
+        "title": "Electron diffraction and computer modeling studies of the crystal structure of poly(butylene terephthalate) α-form single crystals",
+        "year": 1997,
+        "journal": "Journal of Macromolecular Science Part B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pol.1982.180200213",
+        "title": "Elastic modulus of crystalline regions of poly(butylene terephthalate) in the direction parallel to the chain axis",
+        "year": 1982,
+        "journal": "Journal of Polymer Science Polymer Physics Edition",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma030347x",
+        "title": "Orientation Behavior of the Three Principal Crystallographic Axes of Poly(butylene terephthalate) Estimated in Terms of Orientation Distribution Function of Crystallites",
+        "year": 2004,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(02)00506-2",
+        "title": "The conformations of poly(butylene-terephthalate) and poly(butylene-2,6-naphthalate) chains in their α and β crystalline polymorphs",
+        "year": 2002,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym13010152",
+        "title": "Temperature-Modulated Scanning Calorimetry of Melting–Recrystallization of Poly(butylene terephthalate)",
+        "year": 2021,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.2115/fiber.36.t33",
+        "title": "ELASTIC MODULUS OF THE CRYSTAL REGIONS IN THE DIRECTION PERPENDICULAR TO THE CHAIN AXIS OF POLY (BUTYLENE TEREPHTHALATE)",
+        "year": 1980,
+        "journal": "Sen i Gakkaishi",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/bf00700779",
+        "title": "Surface controlled crystallization of poly(tetramethylene terephthalate)",
+        "year": 1983,
+        "journal": "Journal of Materials Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/pj.2010.5",
+        "title": "Smectic structure and glass transition in poly(butylene terephthalate)",
+        "year": 2010,
+        "journal": "Polymer Journal",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/ma991375b",
+        "title": "Syntheses, Characterizations, and Structures of a New Series of Aliphatic−Aromatic Polyesters. 1. The Poly(tetramethylene terephthalate dicarboxylates)",
+        "year": 1999,
+        "journal": "Macromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2007.07.035",
+        "title": "Morphological study on three kinds of two-dimensional spherulites of poly(butylene terephthalate) (PBT)",
+        "year": 2007,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1038/pj.2012.65",
+        "title": "In situ study of fiber structure development of poly(butylene terephthalate) in a continuous laser-heated drawing process",
+        "year": 2012,
+        "journal": "Polymer Journal",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/pi.1995.210380410",
+        "title": "Surface morphology and annealing of poly(butylene terephthalate)",
+        "year": 1995,
+        "journal": "Polymer International",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/pi.1995.210370106",
+        "title": "Morphology and melting behaviour of poly(butylene terephthalate)",
+        "year": 1995,
+        "journal": "Polymer International",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/mame.202200208",
+        "title": "Structure–Property–Processing Relations of Short‐Chain Branched Poly(butylene terephthalate) (PBT) with Biobased Comonomers",
+        "year": 2022,
+        "journal": "Macromolecular Materials and Engineering",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.4325/seikeikakou.17.842",
+        "title": "Structure and Exothermic Behavior of Poly (butylene terephthalate)",
+        "year": 2005,
+        "journal": "Seikei-Kakou",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1515/epoly.2008.8.1.1242",
+        "title": "Fine structure and physical properties of poly(butylene terephthalate) sheets prepared by roll drawing",
+        "year": 2008,
+        "journal": "e-Polymers",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/polym18172123",
+        "title": "Effect of Gamma Radiation on the Chemical Structure and Physical Properties of Poly(butylene terephthalate) (PBT)",
+        "year": 2026,
+        "journal": "Polymers",
+        "cell_signal": false
       }
     ],
     "offtopic": [
@@ -1718,6 +2208,111 @@
         "year": 1996,
         "journal": "Polymer Journal",
         "cell_signal": false
+      },
+      {
+        "doi": "10.1080/00222349808220489",
+        "title": "Growth habits and kinetics of crystallization of poly(ethylene 2,6-naphthalate) under isothermal and nonisothermal conditions",
+        "year": 1998,
+        "journal": "Journal of Macromolecular Science Part B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(99)00703-x",
+        "title": "Effect of shearing on crystallization behavior of poly(ethylene naphthalate)",
+        "year": 2000,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2003.08.002",
+        "title": "Crystallization behavior and morphology of poly(ethylene 2,6-naphthalate)",
+        "year": 2003,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(98)00783-6",
+        "title": "Solvent induced crystallization behavior of poly(ethylene 2,6-naphthalate) film",
+        "year": 1999,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/mame.200300257",
+        "title": "Relationships Between the Crystal Structures and the Multiple Melting Behaviors of Poly(ethylene 2,6‐naphthalate)",
+        "year": 2004,
+        "journal": "Macromolecular Materials and Engineering",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1023/a:1012931416958",
+        "title": "Nanostructure of atmospheric and high-pressure crystallised poly(ethylene-2,6-naphthalate",
+        "year": 2001,
+        "journal": "Journal of Materials Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ie061668a",
+        "title": "Crystallization Behaviors of Poly(ethylene 2,6-naphthalate) in the Presence of Liquid Crystalline Polymer",
+        "year": 2008,
+        "journal": "Industrial & Engineering Chemistry Research",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(02)00777-2",
+        "title": "Nanostructure of atmospheric and high-pressure crystallized poly(ethylene-2,6-naphthalate). Part II: structure–microhardness correlations",
+        "year": 2002,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.7567/jjap.56.032402",
+        "title": "Crystallinity of poly(ethylene naphthalate) and its relation to terahertz absorption",
+        "year": 2017,
+        "journal": "Japanese Journal of Applied Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/mz500357z",
+        "title": "Cocrystalline Copolyimides of Poly(ethylene 2,6-naphthalate)",
+        "year": 2014,
+        "journal": "ACS Macro Letters",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.2115/fiber.54.10_544",
+        "title": "Preferential Orientation of Poly(ethylene 2,6-naphthalate) Melt-Crystallized on the Friction-Transfer Layer of PTFE.",
+        "year": 1998,
+        "journal": "Sen i Gakkaishi",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pcr2.10044",
+        "title": "Crystallization of poly(butylene 2,6‐naphthalate) containing diethylene 2,6‐naphthalate constitutional defects",
+        "year": 2018,
+        "journal": "Polymer Crystallization",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1063/1.1302867",
+        "title": "Two-dimensional vibrational correlation spectroscopic study on crystallization process of poly (ethylene-2,6-naphthalate)",
+        "year": 2000,
+        "journal": "AIP conference proceedings",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pen.760301205",
+        "title": "Processing characteristics, structure development, and properties of uni and biaxially stretched poly(ethylene 2,6 naphthalate) (PEN) films",
+        "year": 1990,
+        "journal": "Polymer Engineering and Science",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1295/polymj.31.524",
+        "title": "Excimer Laser Ablation and Morphology of Uniaxially Stretched Poly(ethylene-2,6-naphthalate) Films",
+        "year": 1999,
+        "journal": "Polymer Journal",
+        "cell_signal": false
       }
     ],
     "offtopic": [
@@ -2223,6 +2818,69 @@
         "year": 2018,
         "journal": "European Polymer Journal",
         "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0040-6031(02)00531-2",
+        "title": "X-ray and DSC studies on the melt-recrystallization process of poly(butylene naphthalate)",
+        "year": 2003,
+        "journal": "Thermochimica Acta",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10118-020-2354-5",
+        "title": "Melt Crystallization of Poly(butylene 2,6-naphthalate)",
+        "year": 2019,
+        "journal": "Chinese Journal of Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/pj.2011.112",
+        "title": "Equilibrium melting temperature and crystallization kinetics of α- and β′-PBN crystal forms",
+        "year": 2011,
+        "journal": "Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.7567/jjap.56.032402",
+        "title": "Crystallinity of poly(ethylene naphthalate) and its relation to terahertz absorption",
+        "year": 2017,
+        "journal": "Japanese Journal of Applied Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.122404",
+        "title": "Morphology of α-crystals of poly (butylene 2,6-naphthalate) crystallized via a liquid crystalline mesophase according to Ostwald's rule of stages",
+        "year": 2020,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1107/s002188980700461x",
+        "title": "Melting behavior of polymorphic crystals of poly(trimethylene 2,6-naphthalate) studied by simultaneous synchrotron X-ray scattering and thermal analysis",
+        "year": 2007,
+        "journal": "Journal of Applied Crystallography",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.5c00542",
+        "title": "Intraspherulitic Melting-Temperature Distribution of Poly(butylene 2,6-naphthalate) Containing β′-Crystals Controlled by Secondary Crystallization",
+        "year": 2025,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.matlet.2022.133570",
+        "title": "Curly morphology of β’-crystals of poly(butylene-2,6-naphthalate)",
+        "year": 2022,
+        "journal": "Materials Letters",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1122/8.0001131",
+        "title": "Shear-induced crystallization of polymorphic poly(butylene 2,6-naphthalate)",
+        "year": 2025,
+        "journal": "Journal of Rheology",
+        "cell_signal": true
       }
     ],
     "offtopic": [
@@ -2594,6 +3252,720 @@
         "title": "Microstructure of Poly(lactide). Phase-Sensitive HETCOR Spectra of Poly(<i>meso</i>-lactide), Poly(<i>r</i><i>ac</i>-lactide), and Atactic Poly(lactide)",
         "year": 1999,
         "journal": "Macromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/ma00204a041",
+        "title": "Crystal structure, conformation and morphology of solution-spun poly(L-lactide) fibers",
+        "year": 1990,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma071258d",
+        "title": "Polymorphous Crystallization and Multiple Melting Behavior of Poly( l -lactide): Molecular Weight Dependence",
+        "year": 2007,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma070082c",
+        "title": "Crystallization and Melting Behavior of Poly ( l -lactic Acid)",
+        "year": 2007,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(00)00234-2",
+        "title": "Epitaxial crystallization and crystalline polymorphism of polylactides",
+        "year": 2000,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2006.08.054",
+        "title": "Crystallization behavior of poly(l-lactic acid)",
+        "year": 2006,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma800343g",
+        "title": "Polymorphic Transition in Disordered Poly( l -lactide) Crystals Induced by Annealing at Elevated Temperatures",
+        "year": 2008,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2011.02.009",
+        "title": "Influence of crystal polymorphism on mechanical and barrier properties of poly(l-lactic acid)",
+        "year": 2011,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/s0032-3861(96)00987-1",
+        "title": "Morphology of poly(l-lactide) solution-grown crystals",
+        "year": 1997,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma2006624",
+        "title": "Crystal Structure Analysis of Poly( l -lactic Acid) α Form On the basis of the 2-Dimensional Wide-Angle Synchrotron X-ray and Neutron Diffraction Measurements",
+        "year": 2011,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma051266z",
+        "title": "Stereoselective Crystallization and Specific Interactions in Polylactides",
+        "year": 2005,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ie2011966",
+        "title": "Crystallization Kinetics of Linear and Long-Chain-Branched Polylactide",
+        "year": 2011,
+        "journal": "Industrial & Engineering Chemistry Research",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma102439t",
+        "title": "Control of Crystal Morphology in Poly( l -lactide) by Adding Nucleating Agent",
+        "year": 2011,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2015.07.024",
+        "title": "Enthalpy of melting of α′- and α-crystals of poly(l-lactic acid)",
+        "year": 2015,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2011.10.046",
+        "title": "Crystal structure and disorder in Poly(l-lactic acid) δ form (α′ form) and the phase transition mechanism to the ordered α form",
+        "year": 2011,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2014.10.059",
+        "title": "Enhancing mechanical performance of polylactide by tailoring crystal morphology and lamellae orientation with the aid of nucleating agent",
+        "year": 2014,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/bm500167u",
+        "title": "Significantly Improving Oxygen Barrier Properties of Polylactide via Constructing Parallel-Aligned Shish-Kebab-Like Crystals with Well-Interlocked Boundaries",
+        "year": 2014,
+        "journal": "Biomacromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma202324g",
+        "title": "Complex Crystal Formation of Poly( l -lactide) with Solvent Molecules",
+        "year": 2012,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pen.20017",
+        "title": "Crystallization kinetics of poly(L‐lactide) in contact with pressurized CO2",
+        "year": 2004,
+        "journal": "Polymer Engineering and Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma800766h",
+        "title": "Crystalline Structure and Morphology of Poly( l -lactide) Formed under High-Pressure CO2",
+        "year": 2008,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma8024943",
+        "title": "Blending Effects on Polymorphic Crystallization of Poly( l -lactide)",
+        "year": 2009,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.5707",
+        "title": "Influence of α′‐/α‐crystal polymorphism on properties of poly( l ‐lactic acid)",
+        "year": 2018,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.tca.2010.12.027",
+        "title": "Crystal polymorphism of poly(l-lactic acid) and its influence on thermal properties",
+        "year": 2011,
+        "journal": "Thermochimica Acta",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma401036j",
+        "title": "Crystal Nucleation in Glassy Poly( l -lactic acid)",
+        "year": 2013,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2012.01.014",
+        "title": "Impact of crystallinity of poly(lactide) on helium and oxygen barrier properties",
+        "year": 2012,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21270",
+        "title": "Crystal density and heat of fusion for a stereo‐complex of poly( L ‐lactic acid) and poly( D ‐lactic acid)",
+        "year": 2007,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/macp.1992.021930704",
+        "title": "Structure and crystallization kinetics of poly( L ‐lactic acid)",
+        "year": 1992,
+        "journal": "Die Makromolekulare Chemie",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.11280",
+        "title": "Crystalline and supermolecular structure of polylactide in relation to the crystallization method",
+        "year": 2002,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.8b00833",
+        "title": "Influence of the Rigid Amorphous Fraction and Crystallinity on Polylactide Transport Properties",
+        "year": 2018,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.32728",
+        "title": "Isothermal crystallization kinetics and crystal structure of poly(lactic acid): Effect of triphenyl phosphate and talc",
+        "year": 2010,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2011.05.044",
+        "title": "Crystal structure and morphology influenced by shear effect of poly(l-lactide) and its melting behavior revealed by WAXD, DSC and in-situ POM",
+        "year": 2011,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.3167",
+        "title": "Effect of crystallization on barrier properties of formulated polylactide",
+        "year": 2011,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.7b00272",
+        "title": "Phase Transition Mechanism of Poly( l -lactic acid) among the α, δ, and β Forms on the Basis of the Reinvestigated Crystal Structure of the β Form",
+        "year": 2017,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s00396-013-3081-z",
+        "title": "Influence of chain structure on crystal polymorphism of poly(lactic acid). Part 1: effect of optical purity of the monomer",
+        "year": 2013,
+        "journal": "Colloid & Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pen.20617",
+        "title": "Morphology and melt crystallization of poly( L ‐lactide) obtained by ring opening polymerization of L ‐lactide with zinc catalyst",
+        "year": 2006,
+        "journal": "Polymer Engineering and Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pc.21004",
+        "title": "Kinetics and crystal structure of poly(lactic acid) crystallized nonisothermally: Effect of plasticizer and nucleating agent",
+        "year": 2010,
+        "journal": "Polymer Composites",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/12_2016_13",
+        "title": "Kinetics of Nucleation and Growth of Crystals of Poly(l-lactic acid)",
+        "year": 2017,
+        "journal": "Advances in polymer science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymdegradstab.2017.08.022",
+        "title": "Crystallization-induced microcellular foaming of poly (lactic acid) with high volume expansion ratio",
+        "year": 2017,
+        "journal": "Polymer Degradation and Stability",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.7b01705",
+        "title": "Preferential Formation of β-Form Crystals and Temperature-Dependent Polymorphic Structure in Supramolecular Poly( l -lactic acid) Bonded by Multiple Hydrogen Bonds",
+        "year": 2017,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/12_2016_15",
+        "title": "Crystal Polymorphism and Morphology of Polylactides",
+        "year": 2017,
+        "journal": "Advances in polymer science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2015.07.040",
+        "title": "Tailoring the crystallization behavior of poly(L-lactide) with self-assembly-type oxalamide compounds as nucleators: 1. Effect of terminal configuration of the nucleators",
+        "year": 2015,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s00396-015-3709-2",
+        "title": "Influence of chain structure on crystal polymorphism of poly(lactic acid). Part 2. Effect of molecular mass on the crystal growth rate and semicrystalline morphology",
+        "year": 2015,
+        "journal": "Colloid & Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1039/c2cp43174b",
+        "title": "NMR crystallography of α-poly(l-lactide)",
+        "year": 2013,
+        "journal": "Physical Chemistry Chemical Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2012.07.044",
+        "title": "Crystal structures of poly(l-lactide)–CO2 complex and its emptied form",
+        "year": 2012,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.6b01442",
+        "title": "Mesophase-Mediated Crystallization of Poly( l -lactide): Deterministic Pathways to Nanostructured Morphology and Superstructure Control",
+        "year": 2016,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acsmacrolett.5b00205",
+        "title": "Single Crystals of the Frustrated β-Phase and Genesis of the Disordered α′-Phase of Poly( l -lactic acid)",
+        "year": 2015,
+        "journal": "ACS Macro Letters",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/jp2037312",
+        "title": "Thermal Behavior and Crystal Structure of Poly( l -lactic acid) with 1,3:2,4-Dibenzylidene- d -sorbitol",
+        "year": 2011,
+        "journal": "The Journal of Physical Chemistry B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.32225",
+        "title": "Kinetics and crystal structure of isothermal crystallization of poly(lactic acid) plasticized with triphenyl phosphate",
+        "year": 2010,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.vibspec.2013.10.003",
+        "title": "Influence of crystal polymorphism on crystallinity calculation of poly(l-lactic acid) by infrared spectroscopy",
+        "year": 2013,
+        "journal": "Vibrational Spectroscopy",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21131",
+        "title": "Structure and mechanical properties of poly( L ‐lactic acid) crystals and fibers",
+        "year": 2007,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21872",
+        "title": "Effects of carbon nanotubes on dynamic mechanical property, thermal property, and crystal structure of poly( L ‐lactic acid)",
+        "year": 2009,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acsami.9b21391",
+        "title": "Impact of Nanoconfinement on Polylactide Crystallization and Gas Barrier Properties",
+        "year": 2020,
+        "journal": "ACS Applied Materials & Interfaces",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2017.11.069",
+        "title": "Temperature-dependent polymorphic crystallization of poly(l-lactide)s on the basis of optical purity and microstructure",
+        "year": 2017,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym13193280",
+        "title": "Investigation on the α/δ Crystal Transition of Poly(l-lactic Acid) with Different Molecular Weights",
+        "year": 2021,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.ijbiomac.2022.06.056",
+        "title": "Effect of the structural features of biobased linear polyester plasticizers on the crystallization of polylactides",
+        "year": 2022,
+        "journal": "International Journal of Biological Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym12051065",
+        "title": "Temperature and Time Dependence of the Solvent-Induced Crystallization of Poly(l-lactide)",
+        "year": 2020,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.4478",
+        "title": "Deterioration of metal–organic framework crystal structure during fabrication of poly( l ‐lactic acid) mixed‐matrix membranes",
+        "year": 2013,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.122373",
+        "title": "Amorphous rigidification and cooperativity drop in semi−crystalline plasticized polylactide",
+        "year": 2020,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pen.23595",
+        "title": "Influence of the chain extension on the crystallization behavior of polylactide",
+        "year": 2013,
+        "journal": "Polymer Engineering and Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pen.21057",
+        "title": "Influence of dispersed organophilic montmorillonite at nanometer‐scale on crystallization of poly( L ‐lactide)",
+        "year": 2008,
+        "journal": "Polymer Engineering and Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.122875",
+        "title": "Melt extension-induced shish-kebabs with heterogeneous spatial distribution of crystalline polymorphs in lightly crosslinked poly(lactic acid)",
+        "year": 2020,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1115/1.4025909",
+        "title": "Effect of Film Formation Method and Annealing on Morphology and Crystal Structure of Poly(L-Lactic Acid) Films",
+        "year": 2013,
+        "journal": "Journal of Manufacturing Science and Engineering",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/ma12111872",
+        "title": "Structural Evolution in Isothermal Crystallization Process of Poly(L-lactic acid) Enhanced by Silk Fibroin Nano-Disc",
+        "year": 2019,
+        "journal": "Materials",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.jpcb.8b03211",
+        "title": "Influence of Boron Nitride Nanosheets on the Crystallization and Polymorphism of Poly( l -lactide)",
+        "year": 2018,
+        "journal": "The Journal of Physical Chemistry B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.cgd.3c01498",
+        "title": "Lamellar Morphology of Disorder α′-Crystals of Poly( L -Lactic Acid)",
+        "year": 2024,
+        "journal": "Crystal Growth & Design",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2007.06.012",
+        "title": "Transcrystalline structures of poly(l-lactide)",
+        "year": 2007,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.ijbiomac.2024.136296",
+        "title": "Dependence of the crystal structure on the d-units amount in semi-crystalline poly(lactic acid)",
+        "year": 2024,
+        "journal": "International Journal of Biological Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2022.125142",
+        "title": "Sn(II)2-ethylhexanoate-catalyzed polymerizations of l-lactide in solution – Solution grown crystals of cyclic Poly(l-Lactide)s",
+        "year": 2022,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2017.08.036",
+        "title": "Molecular weight increase driven by evolution of crystal structure in the process of solid-state polycondensation of poly(l-lactic acid)",
+        "year": 2017,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym17091267",
+        "title": "Quantitative DSC Assessment of the Polymorph-Specific Crystallinity of Poly(Lactic Acid) and the Impact of a Self-Assembling Nucleating Agent and PEG Plasticizer",
+        "year": 2025,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1039/c3ce40466h",
+        "title": "Shear effects on crystalline structures of poly(l-lactide)",
+        "year": 2013,
+        "journal": "CrystEngComm",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acsapm.9b00722",
+        "title": "Conformational Energy Settled Crystallization Behaviors of Poly( l -lactic acid)",
+        "year": 2019,
+        "journal": "ACS Applied Polymer Materials",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/s41598-019-39640-1",
+        "title": "Diverse nature of femtosecond laser ablation of poly(L-lactide) and the influence of filamentation on the polymer crystallization behaviour",
+        "year": 2019,
+        "journal": "Scientific Reports",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym13193377",
+        "title": "In-Situ Isothermal Crystallization of Poly(l-lactide)",
+        "year": 2021,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1039/d1ma00195g",
+        "title": "Temperature dependent poly( l -lactide) crystallization investigated by Fourier transform terahertz spectroscopy",
+        "year": 2021,
+        "journal": "Materials Advances",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.saa.2019.117953",
+        "title": "Isothermal crystalline polymorphs of poly(l-lactic acid) by FTIR coupled with two-dimensional correlation spectroscopy and perturbation-correlation moving-window two-dimensional analysis",
+        "year": 2019,
+        "journal": "Spectrochimica Acta Part A Molecular and Biomolecular Spectroscopy",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10118-020-2464-0",
+        "title": "Texture Induced by Molecular Weight Dispersity: Polymorphism within Poly(L-lactic acid) Spherulites",
+        "year": 2020,
+        "journal": "Chinese Journal of Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.reactfunctpolym.2009.08.004",
+        "title": "Polymorph control of a complex BaCO3 superstructure through the cooperation of an insoluble polylactide self-assembled film and soluble poly allylamine modifier",
+        "year": 2009,
+        "journal": "Reactive and Functional Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.physb.2022.414488",
+        "title": "Broadband infrared absorption spectroscopy of low-frequency inter-molecular vibrations in crystalline poly(L-lactide)",
+        "year": 2022,
+        "journal": "Physica B Condensed Matter",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1039/d3py01370g",
+        "title": "Transformation of poly( l -lactide) crystals composed of linear chains into crystals composed of cycles",
+        "year": 2024,
+        "journal": "Polymer Chemistry",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pls2.10083",
+        "title": "Polylactide cocrystals and gels",
+        "year": 2022,
+        "journal": "SPE Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s00289-020-03464-1",
+        "title": "Effect of a small amount of poly(ethylene oxide) on crystal polymorphism of poly(l-lactic acid)",
+        "year": 2020,
+        "journal": "Polymer Bulletin",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1063/1.4949583",
+        "title": "Melting of α′- and α-crystals of poly(lactic acid)",
+        "year": 2016,
+        "journal": "AIP conference proceedings",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acsapm.4c01327",
+        "title": "Superior Barrier Performance of Poly(lactic acid) Films via Constructing Well-Defined Nanosized Crystals and Sandwich Structure",
+        "year": 2024,
+        "journal": "ACS Applied Polymer Materials",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.5c02464",
+        "title": "Multistep Relaxation Pathway from Glass to Crystal Development in Poly( l -lactide)",
+        "year": 2025,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2023.126126",
+        "title": "Modeling of the kinetics of polymorphic isothermal crystallization of poly(l-lactide) subjected to uniaxial molecular orientation",
+        "year": 2023,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2022.124618",
+        "title": "Modeling of polymorphic composition development during isothermal crystallization of poly(l-lactide acid)",
+        "year": 2022,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10118-025-3331-9",
+        "title": "Dual Cold Crystallization Kinetics of Heterogeneous Amorphous Structure in Poly(L-lactide) upon Extensional Flow",
+        "year": 2025,
+        "journal": "Chinese Journal of Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10924-026-03812-8",
+        "title": "Crystallization-Driven Design of Multilayered Poly(l-lactide) Foams",
+        "year": 2026,
+        "journal": "Journal of Polymers and the Environment",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3103/s1062873823701903",
+        "title": "Effect of the Supramolecular and Crystal Structure of Polylactide on Obtaining the Shape Memory Effect",
+        "year": 2023,
+        "journal": "Bulletin of the Russian Academy of Sciences Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.31857/s036767652370134x",
+        "title": "Influence of the supramolecular and crystal structure of polylactide on the realization of the shape memory effect",
+        "year": 2023,
+        "journal": "Известия Российской академии наук Серия физическая",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1186/1475-2859-13-s1-s9",
+        "title": "Cell wall structure and function in lactic acid bacteria",
+        "year": 2014,
+        "journal": "Microbial Cell Factories",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s0032-3861(00)00235-4",
+        "title": "The frustrated structure of poly( l -lactide)",
+        "year": 2000,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2016.11.047",
+        "title": "Multi-scale analysis of the impact of polylactide morphology on gas barrier properties",
+        "year": 2016,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/bm0343951",
+        "title": "Structural Study of Poly( l -lactic acid) Spherulites",
+        "year": 2003,
+        "journal": "Biomacromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/ma302560q",
+        "title": "Wavenumber Dependence of FT-IR Image of Molecular Orientation in Banded Spherulites of Poly(3-hydroxybutyrate) and Poly( l -lactic acid)",
+        "year": 2013,
+        "journal": "Macromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/bm061229v",
+        "title": "Plastic Deformation of Amorphous Poly( l / dl -lactide): Structure Evolution and Physical Properties",
+        "year": 2007,
+        "journal": "Biomacromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/(sici)1099-0488(19961115)34:15<2569::aid-polb4>3.0.co;2-o",
+        "title": "A morphological study of membranes obtained from the systems polylactide-dioxane-methanol, polylactide-dioxane-water and polylactide-N-methyl pyrrolidone-water",
+        "year": 1996,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2023.125985",
+        "title": "Application of infrared spectroscopy in the multiscale structure characterization of poly(l-lactic acid)",
+        "year": 2023,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.matdes.2021.109779",
+        "title": "Ultrahigh performance polylactide achieved by the design of molecular structure",
+        "year": 2021,
+        "journal": "Materials & Design",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1155/2022/4367582",
+        "title": "The Study of Properties and Structure of Polylactide–Graphite Nanoplates Compositions",
+        "year": 2022,
+        "journal": "Polymer Crystallization",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymdegradstab.2020.109416",
+        "title": "Defects in polylactide spherulites: Ring line cracks and micropores",
+        "year": 2020,
+        "journal": "Polymer Degradation and Stability",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.2115/fiber.66.124",
+        "title": "Structure of Melt Electrospun Poly(lactic acid) Fibers",
+        "year": 2010,
+        "journal": "Sen i Gakkaishi",
         "cell_signal": false
       }
     ],
@@ -3296,6 +4668,83 @@
         "year": 2019,
         "journal": "Macromolecules",
         "cell_signal": false
+      },
+      {
+        "doi": "10.1039/c6ce01623e",
+        "title": "Crystallization behavior and crystalline structural changes of poly(glycolic acid) investigated via temperature-variable WAXD and FTIR analysis",
+        "year": 2016,
+        "journal": "CrystEngComm",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.eurpolymj.2006.01.013",
+        "title": "Crystallization kinetics of poly(glycolic acid-alt-6-aminohexanoic acid)",
+        "year": 2006,
+        "journal": "European Polymer Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/app.29000",
+        "title": "Structure development during crystallization and solid‐state processing of poly(glycolic acid)",
+        "year": 2008,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym13060891",
+        "title": "Fast-Scanning Chip-Calorimetry Measurement of Crystallization Kinetics of Poly(Glycolic Acid)",
+        "year": 2021,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym15132764",
+        "title": "Influence of a Multiple Epoxy Chain Extender on the Rheological Behavior, Crystallization, and Mechanical Properties of Polyglycolic Acid",
+        "year": 2023,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21077",
+        "title": "Alternating poly(ester amide)s of glycolic acid and ω‐amino acids: Crystalline morphology and main crystallographic data",
+        "year": 2007,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21630",
+        "title": "Crystalline structure of sequential poly(ester amide)s derived from glycolic acid, 1,6‐hexanediamine, and even aliphatic dicarboxylic acids",
+        "year": 2008,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/polb.21268",
+        "title": "Isothermal crystallization kinetics and spherulitic morphology of poly(4‐hydroxybutyric acid‐alt‐glycolic acid)",
+        "year": 2007,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/(sici)1521-3927(19981201)19:12<613::aid-marc613>3.0.co;2-m",
+        "title": "Hierarchically structured polyglycolide - a biomaterial mimicking natural bone",
+        "year": 1998,
+        "journal": "Macromolecular Rapid Communications",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.4236/jbpc.2011.23033",
+        "title": "Conformational behavior of stereo regular substituted polyglycolides is side chain dependent",
+        "year": 2011,
+        "journal": "Journal of Biophysical Chemistry",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/(sici)1521-3927(19981201)19:12<613::aid-marc613>3.3.co;2-d",
+        "title": "Hierarchically structured polyglycolide – a biomaterial mimicking natural bone",
+        "year": 1998,
+        "journal": "Macromolecular Rapid Communications",
+        "cell_signal": false
       }
     ],
     "offtopic": [
@@ -3661,6 +5110,90 @@
         "year": 1990,
         "journal": "Macromolecules",
         "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.3c00234",
+        "title": "Effect of Molecular Weight on the Crystallization and Melt Memory of Poly(ε-caprolactone) (PCL)",
+        "year": 2023,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/cryst13101447",
+        "title": "Impact of Soft Segment Composition on Phase Separation and Crystallization of Multi-Block Thermoplastic Polyurethanes Based on Poly(butylene adipate) Diol and Polycaprolactone Diol",
+        "year": 2023,
+        "journal": "Crystals",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym10111239",
+        "title": "Polymers of ε-Caprolactone Using New Copper(II) and Zinc(II) Complexes as Initiators: Synthesis, Characterization and X-Ray Crystal Structures",
+        "year": 2018,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.cgd.0c00803",
+        "title": "Effect of Porous and Nonporous Polycaprolactone Fiber Meshes on CaCO3Crystallization Through a Gas Diffusion Method",
+        "year": 2020,
+        "journal": "Crystal Growth & Design",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym13122008",
+        "title": "Surface Crystal Nucleation and Growth in Poly (ε-caprolactone): Atomic Force Microscopy Combined with Fast Scanning Chip Calorimetry",
+        "year": 2021,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/978-981-13-1002-7_25",
+        "title": "Preparation of Random and Aligned Polycaprolactone Fiber as Template for Classical Calcium Oxalate Through Electrocrystallization",
+        "year": 2018,
+        "journal": "Springer eBooks",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.122227",
+        "title": "The effect of temperature and pressure on polycaprolactone morphology",
+        "year": 2020,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s0142-9612(02)00579-3",
+        "title": "Effect of molecular weight of poly(ε-caprolactone) on interpenetrating network structure, apatite-forming ability, and degradability of poly(ε-caprolactone)/silica nano-hybrid materials",
+        "year": 2003,
+        "journal": "Biomaterials",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/polym10040397",
+        "title": "Effect of Ionizing Radiation on the Chemical Structure and the Physical Properties of Polycaprolactones of Different Molecular Weight",
+        "year": 2018,
+        "journal": "Polymers",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/j.polymer.2020.122870",
+        "title": "Mesophase in melt-spun poly(ϵ-caprolactone) filaments: Structure–mechanical property relationship",
+        "year": 2020,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/polym14245340",
+        "title": "Biodegradable Mulching Films Based on Polycaprolactone and Its Porous Structure Construction",
+        "year": 2022,
+        "journal": "Polymers",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1016/s1773-2247(14)50031-7",
+        "title": "Development of lyophilized spherical particles of poly(epsilon-caprolactone) and examination of their morphology, cytocompatibility and influence on the formation of reactive oxygen species",
+        "year": 2014,
+        "journal": "Journal of Drug Delivery Science and Technology",
+        "cell_signal": false
       }
     ],
     "offtopic": [
@@ -4019,7 +5552,120 @@
     ]
   },
   "PBS": {
-    "ontopic": [],
+    "ontopic": [
+      {
+        "doi": "10.1021/ma300530a",
+        "title": "Reversible Lamellar Thickening Induced by Crystal Transition in Poly(butylene succinate)",
+        "year": 2012,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym10020110",
+        "title": "Epitaxial Crystallization Behavior of Poly(butylene adipate) on Orientated Poly(butylene succinate) Substrate",
+        "year": 2018,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/macp.202200459",
+        "title": "The Semicrystalline Morphology of Polybutylene Succinate Supports a General Scheme Based on Intracrystalline Dynamics",
+        "year": 2023,
+        "journal": "Macromolecular Chemistry and Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2023.126311",
+        "title": "Poly (butylene succinate): Low-temperature nucleation and crystallization, complex morphology and absence of lamellar thickening",
+        "year": 2023,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.1579",
+        "title": "The effect of 60Co γ‐rays on the crystal structure, melting and crystallization behavior of poly(butylene succinate)",
+        "year": 2004,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/marc.202400273",
+        "title": "Reorganization of Poly(Butylene Succinate) Containing Crystals of Low Stability",
+        "year": 2024,
+        "journal": "Macromolecular Rapid Communications",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2014.04.023",
+        "title": "Radiopaque iodinated poly(ester-urethane)s based on poly(butylene succinate): Retarded crystallization and dual recrystallization behaviour",
+        "year": 2014,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/cryst11121530",
+        "title": "Dependence of Crystallization Behavior of Interacting Telechelic Poly(butylene succinate) Oligomer on Molecular Weight",
+        "year": 2021,
+        "journal": "Crystals",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2024.126933",
+        "title": "Crystallization manipulation of poly(butylene succinate) via hydrazide-based self-assembled hydrogen-bonding interactions",
+        "year": 2024,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.jpcb.4c06101",
+        "title": "Homogeneous Crystal Nucleation in Poly (butylene succinate- ran -butylene adipate): Challenging the Nuclei-Transfer Step in Tammann’s Method",
+        "year": 2024,
+        "journal": "The Journal of Physical Chemistry B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/polym17081086",
+        "title": "Enhanced Melt Memory Effects in Poly(butylene succinate) Through Incorporation of Extended-Chain Crystals",
+        "year": 2025,
+        "journal": "Polymers",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/macp.202500079",
+        "title": "Imperfect Crystals of Poly(butylene succinate) Formed at High Supercooling of the Melt",
+        "year": 2025,
+        "journal": "Macromolecular Chemistry and Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10965-025-04429-6",
+        "title": "The effect of calcium salt of carboxylic acid on the crystallization behavior and mechanical properties of Polybutylene succinate",
+        "year": 2025,
+        "journal": "Journal of Polymer Research",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.2139/ssrn.6160787",
+        "title": "Evolution of Crystal Morphology in Polylactic Acid Foaming Processes: The Heterogeneous Nucleation Effect of a Dispersed Polybutylene Succinate Phase",
+        "year": 2026,
+        "journal": "SSRN Electronic Journal",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2014.11.003",
+        "title": "Conformational characteristics and configurational properties of poly(ethylene succinate) and poly(butylene succinate) and structure–property–function relationships of representative biodegradable polyesters",
+        "year": 2014,
+        "journal": "Polymer",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/marc.202500048",
+        "title": "Electrospun Polybutylene Succinate Coatings for Sustainable Cardboard Packaging: Structure‐Property Relationships",
+        "year": 2025,
+        "journal": "Macromolecular Rapid Communications",
+        "cell_signal": false
+      }
+    ],
     "offtopic": [
       {
         "doi": "10.58837/chula.the.2019.1622",
@@ -4446,7 +6092,29 @@
     ]
   },
   "PBSA": {
-    "ontopic": [],
+    "ontopic": [
+      {
+        "doi": "10.1002/polb.20539",
+        "title": "Crystallization kinetics and morphology of poly(butylene succinate‐co‐adipate)",
+        "year": 2005,
+        "journal": "Journal of Polymer Science Part B Polymer Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/ma9050313",
+        "title": "Poly(lactide)-g-poly(butylene succinate-co-adipate) with High Crystallization Capacity and Migration Resistance",
+        "year": 2016,
+        "journal": "Materials",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1038/s41598-025-90282-y",
+        "title": "The biodegradable polymer poly(butylene succinate-co-adipate) modulates the community structures of actively growing bacteria in rotifer culture water",
+        "year": 2025,
+        "journal": "Scientific Reports",
+        "cell_signal": false
+      }
+    ],
     "offtopic": [
       {
         "doi": "10.58837/chula.the.2019.1622",
@@ -4767,6 +6435,188 @@
         "title": "Branched Polyurethanes Based on Synthetic Polyhydroxybutyrate with Tunable Structure and Properties",
         "year": 2018,
         "journal": "Polymers",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1002/app.21204",
+        "title": "Effect of lignin particles as a nucleating agent on crystallization of poly(3‐hydroxybutyrate)",
+        "year": 2004,
+        "journal": "Journal of Applied Polymer Science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma3010907",
+        "title": "The Role of the Rigid Amorphous Fraction on Cold Crystallization of Poly(3-hydroxybutyrate)",
+        "year": 2012,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/ma702222a",
+        "title": "Crystal Structures, Thermal Behaviors, and C−H···O═C Hydrogen Bondings of Poly(3-hydroxyvalerate) and Poly(3-hydroxybutyrate) Studied by Infrared Spectroscopy and X-ray Diffraction",
+        "year": 2008,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.9b00225",
+        "title": "X-ray Crystal Structure Analysis of Poly(3-hydroxybutyrate) β-Form and the Proposition of a Mechanism of the Stress-Induced α-to-β Phase Transition",
+        "year": 2019,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/1521-3935(20010501)202:8<1405::aid-macp1405>3.0.co;2-5",
+        "title": "Structural Investigation of Poly(3-hydroxybutyrate) Spherulites by Microfocus X-Ray Diffraction",
+        "year": 2001,
+        "journal": "Macromolecular Chemistry and Physics",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1002/pi.6402",
+        "title": "Polyhydroxybutyrate: a review of experimental and simulation studies of the effect of fillers on crystallinity and mechanical properties",
+        "year": 2022,
+        "journal": "Polymer International",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/jp4063127",
+        "title": "The Role of the Crystallization Temperature on the Nanophase Structure Evolution of Poly[(R)-3-hydroxybutyrate]",
+        "year": 2013,
+        "journal": "The Journal of Physical Chemistry B",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymer.2008.08.026",
+        "title": "Surface structure of folded-chain crystals of poly(R-3-hydroxybutyrate) of different chain length",
+        "year": 2008,
+        "journal": "Polymer",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.biomac.2c00682",
+        "title": "Effect of Chain Stereoconfiguration on Poly(3-hydroxybutyrate) Crystallization Kinetics",
+        "year": 2022,
+        "journal": "Biomacromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1016/j.polymdegradstab.2004.04.006",
+        "title": "The deformation of the chain molecules and crystallites in poly([R]-3-hydroxybutyrate) and poly(4-hydroxybutyrate) under tensile stress",
+        "year": 2004,
+        "journal": "Polymer Degradation and Stability",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/12_2019_50",
+        "title": "Crystallization of Poly[(R)-3-hydroxybutyrate]",
+        "year": 2019,
+        "journal": "Advances in polymer science",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.3390/ma12152488",
+        "title": "Isothermal Crystallization Kinetics of Poly(4-hydroxybutyrate) Biopolymer",
+        "year": 2019,
+        "journal": "Materials",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1007/s10965-015-0706-6",
+        "title": "Crystallization properties of polyhydroxybutyrate with modified silicas",
+        "year": 2015,
+        "journal": "Journal of Polymer Research",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1063/1.4965523",
+        "title": "Crystallization behavior of polyhydroxybutyrate (PHB)",
+        "year": 2016,
+        "journal": "AIP conference proceedings",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1107/s2053230x14019347",
+        "title": "Crystallization and preliminary crystallographic analysis of poly(3-hydroxybutyrate) depolymerase fromBacillus thuringiensis",
+        "year": 2014,
+        "journal": "Acta Crystallographica Section F Structural Biology Communications",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1021/acs.macromol.5c02381",
+        "title": "Homogeneous Crystal Nucleation of Poly(3-hydroxybutyrate): Kinetics, Stability, and Cluster-Size Distribution",
+        "year": 2025,
+        "journal": "Macromolecules",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1107/s1600576720015794",
+        "title": "Determining paracrystallinity in mixed-tacticity polyhydroxybutyrates",
+        "year": 2021,
+        "journal": "Journal of Applied Crystallography",
+        "cell_signal": true
+      },
+      {
+        "doi": "10.1074/jbc.m116.756833",
+        "title": "Structure of the Catalytic Domain of the Class I Polyhydroxybutyrate Synthase from Cupriavidus necator",
+        "year": 2016,
+        "journal": "Journal of Biological Chemistry",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/nano7010005",
+        "title": "Synthesis of Polyhydroxybutyrate Particles with Micro-to-Nanosized Structures and Application as Protective Coating for Packaging Papers",
+        "year": 2016,
+        "journal": "Nanomaterials",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1021/acs.macromol.8b01047",
+        "title": "Structures of Mixed-Tacticity Polyhydroxybutyrates",
+        "year": 2018,
+        "journal": "Macromolecules",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1134/s1070363221030245",
+        "title": "Structure and Properties of Biopolymeric Fibrous Materials Based on Polyhydroxybutyrate–Metalloporphyrin Complexes",
+        "year": 2021,
+        "journal": "Russian Journal of General Chemistry",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.3390/ma16196525",
+        "title": "Influence of Rheological and Morphological Characteristics of Polyhydroxybutyrate on Its Meltblown Process Behavior",
+        "year": 2023,
+        "journal": "Materials",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1201/b13964-25",
+        "title": "On Morphology of Polyhydroxybutyrate",
+        "year": 2013,
+        "journal": "Apple Academic Press eBooks",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1088/1757-899x/1093/1/012032",
+        "title": "The Investigation of the Structure and Properties of Nonwoven Fibrous Materials Based on Polyhydroxybutyrate Biopolymer",
+        "year": 2021,
+        "journal": "IOP Conference Series Materials Science and Engineering",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.30791/1028-978x-2026-6-15-25",
+        "title": "Investigation of the effect of calcium phosphates on the structure and properties of poly(-3-hydroxybutyrate-4-hydroxybutyrate)",
+        "year": 2026,
+        "journal": "Perspektivnye Materialy",
+        "cell_signal": false
+      },
+      {
+        "doi": "10.1063/1.5084503",
+        "title": "The supramolecular structure of polyhydroxybutyrate fibers modified with the iron (III) – tetraphenylporphyrin complex",
+        "year": 2018,
+        "journal": "AIP conference proceedings",
         "cell_signal": false
       }
     ],

@@ -29,6 +29,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 PROJECT_ROOT = HERE.parents[1]
 Q_PATH = PROJECT_ROOT / "data" / "processed" / "corpus_quality.json"
+SEARCH_PATH = PROJECT_ROOT / "data" / "literature" / "search_results.json"
 OUT_PATH = PROJECT_ROOT / "docs" / "fulltext_fetch_list.md"
 
 # 出版商识别（按 DOI 前缀）—— 用于给出获取途径建议
@@ -88,6 +89,13 @@ def strength(title: str) -> int:
 
 def main(top: int | None = None) -> None:
     q = json.loads(Q_PATH.read_text(encoding="utf-8"))
+    # corpus_quality.json 只带 doi/title/year/journal/cell_signal；
+    # pdf_url / oa_status 在主语料里，按 DOI 关联补上（否则「可自动下载」永远是 0）
+    extra = {}
+    for _p, _items in json.loads(SEARCH_PATH.read_text(encoding="utf-8")).items():
+        for _i in _items:
+            extra[(_i.get("doi") or "").lower()] = _i
+
     rows = []
     for poly, buckets in q.items():
         for it in buckets.get("ontopic", []):
@@ -100,8 +108,14 @@ def main(top: int | None = None) -> None:
                 "cell": bool(it.get("cell_signal")),
                 "publisher": publisher_of(it.get("doi") or ""),
                 "score": strength(it.get("title") or ""),
+                "pdf_url": (extra.get((it.get("doi") or "").lower(), {})
+                            .get("pdf_url") or ""),
+                "oa": (extra.get((it.get("doi") or "").lower(), {})
+                       .get("oa_status") or "closed"),
             })
-    rows.sort(key=lambda r: (-int(r["cell"]), -r["score"], -(r["year"] or 0)))
+    # 有 OA 直链的排最前（可脚本批量下，零人工）；其余按晶胞级信号与语义强度
+    rows.sort(key=lambda r: (-int(bool(r["pdf_url"])), -int(r["cell"]),
+                             -r["score"], -(r["year"] or 0)))
     if top:
         rows = rows[:top]
 
@@ -116,9 +130,11 @@ def main(top: int | None = None) -> None:
         f"自动生成：`src/annotation/make_fetch_list.py`（源 `corpus_quality.json`，"
         f"共 {len(rows)} 条 on-topic，其中晶胞级强信号 {n_cell} 条）。",
         "",
-        "> **为什么必须人工下**：晶胞参数几乎只在全文表格里，只抽摘要抽不到；"
-        "而目标文献绝大多数订阅制，可自动下载 PDF 的仅约 2%（2026-10-10 实测）。",
-        "> PDF 放入 `data/literature/` 即可被流水线拾取（已 gitignore，不入库不分发）。",
+        "> **为什么要有这份清单**：晶胞参数几乎只在全文表格里，只抽摘要抽不到。"
+        "经 OpenAlex 实测，325 条 on-topic 中 **81 条（25%）有 OA 直链**可脚本批量下载，"
+        "其余仍靠图书馆订阅 / 馆际互借（2026-10-15 更新；"
+        "此前 2026-10-10 用 Unpaywall 估的「约 2%」严重低估了 green-OA 仓储稿，已作废）。",
+        "> PDF 放入 `data/literature/`，命名 `<sanitized_doi>.pdf`（已 gitignore，不入库不分发）。",
         "",
         "## 一、按出版商汇总与获取途径",
         "",
@@ -128,30 +144,39 @@ def main(top: int | None = None) -> None:
     for pub, n in sorted(by_pub.items(), key=lambda x: -x[1]):
         lines.append(f"| {pub} | {n} | {PUBLISHER_HINT.get(pub, PUBLISHER_HINT['其他'])} |")
 
+    n_auto = sum(1 for r in rows if r["pdf_url"])
     lines += [
         "",
-        "## 二、逐篇清单（按性价比排序）",
+        f"## 二、逐篇清单（按性价比排序，共 {len(rows)} 条）",
         "",
-        "| # | 优先 | 成员 | 标题 | 期刊 / 年 | DOI | 途径 | 已下载 |",
-        "|---:|:---:|:---:|---|---|---|---|:---:|",
+        f"先处理前 **{n_auto}** 条「可自动下载」的（有 OA 直链，脚本批量下即可）；",
+        "剩下的再走图书馆 / 馆际互借。",
+        "",
+        "| # | 自动 | 优先 | 成员 | 标题 | 期刊 / 年 | DOI | 途径 | 已下 |",
+        "|---:|:---:|:---:|:---:|---|---|---|---|:---:|",
     ]
     for i, r in enumerate(rows, 1):
+        auto = "⚡" if r["pdf_url"] else ""
         prio = "★★" if r["cell"] else "★"
-        title = re.sub(r"\s+", " ", r["title"])[:70]
+        title = re.sub(r"\s+", " ", r["title"])[:66]
         journal = f"{r['journal']} / {r['year']}" if r["journal"] else str(r["year"])
         lines.append(
-            f"| {i} | {prio} | {r['polymer']} | {title} | {journal} "
+            f"| {i} | {auto} | {prio} | {r['polymer']} | {title} | {journal} "
             f"| `{r['doi']}` | {r['publisher']} | ☐ |"
         )
 
     lines += [
         "",
-        "## 三、填表说明",
+        "## 三、操作说明",
         "",
-        "1. 按上表顺序，在校内 IP / 图书馆电子资源导航里逐篇下载 PDF；",
-        "2. 文件放到 `data/literature/`，命名建议 `<成员>-<序号>.pdf`（PDF 已 gitignore）；",
-        "3. 下载后在「已下载」列打勾，便于统计完成度；",
-        "4. **不要**用第三方数据库整包抓取，也不要把 PDF 提交进仓库或对外分发。",
+        "1. **先跑自动下载**（有 ⚡ 标记的）："
+        "`python src/extraction/fetch_pdf.py --on-topic-only`；"
+        "注意直链可能失效或需要校园网，需实测确认。",
+        "2. 自动下载失败的，按「途径」列在校内 IP / 图书馆电子资源导航里人工下载；",
+        "3. PDF 放到 `data/literature/`，命名为 `<sanitized_doi>.pdf`"
+        "（与 `corpus.pdf_path_for` 一致，否则流水线拾取不到）；",
+        "4. 下载后在「已下」列打勾，便于统计完成度；",
+        "5. **不要**整包抓取第三方数据库，也不要把 PDF 提交进仓库或对外分发。",
         "",
     ]
 

@@ -206,18 +206,75 @@ def write_report(res: dict) -> None:
     print(f"\n✓ OA 报告已写入 {REPORT_PATH}")
 
 
+def merge_into_corpus(res: dict) -> None:
+    """把 OpenAlex 结果并入主语料（按 DOI 去重；只补空字段，不覆盖已有值）。
+
+    合规红线：`crossref_ok=False` 的条目直接丢弃，不入库。
+    """
+    data = json.loads(SEARCH_PATH.read_text(encoding="utf-8"))
+    added = enriched = dropped = 0
+    for poly, items in res.items():
+        have = {(i.get("doi") or "").lower(): i for i in data.get(poly, [])}
+        for it in items:
+            doi = it["doi"]
+            if it.get("crossref_ok") is False:
+                dropped += 1
+                continue
+            cur = have.get(doi)
+            if cur is None:
+                data.setdefault(poly, []).append({
+                    "doi": doi, "title": it["title"], "authors": "",
+                    "journal": it.get("journal", ""), "year": it.get("year"),
+                    "abstract": it.get("abstract", ""),
+                    "abstract_src": "openalex",
+                    "oa_status": it.get("oa_status"),
+                    "pdf_url": it.get("pdf_url", ""),
+                    "landing_page": it.get("landing_page", ""),
+                    "url": it.get("url"),
+                    "source": "openalex",
+                })
+                have[doi] = data[poly][-1]
+                added += 1
+            else:
+                touched = False
+                for k_src, k_dst in [("abstract", "abstract"), ("pdf_url", "pdf_url"),
+                                     ("oa_status", "oa_status"),
+                                     ("landing_page", "landing_page")]:
+                    if it.get(k_src) and not cur.get(k_dst):
+                        cur[k_dst] = it[k_src]
+                        touched = True
+                if touched:
+                    cur.setdefault("abstract_src", "openalex")
+                    enriched += 1
+    bak = SEARCH_PATH.with_suffix(".json.bak")
+    bak.write_text(SEARCH_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+    SEARCH_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"✓ 并入完成：新增 {added} 条，补全字段 {enriched} 条，"
+          f"因 CrossRef 核验失败丢弃 {dropped} 条（备份 {bak.name}）")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--polymers", default=None)
     ap.add_argument("--per-page", type=int, default=25)
     ap.add_argument("--no-verify", action="store_true")
+    ap.add_argument("--merge", action="store_true", help="并入 search_results.json")
+    ap.add_argument("--merge-only", action="store_true",
+                    help="跳过检索，直接把已有 openalex_results.json 并入语料")
     a = ap.parse_args()
+
+    if a.merge_only:
+        merge_into_corpus(json.loads(OUT_PATH.read_text(encoding="utf-8")))
+        return
+
     polymers = [p.strip() for p in a.polymers.split(",")] if a.polymers else TARGETS
     res = run(polymers, a.per_page, verify=not a.no_verify)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n✓ 已写入 {OUT_PATH}")
     write_report(res)
+    if a.merge:
+        merge_into_corpus(res)
 
 
 if __name__ == "__main__":
